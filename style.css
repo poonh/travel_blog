@@ -121,3 +121,9 @@ p {
             align-items: center;
             margin-top: 50px;
 }
+
+.rotate-left {
+    transform: rotate(-90deg);  /* Rotate 90 degrees to the left (counterclockwise) */
+    transform-origin: center;  /* Rotate around the center of the image */
+}
+
