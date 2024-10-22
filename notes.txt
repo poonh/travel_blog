@@ -1,0 +1,4 @@
+
+gh auth login
+git pull origin main --rebase
+git config --global http.postBuffer 524288000
