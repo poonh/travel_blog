@@ -38,9 +38,19 @@
 }
 
 .picture {
-    width: 80%; /* Adjust the width as needed */
+   /* width: 80%;*/ /* Adjust the width as needed */
     max-width: 500px; /* Maximum width of the image */
+    max-height: 500px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.picture-maps {
+   /* width: 80%;*/ /* Adjust the width as needed */
+    max-width: 1800px; /* Maximum width of the image */
+    max-height: 1800px;
+  /*  cursor: pointer;*/
     display: block;
     margin: 0 auto;
 }
@@ -127,3 +137,46 @@ p {
     transform-origin: center;  /* Rotate around the center of the image */
 }
 
+.image-container {
+    position: relative;
+}
+
+.info-panel {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    text-align: center;
+}
+
+#close-panel-yuki,
+#close-panel-akitakada,
+#close-panel-higashihiroshima,
+#close-panel-shirokiyama,
+#close-panel-higashihiroshima,
+#close-panel-takehara,
+#close-panel-kamikamagari,
+#close-panel-etajima,
+#close-panel-kurahashi,
+#close-panel-sera,
+#close-panel-onomichi,
+#close-panel-fuchu,
+#close-panel-shinseki,
+#close-panel-shobara{
+    margin-top: 1px;
+    cursor: pointer;
+    background-color: darkgray; /* Green */
+    border: 1px solid white; /* Darker Green */
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
