@@ -73,24 +73,32 @@ nav ul li a {
 
 /* Mobile Menu Styles */
 
-nav ul, .mobile-menu-list {
+nav ul, .mobile-menu-list { /*computer menu*/
     list-style-type: none;
-    padding: 0;
+    padding: 10;
     margin: 0;
   
 }
 
 nav ul li, .mobile-menu-list li {
+    /*
     display: inline;
-    margin-right: 20px;
+    margin-right: 20px;*/
+    
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-right: 1px solid rgb(224, 224, 224);
    
 }
 
 nav ul li a, .mobile-menu-list li a {
     color: white; /* Set the color to black */
     text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
 
 }
 
@@ -118,10 +126,9 @@ nav ul li a, .mobile-menu-list li a {
 
 @media (max-width: 768px) {
      nav {
-        background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
+         background-color:rgb(0, 108, 169); /* Set the background image */
   
      }
-
 
      
     .menu {
