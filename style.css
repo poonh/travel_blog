@@ -16,7 +16,6 @@ body {
 }
 
 
-/*additional begins*/
 
 main {
     background-color:rgb(255, 255, 255);
@@ -26,9 +25,11 @@ main {
     margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
 }
 
+/*additional begins*/
 
 nav {
    padding: 0px; /*distance between the menu bar and the top*/
+   height: 30px;
 }
 
 /* Menu with Two Horizontal Rows */
@@ -71,6 +72,28 @@ nav ul li a {
 }
 
 /* Mobile Menu Styles */
+
+nav ul, .mobile-menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+nav ul li, .mobile-menu-list li {
+    display: inline;
+    margin-right: 20px;
+   
+}
+
+nav ul li a, .mobile-menu-list li a {
+    color: white; /* Set the color to black */
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
 .mobile-menu {
     display: none;
 }
@@ -78,31 +101,29 @@ nav ul li a {
 .menu-icon {
     width: 30px;
     height: 30px;
-/*    background-image: url('pictures/darkblue.webp');*/
+    /*    background-color: lightgreen;*/
+    background-image: url('pictures/lightgreen.jpg')
     cursor: pointer;
 }
 
 .mobile-menu-list {
     display: none;
-    background-color:rgb(0, 108, 169);
-  /*  background-image: url('pictures/darkblue.webp');*/
+/*    background-color: lightgreen;*/
+    background-image: url('pictures/lightgreen.jpg')
 }
 
 .mobile-menu-list li {
     padding: 10px;
 }
 
-nav {
-    height: 30px;
-}
-
-/* Mobile Responsive Styles */
 @media (max-width: 768px) {
-    nav {
-        background-color:rgb(0, 108, 169);
-       /* background-image: url('pictures/lightgreen.jpg');*/
-    }
+     nav {
+        background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
+  
+     }
 
+
+     
     .menu {
         display: none;
     }
@@ -114,25 +135,8 @@ nav {
     .mobile-menu-list {
         display: block;
     }
-
-    nav ul {
-        flex-direction: column; /* Stack items vertically on small screens */
-        max-width: 100%;
-    }
-
-    nav ul li {
-        width: 100%; /* Full width for each item on small screens */
-    }
 }
 
-.caption {
-  font-family: "PingFang SC", "Microsoft YaHei", "Heiti SC", "SimSun", "sans-serif";
-  font-size: 20px;               /* Adjust the font size */
-  color: blue;                   /* Adjust the text color */
-  text-align: center;            /* Center the text horizontally */
-  display: block;                /* Ensure the element takes up full width */
-  margin: 0 auto;                /* Center the element */
-}
 
 
 .linebreak {
