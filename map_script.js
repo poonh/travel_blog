@@ -133,20 +133,63 @@ document.addEventListener('DOMContentLoaded', function () {
         togglePanel('ota', 'info-panel-ota');
     });
     
+    document.getElementById('kumakogen').addEventListener('click', function() {
+        togglePanel('kumakogen', 'info-panel-kumakogen');
+    });
     
+    document.getElementById('ikata').addEventListener('click', function() {
+        togglePanel('ikata', 'info-panel-ikata');
+    });
     
-    // Add more event listeners here for additional areas
-/*});
-
-// Close button functionality
-document.addEventListener('DOMContentLoaded', function () {*/
+    document.getElementById('iyo').addEventListener('click', function() {
+        togglePanel('iyo', 'info-panel-iyo');
+    });
+    
+    document.getElementById('touon').addEventListener('click', function() {
+        togglePanel('touon', 'info-panel-touon');
+    });
+    
+    document.getElementById('ainan').addEventListener('click', function() {
+        togglePanel('ainan', 'info-panel-ainan');
+    });
+    
+    document.getElementById('yusuhara').addEventListener('click', function() {
+        togglePanel('yusuhara', 'info-panel-yusuhara');
+    });
+    
+    document.getElementById('shimanto').addEventListener('click', function() {
+        togglePanel('shimanto', 'info-panel-shimanto');
+    });
+    
+    document.getElementById('sukumo').addEventListener('click', function() {
+        togglePanel('sukumo', 'info-panel-sukumo');
+    });
+        
+    document.getElementById('uguru').addEventListener('click', function() {
+        togglePanel('uguru', 'info-panel-uguru');
+    });
+    
+    document.getElementById('maniwa').addEventListener('click', function() {
+        togglePanel('maniwa', 'info-panel-maniwa');
+    });
+    
+    document.getElementById('daizen').addEventListener('click', function() {
+        togglePanel('daizen', 'info-panel-daizen');
+    });
+    
+    document.getElementById('kitakyushu').addEventListener('click', function() {
+        togglePanel('kitakyushu', 'info-panel-kitakyushu');
+    });
+    
+    document.getElementById('yamaguchi').addEventListener('click', function() {
+        togglePanel('yamaguchi', 'info-panel-yamaguchi');
+    });
+    
     
     document.getElementById('close-panel-shirokiyama').addEventListener('click', function() {
         document.getElementById('info-panel-shirokiyama').style.display = 'none';
     });
 
-
-    // Close panel for Yuki
     document.getElementById('close-panel-yuki').addEventListener('click', function() {
         document.getElementById('info-panel-yuki').style.display = 'none';
     });
@@ -219,7 +262,58 @@ document.addEventListener('DOMContentLoaded', function () {*/
     document.getElementById('close-panel-ounan').addEventListener('click', function() {
         document.getElementById('info-panel-ounan').style.display = 'none';
     });
+    
+    document.getElementById('close-panel-kumakogen').addEventListener('click', function() {
+        document.getElementById('info-panel-kumakogen').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-ikata').addEventListener('click', function() {
+        document.getElementById('info-panel-ikata').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-iyo').addEventListener('click', function() {
+        document.getElementById('info-panel-iyo').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-touon').addEventListener('click', function() {
+        document.getElementById('info-panel-touon').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-ainan').addEventListener('click', function() {
+        document.getElementById('info-panel-ainan').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-yusuhara').addEventListener('click', function() {
+        document.getElementById('info-panel-yusuhara').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-shimanto').addEventListener('click', function() {
+        document.getElementById('info-panel-shimanto').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-sukumo').addEventListener('click', function() {
+        document.getElementById('info-panel-sukumo').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-uguru').addEventListener('click', function() {
+        document.getElementById('info-panel-uguru').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-maniwa').addEventListener('click', function() {
+        document.getElementById('info-panel-maniwa').style.display = 'none';
+    });
+        
+    document.getElementById('close-panel-daizen').addEventListener('click', function() {
+        document.getElementById('info-panel-daizen').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-kitakyushu').addEventListener('click', function() {
+        document.getElementById('info-panel-kitakyushu').style.display = 'none';
+    });
 
+    document.getElementById('close-panel-yamaguchi').addEventListener('click', function() {
+        document.getElementById('info-panel-yamaguchi').style.display = 'none';
+    });
     // Add more close button listeners for additional panels
 });
 

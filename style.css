@@ -176,7 +176,21 @@ p {
 #close-panel-okuizumo,
 #close-panel-matsue,
 #close-panel-ota,
-#close-panel-unnan,{
+#close-panel-unnan,
+#close-panel-kumakogen,
+#close-panel-iyo,
+#close-panel-ikata,
+#close-panel-touon,
+#close-panel-ainan,
+#close-panel-yusuhara,
+#close-panel-shimanto,
+#close-panel-sukumo,
+#close-panel-uguru,
+#close-panel-maniwa,
+#close-panel-daizen,
+#close-panel-kitakyushu,
+#close-panel-yamaguchi{
+    
     margin-top: 1px;
     cursor: pointer;
     background-color: darkgray; /* Green */
