@@ -1,6 +1,94 @@
 <!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
+    <style>
+        /* Styling for the information panel */
+        .info-panel {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background: darkred;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+        
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,69 +100,108 @@
 </head>
 <body>
     <header>
-<!--        <h1>Life in Saijo</h1>-->
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main class="content">
         <article>
+            <br><br><br><br>
             2.<a href="https://poonh.github.io/travel_blog/github_html/2023_setouchi_info.html" target=_blank>相关行程信息</a><br>
             3.<a href="https://poonh.github.io/travel_blog/github_html/2023_setouchi.html" target=_blank>游记</a><br><br>
             <h3 align="center">1.濑户贵宾列车尾道休闲一天游 - 广告<br><br></h3>
             日期: 2023年2月24日(周五)<br><br>
             需要用品:水，防晒，运动衣服，浴巾(如去温泉)<br><br>
-    
+            
             行程: 早8点多西条出发，乘坐广岛站9:32濑户内海贵宾专列<a href =" https://www.jr-odekake.net/railroad/kankoutrain/area_hiroshima/etsetora/" target=_blank>エトセトラ</a>(etsetora)三小时畅游濑户内海。 我们定好了靠近海侧位置，带上小点心可以一边享受濑户内海美景一边品尝美食。<br><br>
-           
-           <div class="picture-container">
-               <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/12.JPG" class="picture">
-           </div>
-           <div style="text-align: center;"></div>
-           <div class="picture-container">
-               <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/19.JPG" class="picture">
-           </div>
-           <div style="text-align: center;"></div>
-           <div class="picture-container">
-               <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/6.JPG" class="picture">
-           </div>
-           <div style="text-align: center;"></div>
-           
-           中午12:32到尾道，先午饭。想看风景可以到千光寺附近,可以遥望濑户内海景色的<a href ="https://www.instagram.com/cafe._.holoholo/" target=_blank>cafe holoholo</a>午饭，或者尾道駅一代很多 其他选择。随后步行到千光寺公园。千光寺山海拔100多米，乃当地风景名声，顶上可以俯视 濑户内海景色。<br><br>
-           
-           <div class="picture-container">
-               <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/64.JPG" class="picture">
-           </div>
-           <div style="text-align: center;"></div>
-           <div class="picture-container">
-               <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/68.JPG" class="picture">
-           </div>
-           <div style="text-align: center;"></div>
-           
-           
-           备选行程: 下山后看时间有两个选择<br>
-           1.经多部电影拍摄地-千光寺新道返回车站。此道自大正时代，以狭长石板道闻名，乃尾道标 志。附近有多家特色咖啡店，可以享受下午茶后返回。<br><br>
-           2.当地人气温泉平原温泉<a href ="https://poppo.info/" target=_blank>ぽっぽの湯</a>。除了室内外风吕还有女士专享的汉方药草桑拿。<br>
-           备注: 从车站坐バス过去，约20分钟。<br><br>
-           
-           
-
-           成本估计:<br>
-           Jr: 1520+990 (西条-广岛-尾道-西条)<br>
-           エトセトラ グーリン券(etsetora乘车券): 1000<br>
-           午饭: ~1000<br>
-           温泉门票:860<br>
-           温泉往返バス:560<br>
-           合共: 〜6000(不去温泉的话~5000)<br><br>
-
+            
+            <div class="picture-container">
+                <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/12.JPG" class="picture">
+            </div>
+            <div style="text-align: center;"></div>
+            <div class="picture-container">
+                <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/19.JPG" class="picture">
+            </div>
+            <div style="text-align: center;"></div>
+            <div class="picture-container">
+                <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/6.JPG" class="picture">
+            </div>
+            <div style="text-align: center;"></div>
+            
+            中午12:32到尾道，先午饭。想看风景可以到千光寺附近,可以遥望濑户内海景色的<a href ="https://www.instagram.com/cafe._.holoholo/" target=_blank>cafe holoholo</a>午饭，或者尾道駅一代很多 其他选择。随后步行到千光寺公园。千光寺山海拔100多米，乃当地风景名声，顶上可以俯视 濑户内海景色。<br><br>
+            
+            <div class="picture-container">
+                <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/64.JPG" class="picture">
+            </div>
+            <div style="text-align: center;"></div>
+            <div class="picture-container">
+                <img src="https://poonh.github.io/travel_blog/html_pics/2023_setouchi/68.JPG" class="picture">
+            </div>
+            <div style="text-align: center;"></div>
+            
+            
+            
+            
+            备选行程: 下山后看时间有两个选择<br>
+            1.经多部电影拍摄地-千光寺新道返回车站。此道自大正时代，以狭长石板道闻名，乃尾道标 志。附近有多家特色咖啡店，可以享受下午茶后返回。<br><br>
+            2.当地人气温泉平原温泉<a href ="https://poppo.info/" target=_blank>ぽっぽの湯</a>。除了室内外风吕还有女士专享的汉方药草桑拿。<br>
+            备注: 从车站坐バス过去，约20分钟。<br><br>
+            
+            
+            
+            成本估计:<br>
+            Jr: 1520+990 (西条-广岛-尾道-西条)<br>
+            エトセトラ グーリン券(etsetora乘车券): 1000<br>
+            午饭: ~1000<br>
+            温泉门票:860<br>
+            温泉往返バス:560<br>
+            合共: 〜6000(不去温泉的话~5000)<br><br>
+            
             2.<a href="https://poonh.github.io/travel_blog/github_html/2023_setouchi_info.html" target=_blank>相关行程信息</a><br>
             3.<a href="https://poonh.github.io/travel_blog/github_html/2023_setouchi.html" target=_blank>游记</a><br>
-<br><br>
-
-
-<!--    <footer>
-        <p>&copy; 2024 Life in Saijo</p>
-    </footer>-->
- <div id="overlay" class="overlay">
-     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
- </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+            <br><br>
+            
+            
+            <!--    <footer>
+            <p>&copy; 2024 Life in Saijo</p>
+            </footer>-->
+            <div id="overlay" class="overlay">
+                <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+            </div>
+            <script src="../script.js"></script> <!-- Link to your JS file -->
+            <script>
+            document.getElementById('clickable-image').addEventListener('click', function() {
+            document.getElementById('info-panel').style.display = 'block';
+            });
+            
+            document.getElementById('close-panel').addEventListener('click', function() {
+            document.getElementById('info-panel').style.display = 'none';
+            });
+            
+            </script>
 </body>
 </html>
