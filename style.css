@@ -170,7 +170,13 @@ p {
 #close-panel-onomichi,
 #close-panel-fuchu,
 #close-panel-shinseki,
-#close-panel-shobara{
+#close-panel-shobara,
+#close-panel-ounan,
+#close-panel-izumo,
+#close-panel-okuizumo,
+#close-panel-matsue,
+#close-panel-ota,
+#close-panel-unnan,{
     margin-top: 1px;
     cursor: pointer;
     background-color: darkgray; /* Green */
