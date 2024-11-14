@@ -207,7 +207,6 @@ nav ul li a{
    /* width: 80%;*/ /* Adjust the width as needed */
     max-width: 1000px; /* Maximum width of the image */
     max-height: 500px;
-    cursor: pointer;
     display: block;
     margin: 0 auto;
 }
