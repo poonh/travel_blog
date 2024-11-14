@@ -1,8 +1,9 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('pictures/lightgreen.jpg');
+  /*  background-image: url('pictures/lightgreen.jpg');*/
     background-size: cover;
 }
 
@@ -16,85 +17,135 @@ body {
 
 
 
-.text-right {
-            text-align: right;
-        }
-/* Removed the .logo styles */
-
-header {
-    background-image: url('pictures/lightgreen.jpg'); /* Apply the same background image */
-    background-color: #333; /* Fallback color */
-    color: #000;
-}
+main {
+    background-color:rgb(255, 255, 255);
+/*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
+    max-width: 800px; /* Set a maximum width for the main content */
+    margin: 0 auto;
+    margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
 }
 
-nav ul, .mobile-menu-list {
+/*additional begins*/
+
+nav {
+   padding: 0px; /*distance between the menu bar and the top*/
+   height: 30px;
+}
+
+/* Menu with Two Horizontal Rows */
+
+/*
+nav {
+    background-color: navy; /* Set background color for the nav element
+    padding: 20px; /* Add padding to extend the background color
+    max-width: 800px; /* Set the max width of the menu
+    margin: 0 auto; /* Center the nav element horizontally
+}
+*/
+nav ul {
+/*    background-image: url('pictures/darkblue.webp');*/
+    background-color: rgb(0, 108, 169);
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into two rows */
+    justify-content: center; /* Centers items horizontally */
+    max-width: 800px; /* Optional: Set a max width for the menu */
+}
+
+nav ul li {
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-right: 1px solid rgb(224, 224, 224); /*separation bar between menu items*/
+
+}
+
+nav ul li a {
+    color: #000; /* White #000 for black */
+    text-decoration: none;
+    font-size: 20px;
+   /* font-weight: bold;*/
+    display: inline-block;
+}
+
+/* Mobile Menu Styles */
+
+nav ul, .mobile-menu-list { /*computer menu*/
+    list-style-type: none;
+    padding: 10;
     margin: 0;
   
 }
 
 nav ul li, .mobile-menu-list li {
+    /*
     display: inline;
-    margin-right: 20px;
+    margin-right: 20px;*/
+    
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-right: 1px solid rgb(224, 224, 224);
    
 }
 
-nav ul li a, .mobile-menu-list li a {
-    color: #000; /* Set the color to black */
+nav ul li a{
+    color: white; /* Set the color to black */
     text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
 
 }
 
-main {
-    padding: 20px;
-    max-width: 600px; /* Set a maximum width for the main content */
-    margin: 0 auto;
-    margin-top: 0px
+.mobile-menu-list li a {
+    color: black; /* Set the color to black */
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
+
 }
 
-footer {
-    /* Removed the footer styles */
-}
 
-/* Mobile menu styles */
-.mobile-menu {
-    display: none;
-}
-
-.menu-icon {
-    width: 30px;
-    height: 30px;
-    /*    background-color: lightgreen;*/
-    background-image: url('pictures/lightgreen.jpg')
-    cursor: pointer;
-}
 
 .mobile-menu-list {
     display: none;
 /*    background-color: lightgreen;*/
-    background-image: url('pictures/lightgreen.jpg')
+   /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
 .mobile-menu-list li {
     padding: 10px;
 }
 
-nav{
-    height: 30px;
-
-}
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
      nav {
-        background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
+         background-color:rgb(0, 108, 169); /* Set the background image */
   
      }
-
-
+     
+     .menu-icon {
+         display: inline-block;
+         margin-left: 280px; /* Adjust as needed */
+         cursor: pointer;
+     }
+     
+     .mobile-menu {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-right: 10px;
+     }
+     
+     .menu-title {
+         margin-right: auto; /* Pushes 目錄 to the far left */
+         margin-left: 10px; /* Adjust margin as needed */
+     }
      
     .menu {
         display: none;
@@ -107,4 +158,225 @@ nav{
     .mobile-menu-list {
         display: block;
     }
+}
+
+
+
+.linebreak {
+  border: none;
+  border-top: 1px solid black;  /* Creates a thin horizontal line */
+  margin: 10px 0;               /* Adjusts space above and below the line */
+  height: 0;                    /* Ensures no extra height */
+}
+
+
+/*additional ends*/
+/*.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}*/
+
+.content {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+/*
+
+.text-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}*/
+
+.picture-container {
+    margin-top: 20px
+    text-align: center;
+    margin: 20px;
+}
+
+.picture {
+   /* width: 80%;*/ /* Adjust the width as needed */
+    max-width: 500px; /* Maximum width of the image */
+    max-height: 500px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.picture-maps {
+   /* width: 80%;*/ /* Adjust the width as needed */
+    max-width: 1800px; /* Maximum width of the image */
+    max-height: 1800px;
+  /*  cursor: pointer;*/
+    display: block;
+    margin: 0 auto;
+}
+
+.enlarged-picture {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.enlarged-picture.active {
+    display: block;
+}
+
+.enlarged-picture img {
+    width: 800px; /* Adjust the width as needed */
+    cursor: pointer;
+}
+
+.image_caption, .lead_image_caption, #storytext figcaption, #storypagemaincol p.slideshow_caption {
+    font-family: "Merriweather Sans", Sans-serif;
+    font-weight: 600;
+    line-height: 17px;
+    font-size: 18px;
+    display: block;
+    caption-side: bottom;
+    margin:.1em .5em .7em .1em;
+    text-align: center; /* Center text within its container */
+}
+
+.red {
+    color: red;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.overlay img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+    text-align: center; /* Center the video horizontally */
+    margin-bottom: 20px
+}
+
+.video-container video {
+    display: inline-block; /* Ensure the video is treated as an inline block element */
+     width: 40%
+}
+
+.video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+}
+
+.rotate-left {
+    transform: rotate(-90deg);  /* Rotate 90 degrees to the left (counterclockwise) */
+    transform-origin: center;  /* Rotate around the center of the image */
+}
+
+.image-container {
+    position: relative;
+}
+
+.info-panel {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    text-align: center;
+}
+
+
+.close-btn {
+    font-size: 15px;
+    background-color: darkgray
+    color: gray
+    
+}
+#close-panel-yuki,
+#close-panel-akitakada,
+#close-panel-higashihiroshima,
+#close-panel-shirokiyama,
+#close-panel-higashihiroshima,
+#close-panel-takehara,
+#close-panel-kamikamagari,
+#close-panel-etajima,
+#close-panel-kurahashi,
+#close-panel-sera,
+#close-panel-onomichi,
+#close-panel-fuchu,
+#close-panel-shinseki,
+#close-panel-shobara,
+#close-panel-ounan,
+#close-panel-izumo,
+#close-panel-okuizumo,
+#close-panel-matsue,
+#close-panel-ota,
+#close-panel-unnan,
+#close-panel-kumakogen,
+#close-panel-iyo,
+#close-panel-ikata,
+#close-panel-touon,
+#close-panel-ainan,
+#close-panel-yusuhara,
+#close-panel-shimanto,
+#close-panel-sukumo,
+#close-panel-uguru,
+#close-panel-maniwa,
+#close-panel-daizen,
+#close-panel-yamaguchiken,
+#close-panel-kitakyushu,{
+    
+    margin-top: 1px;
+    cursor: pointer;
+    background-color: darkgray; /* Green */
+    border: 1px solid white; /* Darker Green */
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 10px;
 }
