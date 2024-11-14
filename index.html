@@ -105,6 +105,9 @@
 <body>
     <a id="back"></a>
     <header>
+        <img border="0" class="picture" data-original-height="1152" data-original-width="2048" width="500" height="100" src="pictures/background.JPG" />
+   
+   
         <div class="container">
             <!-- Removed the logo div -->
             <nav>
@@ -536,5 +539,16 @@
         </main>
  <!--           <script src="script.js"></script> <!-- Link to your JS file -->
  <script src="map_script.js"></script>
+ <script>
+     function toggleMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.toggle('active');
+     }
+
+     function hideMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.remove('active');
+     }
+ </script>
 </body>
 </html>
