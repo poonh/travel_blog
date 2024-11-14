@@ -203,19 +203,33 @@ nav ul li a{
 }
 
 
-.responsive-image-icon {
-}
 
 /* Adjust size for mobile screens */
+/*
 @media (max-width: 767px) {
     .responsive-image-icon {
-        width: 100%; /* Fills mobile screen width */
-        max-width: 100%; /* Prevents image from exceeding screen width */
+        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 }
+*/
+.saijo-icon {
+  width: 100%; /* Makes the image take the full width of its container */
+  height: 0; /* Sets height to 0 so we can use padding for the aspect ratio */
+  padding-bottom: 10%; /* Sets the height to 10% of the width */
+  object-fit: cover;
+ /* height: auto;
+  max-width: 800px;  */
+}
 
-
+@media (min-width: 768px) {
+  .saijo-icon {
+    width: 800px; /* Fixed width of 800px for tablets and desktops */
+    height: auto; /* Maintains aspect ratio if using fixed width */
+    padding-bottom: 10%; /* Ensures the height is 10% of the width */
+  }
+}
 
 .picture-icon {
    /* width: 80%;*/ /* Adjust the width as needed */
