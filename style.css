@@ -243,7 +243,7 @@ nav ul li a{
 
 .iframe-container {
     position: relative;
-    width: 100%;         /* Full width */
+    width: 90%;         /* Full width */
     max-width: 500px;    /* Cap width at 500px */
     padding-bottom: 75%; /* 4:3 aspect ratio (75% of width) */
     margin: 0 auto;
