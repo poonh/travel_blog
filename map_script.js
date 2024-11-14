@@ -177,15 +177,14 @@ document.addEventListener('DOMContentLoaded', function () {
         togglePanel('daizen', 'info-panel-daizen');
     });
     
+    document.getElementById('yamaguchiken').addEventListener('click', function() {
+        togglePanel('yamaguchiken', 'info-panel-yamaguchiken');
+    });
+    
     document.getElementById('kitakyushu').addEventListener('click', function() {
         togglePanel('kitakyushu', 'info-panel-kitakyushu');
     });
-    
-    document.getElementById('yamaguchi').addEventListener('click', function() {
-        togglePanel('yamaguchi', 'info-panel-yamaguchi');
-    });
-    
-    
+
     document.getElementById('close-panel-shirokiyama').addEventListener('click', function() {
         document.getElementById('info-panel-shirokiyama').style.display = 'none';
     });
@@ -307,13 +306,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('info-panel-daizen').style.display = 'none';
     });
     
+    document.getElementById('close-panel-yamaguchiken').addEventListener('click', function() {
+        document.getElementById('info-panel-yamaguchiken').style.display = 'none';
+    });
+    
     document.getElementById('close-panel-kitakyushu').addEventListener('click', function() {
         document.getElementById('info-panel-kitakyushu').style.display = 'none';
     });
 
-    document.getElementById('close-panel-yamaguchi').addEventListener('click', function() {
-        document.getElementById('info-panel-yamaguchi').style.display = 'none';
-    });
     // Add more close button listeners for additional panels
 });
 
