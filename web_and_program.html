@@ -107,14 +107,14 @@
             </div>
         </div>
     </header>
-    <main class="content">
+    <main>
         <article>
             <br><br><br><br>
             <p>建设中</p>
 
 
-
-
+        </article>
+    </main>
 <br><br>
 
 
@@ -124,6 +124,17 @@
  <div id="overlay" class="overlay">
      <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
  </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+ <script src="script.js"></script> <!-- Link to your JS file -->
+ <script>
+     function toggleMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.toggle('active');
+     }
+
+     function hideMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.remove('active');
+     }
+ </script>
 </body>
 </html>
