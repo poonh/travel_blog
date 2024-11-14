@@ -10,7 +10,7 @@ function togglePanel(areaId, panelId) {
     
 /*    const clickX = event.clientX - areaRect.left;
     const clickY = event.clientY - areaRect.top;*/
-    const centerX = window.innerWidth / 2; + window.scrollX
+    const centerX = (window.innerWidth / 2) + window.scrollX
     const centerY = (window.innerHeight / 2) + window.scrollY
 /*    console.log(centerX);*/
     console.log(centerY);
