@@ -225,7 +225,7 @@ nav ul li a{
 
 @media (min-width: 768px) {
   .saijo-icon {
-    width: 800px; /* Fixed width of 800px for tablets and desktops */
+    width: 100%; /* Fixed width of 800px for tablets and desktops */
     height: auto; /* Maintains aspect ratio if using fixed width */
     padding-bottom: 10%; /* Ensures the height is 10% of the width */
   }
