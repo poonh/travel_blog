@@ -210,7 +210,7 @@ nav ul li a{
 @media (max-width: 767px) {
     .responsive-image-icon {
         width: 100%; /* Fills mobile screen width */
-        max-width: 100%; /* Prevents image from exceeding screen width */
+        max-width: 760px; /* Prevents image from exceeding screen width */
         height: auto; 
     }
 }
