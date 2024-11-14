@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本乡村乐无穷</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_tmp.css">
 
     <style>
         /* Add your custom styles here */
@@ -74,7 +74,7 @@
 
 <body>
     <header>
-    <a id="back"></a>
+   
         <div class="container">
             <!-- Removed the logo div -->
             <nav>
@@ -506,10 +506,21 @@
        </article>
     </main>
 
-    <div id="overlay" class="overlay">
-        <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
-    </div>
+    <footer>
+        <!-- Removed the footer content -->
+    </footer>
     <script src="map_script.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.toggle('active');
+        }
+
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
+        }
+    </script>
 </body>
 </html>
 
