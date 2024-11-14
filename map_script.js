@@ -10,19 +10,21 @@ function togglePanel(areaId, panelId) {
     
 /*    const clickX = event.clientX - areaRect.left;
     const clickY = event.clientY - areaRect.top;*/
-    
-    
+    const centerX = window.innerWidth / 2;
+    const centerY = (window.innerHeight / 2) + window.scrollY
+/*    console.log(centerX);*/
+    console.log(centerY);
     const clickX = /*window.scrollX + */window.innerWidth / 2;
     const clickY = window.scrollY /*+ window.innerHeight / 2*/;
     
     panel.style.position = 'absolute';
-    panel.style.top = `${clickY + 300}px`/*`${window.scrollY + areaRect.top + areaRect.height}px`*/;
-    panel.style.left = `568.5px`/*`${window.scrollX + areaRect.left}px`*/;
+    /*panel.style.top = `${clickY + 300}px`*//*`${window.scrollY + areaRect.top + areaRect.height}px`*/;
+    panel.style.top = `${centerY}px`
+    panel.style.left = `${centerX}px`/*`${window.scrollX + areaRect.left}px`*/;
 
-    let topValue = panel.style.top;
-    console.log(clickX);
+
     let leftValue = panel.style.left;
-    console.log(clickY);
+    console.log(clickY+300);
 /*    let computedLeftValue = window.getComputedStyle(panel).left;
     console.log("Computed left value:", computedLeftValue)*/
     // Get the click position relative to the image
