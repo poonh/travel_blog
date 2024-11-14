@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本乡村乐无穷</title>
+    <link rel="stylesheet" type="text/css" href="style_test.css">
+
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Your content goes here -->
+        <div style="font-size: 14px;">
+       (以下地图取自<a href="https://www.j-lis.go.jp" target=_blank>J-LIS自地方公共团体情報システム機構</a>)<br><br>
+       </div>
+
+        <a href="#hiroshima" rel="noopener">广岛县地图</a>&nbsp&nbsp
+        <a href="#shimane" rel="noopener">岛根县地图</a>&nbsp&nbsp
+        <a href="#ehime" rel="noopener">爱媛县地图</a> &nbsp&nbsp
+        <a href="#kochi" rel="noopener">高知县地图</a>&nbsp&nbsp
+        <a href="#okayama" rel="noopener">冈山县地图</a> &nbsp&nbsp
+        <a href="#tottori" rel="noopener">鸟取县地图</a>&nbsp&nbsp
+        <a href="#yamaguchi" rel="noopener">山口县地图</a>&nbsp&nbsp
+        <a href="#fukuoka" rel="noopener">福冈县地图</a>
+       
+    </main>
+
+    <footer>
+        <!-- Removed the footer content -->
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.toggle('active');
+        }
+
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
+
