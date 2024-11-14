@@ -225,8 +225,8 @@ nav ul li a{
 }
 
 .picture {
-   /* width: 80%;*/ /* Adjust the width as needed */
-    max-width: 500px; /* Maximum width of the image */
+    width: 100%;  
+    max-width: 500px; /* 500px */
     max-height: 500px;
     cursor: pointer;
     display: block;
