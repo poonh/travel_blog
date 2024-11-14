@@ -73,7 +73,7 @@ nav ul li a {
 
 /* Mobile Menu Styles */
 
-nav ul, .mobile-menu-list { /*computer menu*/
+nav ul { /*computer menu*/
     list-style-type: none;
     padding: 10;
     margin: 0;
@@ -115,40 +115,59 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 30px;
-    height: 30px;
+    margin-right: 10px; /* Adjust margin as needed */
+    cursor: pointer;
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
 }
 
-.mobile-menu-list {
-    display: none;
-/*    background-color: lightgreen;*/
-   /* background-image: url('pictures/lightgreen.jpg')*/
+.menu-title {
+    margin-left: 10px; /* Adjust margin as needed */
 }
 
-.mobile-menu-list li {
-    padding: 10px;
-}
 
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
      nav {
          background-color:rgb(0, 108, 169); /* Set the background image */
   
      }
+     .menu-icon {
+         display: inline-block;
+         margin-left: 280px; /* Adjust as needed */
+         cursor: pointer;
+     }
 
+     .menu-title {
+         margin-right: auto; /* Pushes 目錄 to the far left */
+         margin-left: 10px; /* Adjust margin as needed */
+     }
      
     .menu {
         display: none;
     }
 
     .mobile-menu {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
     }
 
     .mobile-menu-list {
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60%; /* Adjust width as needed */
+        background-color: #fff; /* Adjust as needed */
+        padding: 20px;
+        border-right: 1px solid #ccc; /* Adjust as needed */
+        z-index: 1000; /* Ensure it's above other content */
+        flex-direction: column; /* Display items vertically */
+        transition: width 2s;
     }
 }
 
