@@ -203,15 +203,15 @@ nav ul li a{
 }
 
 
-.responsive-image {
+.responsive-image-icon {
 }
 
 /* Adjust size for mobile screens */
 @media (max-width: 767px) {
-    .responsive-image {
-        width: 100%; /* Adjust to fit mobile screen width */
+    .responsive-image-icon {
+        width: 100%; /* Adjusts to fit mobile screen width */
         max-width: 750px; /* Optional max width */
-        height: auto; /* Keeps aspect ratio */
+        height: calc(100% * 0.1); /* Sets height to 10% of width */
     }
 }
 
