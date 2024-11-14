@@ -203,6 +203,20 @@ nav ul li a{
 }
 
 
+.responsive-image {
+}
+
+/* Adjust size for mobile screens */
+@media (max-width: 767px) {
+    .responsive-image {
+        width: 100%; /* Adjust to fit mobile screen width */
+        max-width: 750px; /* Optional max width */
+        height: auto; /* Keeps aspect ratio */
+    }
+}
+
+
+
 .picture-icon {
    /* width: 80%;*/ /* Adjust the width as needed */
     max-width: 1000px; /* Maximum width of the image */
