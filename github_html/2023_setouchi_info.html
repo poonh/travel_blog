@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title></title>
     <style>
-        /* Styling for the information panel */
-        .info-panel {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            border: 2px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
+        /* Add your custom styles here */
 
-        .close-btn {
-            background: red;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        .close-btn:hover {
-            background: darkred;
-        }
         .menu-icon {
             display: none;
             cursor: pointer;
@@ -87,29 +72,24 @@
                 margin-left: 10px; /* Adjust margin as needed */
             }
         }
-        
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
-    <title>濑户贵宾列车尾道休闲一天游</title>
+            </style>
+    
+    
+            
 </head>
 <body>
+    <a id="back"></a>
     <header>
         <div class="container">
-            <!-- Removed the logo div -->
+
             <nav>
                 <ul class="menu">
                     <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
-                    <li><a href="index.html">日本乡村游记(按地图)</a></li>
-                    <li><a href="journal_list.html">日本乡村游记(按列表)</a></li>
-                    <li><a href="other_japan.html">其他日本游记(非自驾)</a></li>
-                    <li><a href="europe.html">欧洲游记(非自驾)</a></li>
-                    <li><a href="web_and_program.html">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
                 </ul>
             </nav>
 
@@ -118,29 +98,38 @@
                 <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
                 <ul class="mobile-menu-list">
-                    <li><a href="author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
-                    <li><a href="journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
-                    <li><a href="other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
-                    <li><a href="europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
-                    <li><a href="web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
                 </ul>
             </div>
         </div>
+
     </header>
     <main class="content">
         <article>
             <br><br><br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+
             1.<a href="https://poonh.github.io/travel_blog/github_html/2023_setouchi_ad.html" target=_blank>广告</a><br>
             3.<a href="https://poonh.github.io/travel_blog/github_html/2023_setouchi.html" target=_blank>游记</a><br><br>
             <h3 align="center">2.相关行程信息<br><br></h3>
 
-            <span style="font-size: medium;">我们的行程地图：<br>
+            我们的行程地图：<br>
                 (红:登山口  &nbsp&nbsp蓝:景点 &nbsp&nbsp 绿:吃饭 &nbsp&nbsp)<br>
                 <div style="text-align: center;">
-                <iframe height="480" src="https://www.google.com/maps/d/embed?mid=1UbGikvKUjXOk-qXoUIWb6j__iCc2sCI&usp=sharing" width="640">
-            </iframe></div><br>
-                
+                    <div class="iframe-container">
+                        <iframe
+                            src="https://www.google.com/maps/d/embed?mid=1UbGikvKUjXOk-qXoUIWb6j__iCc2sCI&usp=sharing"
+                            class="responsive-iframe"
+                            allowfullscreen
+                        ></iframe>
+                    </div></div><br/><br/>
+
            
            
            <b>车票购买攻略</b><br>
