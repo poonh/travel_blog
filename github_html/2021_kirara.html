@@ -1,22 +1,119 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>盛夏畅游日本海</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title></title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
-<main class="content">
-<article>
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br><br><br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+         
 <p>上一章</p>
 <p>
 <b>日期：</b>2021年8月26-27日</p>
@@ -82,7 +179,7 @@
 <div class="separator" style="clear: both; text-align: center;">
 <b>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="493" data-original-width="379" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/1.JPG" width="246"/>
+<img border="0" class="picture" data-original-height="493" data-original-width="379" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/1.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -188,26 +285,26 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="400" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/2.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>打キララグループ的信封，里面有确认资料及注意事项。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/3.JPG" width="240"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/3.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/4.JPG" width="240"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/4.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>另外还有很多广告资料 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="400" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/5.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/5.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -215,7 +312,7 @@
 <p>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="400" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/6.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/6.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -226,12 +323,12 @@
 <br/>
 <div class="separator" style="clear: both; text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1440" height="240" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/7.JPG" width="320"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1440" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/7.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/8.JPG" width="240"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/8.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -239,7 +336,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="400" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/9.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/9.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -257,7 +354,7 @@
 <p>由于这里很多手工艺品，我们逛了好一会，最后一个普通的便利店变了行程第一个景点...</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="300" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/10.JPG" width="400"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/10.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -266,7 +363,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/11.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/11.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -274,14 +371,14 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/12.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/12.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">啤酒馆做的灯笼</div>
 <div class="separator" style="clear: both; text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/13.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/13.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -289,14 +386,14 @@
 </div>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="384" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/14.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/14.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>这有用动物骨头做的工艺品，看介绍对磨牙有用。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="384" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/15.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/15.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -304,7 +401,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/16.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/16.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -313,12 +410,12 @@
 </p>
 <div class="separator" style="clear: both; text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2016" data-original-width="1512" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/17.JPG" width="240"/>
+<img border="0" class="picture" data-original-height="2016" data-original-width="1512" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/17.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2016" data-original-width="1512" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/18.JPG" width="240"/>
+<img border="0" class="picture" data-original-height="2016" data-original-width="1512" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/18.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -329,7 +426,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/19.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/19.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -339,7 +436,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/20.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/20.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -349,7 +446,7 @@
 <p>好，继续出发了！到达kirara直接去マリンダラソ出雲酒店(marine thalasso izumo)吃饭。这里吃饭地方不多，选择去这是因为不贵而且又有海景。</p>
 <p>停车后，先给我们的小浪哥记录一下（我代表它感谢raku老师纪念它）。</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/21.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/21.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -358,12 +455,12 @@
 </p>
 <div class="separator" style="clear: both; text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/22.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/22.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/23.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/23.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -376,13 +473,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/24.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/24.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/25.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/25.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -391,14 +488,14 @@
 <p>窗外海景</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/26.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>  坐下来职员就给我们一个保鲜袋放口罩，非常贴心~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="400" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/27.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/27.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -406,7 +503,7 @@
 <p>角煮菜单，还有其他的。下面的都是800或900，不太贵。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/28.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/28.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -417,19 +514,19 @@
 <p> 上菜了！</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/29.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/29.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/30.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/30.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/31.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/31.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -438,7 +535,7 @@
 <p>吃完饭，我们就去酒店的泳池见学了。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/32.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/32.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -447,7 +544,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/33.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/33.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -459,19 +556,19 @@
 <p>吃饭完大概1点，我们就去游泳了。我们先去道の駅逛。这里是北欧风格，我们来看看外形。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/34.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/34.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/35.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/35.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>里面有吃的，也是海景。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/36.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/36.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -481,7 +578,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/37.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/37.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -490,7 +587,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/38.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/38.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -498,25 +595,25 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/39.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/39.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/40.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/40.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/41.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/41.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>这里的无花果是巨大的，在西条没见过那么大。最大的870元4粒，我们买了一盒。不过后来发现在果园能买，便宜很多，我下面再说。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/42.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/42.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -525,13 +622,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/43.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/43.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> 对了，这里当然有荞麦面，我买了，挺好吃的，620日元。<div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/44.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/44.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -539,7 +636,7 @@
 <p>我还买了穴道湖产的しじみの素（一种贝壳类海产，味道很鲜的），540元，准备做清汤锅底用。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2016" data-original-width="1512" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/45.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2016" data-original-width="1512" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/45.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -552,7 +649,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/46.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/46.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -561,7 +658,7 @@
 <p>我加插一下，第二天有点浪但能游的时候，就变了“注意”的黄色旗子。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/47.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/47.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -577,7 +674,7 @@
 <div class="separator" style="clear: both; text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/48.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/48.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -587,12 +684,12 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/49.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/49.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/50.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/50.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -616,7 +713,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/51.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/51.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -632,7 +729,7 @@
 <span>
 <span>营地靠河</span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/52.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/52.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -650,7 +747,7 @@
 <div class="separator" style="clear: both; text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/53.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/53.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -667,7 +764,7 @@
 <div class="separator" style="clear: both; text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/54.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/54.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -684,7 +781,7 @@
 <div class="separator" style="clear: both; text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/55.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/55.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -699,7 +796,7 @@
 <p>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/56.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/56.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -716,7 +813,7 @@
 <br/>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/57.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/57.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -726,7 +823,7 @@
 <br/>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/58.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/58.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -736,7 +833,7 @@
 <br/>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/59.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/59.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -756,7 +853,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1152" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/60.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1152" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/60.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -765,7 +862,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/61.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/61.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -781,13 +878,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/62.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/62.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/63.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/63.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -796,22 +893,22 @@
 <p>整段路路况很好，没有什么上坡下坡，老人小孩都能走。我上几张路况找参考一下。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/64.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/64.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/65.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/65.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/66.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/66.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/67.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/67.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -823,7 +920,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/68.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/68.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -832,21 +929,21 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1152" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/69.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1152" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/69.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>raku老师的小矮胖水壶广告照。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/70.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/70.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>立久惠峡小矮胖~ </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/71.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/71.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -857,7 +954,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/72.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/72.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -867,7 +964,7 @@
 <p>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/73.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/73.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -875,27 +972,27 @@
 <p>我们现在看看对岸的岩石吧。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/74.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/74.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/75.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/75.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/76.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/76.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/77.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/77.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/78.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/78.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -903,7 +1000,7 @@
 <p>走着走着就看到立久惠峡御所览场温泉了，这在第二条桥附近。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/79.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/79.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -912,43 +1009,43 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/80.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/80.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/81.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/81.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>温泉外的地图。  </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/82.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/82.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>露天温泉对面就是御所览场酒店。<br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/83.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/83.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们要过第二道桥了（其实我不认得这是第几条了~）</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/84.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/84.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/85.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/85.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/86.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/86.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -956,18 +1053,18 @@
 <p>现在欣赏一下路上其他风景。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/87.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/87.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/88.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/88.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/89.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/89.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -980,40 +1077,40 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/90.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/90.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/91.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/91.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>路上还有花。 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/92.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/92.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/93.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/93.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/94.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/94.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>在路上也有厕所的。这个厕所女的那边的灯一直开着.... </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/95.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/95.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1022,7 +1119,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/96.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/96.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1032,34 +1129,34 @@
 <p> 来张美颜合照先~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/97.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/97.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  </p>
 <p>我们现在要过最后一条桥 - 不老桥，过了就可以不老。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/98.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/98.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/99.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/99.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>在不老桥必须要多待一会，吸收仙气~离开都还要多看几眼。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/100.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/100.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 这里另一家温泉酒店八光园就是靠着不老桥的。 <br/>
 </p>
 <div class="separator" style="clear: both; text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/101.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/101.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1071,7 +1168,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/102.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/102.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1079,20 +1176,20 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/103.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/103.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/104.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/104.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  </p>
 <p>湖水太清澈了，忍不住要洗个手。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/105.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/105.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1102,26 +1199,26 @@
 <p>拍照先~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/106.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/106.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/107.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/107.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/108.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/108.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>这个照片要赐raku老师一条重罪。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/109.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/109.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1131,7 +1228,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/110.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/110.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1139,27 +1236,27 @@
 <p>这张我也拍的很好。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/111.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/111.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>湖边玩了很久，终于上来了。感谢HY拉我们上来。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/112.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/112.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 返程我们走另一条路，有点文化气息的，有很多佛像，也有高树，中间也有寺庙不过我们没去。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1152" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/113.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1152" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/113.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/114.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/114.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1169,25 +1266,25 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/115.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/115.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="2048" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/116.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/116.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="2048" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/117.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/117.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/118.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/118.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1196,7 +1293,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="2048" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/119.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/119.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1206,7 +1303,7 @@
 <p>路上还有个瀑布，不过现在缺水</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/120.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/120.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1215,7 +1312,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/121.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/121.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1234,13 +1331,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/122.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/122.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们回到终点，要跟立久惠峡说再见了~</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/123.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/123.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>这块碑其实不在终点的...我们在立久惠峡全程包场，全程不用带口罩，真舒服。</p>
@@ -1248,7 +1345,7 @@
 <p>我们现在要回去多伎买菜了，现在时间四点过。我们玩了两小时~很开心。我们去这个超市ラピタ(rapita)，是这里唯一的超市。 <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/124.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/124.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1257,12 +1354,12 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/125.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/125.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/126.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/126.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1272,7 +1369,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/127.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/127.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1280,13 +1377,13 @@
 <p>  近看这个尖顶好像教堂。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/128.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/128.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/129.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/129.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1294,38 +1391,38 @@
 <p> 我们看看圣经传说中的无花果说，今次终于看到真树了。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/130.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/130.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/131.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/131.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/132.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/132.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>老板看上去像一对父女。年轻妈妈的儿子在门口看门，有客人来就马上叫妈妈过来。当时五点多，当日无花果已经收成了。我们如果买完好的，是400元一盒。稍微熟点的，1000元一大盒，有14粒左右。我们买了1000元的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/133.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/133.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/134.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/134.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/135.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/135.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1334,7 +1431,7 @@
 <p>营地接待处有很多姆明（moomin,北欧动漫）的产品卖，碰巧我两周前刚和raku老师玩过姆明拼图，2小时完成300块~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/136.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/136.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1343,7 +1440,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/137.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/137.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1353,7 +1450,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/138.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/138.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1361,14 +1458,14 @@
 <p>对了，前台会写每天的日落时间，今天是18：45。 <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/139.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/139.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <br/>如果你忘记一次性碗筷那些东西，这里也有卖的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/140.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/140.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1377,7 +1474,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/141.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/141.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1387,7 +1484,7 @@
 <p>我们来了~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/142.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/142.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1403,18 +1500,18 @@
 <p>客厅。我很久很久没看过电视，那个时候有残奥，正好看了一小会。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/143.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/143.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/144.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/144.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  向海大阳台 ，我们现在出去看看</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/145.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/145.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1425,14 +1522,14 @@
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://youtube.com/embed//R4PqdOXpl4w" width="60%">
 </iframe> </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/146.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/146.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/147.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/147.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1441,7 +1538,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/148.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/148.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1449,7 +1546,7 @@
 <p>天黑后就是这样，很黑的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/149.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/149.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1457,13 +1554,13 @@
 <p>现在看看厨房~厨房的东西很齐全，杀虫药也有。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/150.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/150.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>厨具，另外还有微波炉，烤箱记电热水壶 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/151.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/151.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1471,7 +1568,7 @@
 <p> 厨房整齐干净</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/152.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/152.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1480,7 +1577,7 @@
 <p>洗碗刷很新，而且非常贴心给了四块布。一块擦手，两块擦碗，一块很吸水的用来擦桌子。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/153.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/153.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1499,20 +1596,20 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/154.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/154.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/155.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/155.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> 风吕，今晚用来享受极致奢华泡泡浴用的。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/156.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/156.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1522,7 +1619,7 @@
 <p>这里的床很软，很舒服。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/157.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/157.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1531,14 +1628,14 @@
 <p>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/158.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/158.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们看看和室。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/159.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/159.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1546,7 +1643,7 @@
 <p>大家都先来露个脸先~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/160.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/160.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1561,14 +1658,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/161.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/161.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/162.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/162.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1576,21 +1673,21 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/163.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/163.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>这就是我为了这次旅程刻意吃完7-11留下来的沙拉盒，原来是吃凉面的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/164.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/164.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>下图辣椒（ししと） 是早上在Familymart买的，烧烤很好吃。蒜烤茄子去年raku老师在明浜也弄过。这里有磨蒜泥器，我看她磨的很使劲呢。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/165.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/165.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1599,14 +1696,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/166.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/166.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>太阳伯伯，我们来迎送你下山了~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/167.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/167.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1614,26 +1711,26 @@
 <p>我们拍了很多浪漫迷人的剪影照。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/168.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/168.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/169.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/169.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/170.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/170.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/171.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/171.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1643,19 +1740,19 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/172.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/172.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>太阳要下山了</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/173.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/173.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/174.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/174.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1664,7 +1761,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/175.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/175.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1672,14 +1769,14 @@
 <p>我们弄好了，要出发去烧烤场了。走路的话只要一两百米，不过我们东西多，那边也有停车场，就开车去了。 </p>
 <p>这是我们部分东西</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/176.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/176.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们到烧烤场了，4个人一张桌子，很宽的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/177.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/177.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1687,7 +1784,7 @@
 <p> 这里还有铁板及锅铲提供，所以这里提供的烧烤套餐有焼きそば的（炒拉面）。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/178.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/178.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1699,14 +1796,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/179.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/179.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>今次raku老师负责生火，去年我和洗碗王子在明浜生火很快就弄好，今年折腾了很久，后来我看墙上指示，我们一开始碳就好像没方对...,其实去年明浜学过，不过忘记了，下次我肯定记得了。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="240" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/180.JPG" width="320"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/180.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1715,7 +1812,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/181.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/181.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1728,7 +1825,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/182.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/182.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1737,7 +1834,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/183.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/183.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1745,14 +1842,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/184.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/184.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 终于差不多好了 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/185.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/185.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 折腾了好一会，终于有的吃了，耶！现在来看看我们的盛宴~</p>
@@ -1762,7 +1859,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/186.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/186.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1771,14 +1868,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/187.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/187.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>看看下图用锡纸裹着的烤鱼，我烤好了打开给你们看。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/188.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/188.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1786,13 +1883,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/189.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/189.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 是用小葱裹着，肚子也塞葱烤的。这样吃着鱼肉散发着葱的清香。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/190.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/190.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1801,7 +1898,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/191.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/191.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1811,7 +1908,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/192.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/192.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1825,7 +1922,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/193.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/193.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1839,7 +1936,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/194.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/194.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1848,33 +1945,33 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/195.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/195.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>烤土豆</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/196.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/196.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>李子（B老师切的大小刚刚好）</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/197.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/197.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>又甜又大的无花果</p>
 <p> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/198.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/198.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/199.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/199.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1882,14 +1979,14 @@
 <p>干无花果 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/200.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/200.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/201.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/201.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1898,13 +1995,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/202.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/202.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 美颜自拍~</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="240" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/203.JPG" width="320"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/203.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1917,7 +2014,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1440" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/204.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1440" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/204.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1925,7 +2022,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1440" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/205.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1440" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/205.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1935,13 +2032,13 @@
 </p>
 <p>感谢我的出浴模特。至于是谁我就不说了。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/206.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/206.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/207.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/207.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>我们玩到12点多1点才睡，还好第二天不用早起。</p>
@@ -1951,7 +2048,7 @@
 <p>早上我7：30起来先做早饭了。我们吃炒鸡蛋，煎香肠和烤面包（基本每次出门都这样吃）。厨房的烤箱折腾了很久不会用，之后raku老师就说用锅干煎，效果也很好呢。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/208.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/208.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1959,13 +2056,13 @@
 <p> 我们要来享受无敌海景早餐了~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/209.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/209.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/210.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/210.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1973,7 +2070,7 @@
 <p> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/211.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/211.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1983,7 +2080,7 @@
 <p>我们到了道の駅下车后，聪明的B老师就说今天那么多车肯定能游泳，最后，果然是，耶！</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/212.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/212.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1994,58 +2091,58 @@
 <p> 这里很美，下海前我们当然是先拍照~大家都要和这个小精灵拍照。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/213.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/213.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/214.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/214.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1152" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/215.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1152" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/215.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/216.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/216.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 这个Kirara的标志在2020春天才立的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/217.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/217.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>下面这几张4个人换角度拍的效果很好。 <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/218.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/218.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/219.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/219.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/220.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/220.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/221.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/221.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2073,13 +2170,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/222.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/222.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/223.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/223.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2089,7 +2186,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/224.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/224.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2097,7 +2194,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/225.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/225.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2105,51 +2202,51 @@
 <p> 开始游泳前，当然又要先拍照。今天蓝天碧海，有时候有太阳有时候没有，很舒服。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/226.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/226.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/227.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/227.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/228.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/228.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
-<span style="font-size: small;">raku老师教，拍这种照片摄影师要蹲下来，镜头朝上，这样人就会显得跳的很高。</span>
+raku老师教，拍这种照片摄影师要蹲下来，镜头朝上，这样人就会显得跳的很高。</span>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/229.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/229.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我专门为这次旅程研发的高防水高度防晒，很管用，防水性能经测试确实很好。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/230.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/230.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>大概11点，我们终于要下海了~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/231.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/231.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>raku老师不会游泳，要扶着她。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/232.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/232.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2158,14 +2255,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/233.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/233.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/234.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/234.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2174,14 +2271,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/235.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/235.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我不带浮轮游了一小会~ </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/236.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/236.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2190,7 +2287,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/237.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/237.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2199,27 +2296,27 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1152" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/238.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1152" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/238.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>B老师在我们的地盘晒太阳。大家注意一下B老师黑色的小伞，打了折都3000多，怪不得那么美。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/239.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/239.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/240.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/240.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 这个海滩真是很漂亮，近看是道の駅，远看是我们的小别墅，中间两个风车，完全是北欧风，差点以为自己去了欧洲呢。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/241.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/241.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2230,61 +2327,61 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/242.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/242.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/243.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/243.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/244.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/244.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>远处是我们住的别墅，现场看就像高级房子。l<div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/245.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/245.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>看个近镜 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/246.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/246.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们来看看海景~这个海滩有几幅石头墙，可以用来挡浪，位于最外面那个石头墙，还有绳子可以扶着走，因为那边海较深。日本人真是很贴心，这个海滩设计的很周到。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/247.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/247.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/248.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/248.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/249.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/249.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/250.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/250.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/251.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/251.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2293,7 +2390,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/252.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/252.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2301,7 +2398,7 @@
 <p>浪好大哦</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/253.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/253.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2310,21 +2407,21 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/254.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/254.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 哇！</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/255.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/255.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>好了，没事了 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/256.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/256.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2333,7 +2430,7 @@
 </p>
 <p>浪过去了，可以好好享受一下了~</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/257.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/257.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2342,7 +2439,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="360" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/258.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/258.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2354,18 +2451,18 @@
 <p>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/259.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/259.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/260.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/260.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>raku老师纤细的腿晒黑了。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/261.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/261.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2374,13 +2471,13 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="320" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/262.JPG" width="240"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/262.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1152" data-original-width="2048" height="180" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/263.JPG" width="320"/>
+<img border="0" class="picture" data-original-height="1152" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/263.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2394,14 +2491,14 @@
 <p>这里还有无花果汁。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/264.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/264.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 这是小伙伴在道の駅吃的午餐。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/265.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/265.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2409,14 +2506,14 @@
 <p>吃完快4点半，准备去昨天的无花果园打包外卖。店主的儿子又在门口看门，看到我们就去叫妈妈。今天我们来的早，无花果还没摘好，店主说现场给我们摘两公斤新鲜的。</p>
 <p>等待的时候，小朋友就和我们聊天，好像在帮他妈妈招待客人那样，他不玩手机，给我们看了他的蚂蚱。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/266.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/266.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/267.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/267.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2428,13 +2525,13 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/268.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/268.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>我们的大无花果，每盒14粒，1000元1盒。<div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/269.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/269.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2442,7 +2539,7 @@
 <p>几位卖无花果的女孩。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/270.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/270.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2451,7 +2548,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1501" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/271.JPG" width="470"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1501" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/271.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2459,7 +2556,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/272.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_kirara/272.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2471,11 +2568,22 @@
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
+
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
 </div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
 </article>
 </main>
 </body>
