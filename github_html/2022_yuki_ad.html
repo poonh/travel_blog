@@ -72,6 +72,8 @@
                 margin-left: 10px; /* Adjust margin as needed */
             }
         }
+        
+        
             </style>
     
     
@@ -228,9 +230,22 @@
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
- <div id="overlay" class="overlay">
-     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
- </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
+</article>
+</main>
 </body>
 </html>
