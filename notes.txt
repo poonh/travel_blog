@@ -1,4 +1,93 @@
+python_programs/extract_ehime_links.js
+open the video link in blogger_new_html, run the above in the console. when a link shows up, open it and save it as mp4 manually.
+put the youtube links in ehime_youtube_link.txt in github_html using python_programs/github_replace_pics_2020_ehime.py
 
-gh auth login
-git pull origin main --rebase
-git config --global http.postBuffer 524288000
+ <a href ="" target=_blank>
+
+
+
+youtube large files:
+https://youtu.be/auoQ-Hu-mZM?si=JZ6NRzbL4RUHjoVS 梼原 private
+https://youtu.be/ywGyBvH7utY?si=rpvO4cXp4o6L-klH 梼原 public
+
+
+html_pics/2020_autumn_kenminnohama/public/2.mp4
+https://youtu.be/_K-jvrQ7Bjc 吴灯塔无人机
+html_pics/2020_autumn_kenminnohama/private/1.mp4
+https://youtu.be/-y5-PcgHujI 吴草地无人机
+html_pics/2020_autumn_kenminnohama/private/2.mp4
+https://youtu.be/yDcIeiHl5-o 吴海滩无人机 
+html_pics/2020_ehime/public/karst.mp4
+https://youtu.be/1vU3Zn_t5s8 爱媛喀斯特
+html_pics/2020_kenminnohama_cycling/public/cycling.mp4
+https://youtu.be/Cn52oRAdisc とびしま骑行路上
+html_pics/2020_kenminnohama_cycling/private/hotel.mp4
+https://youtu.be/9LbR1UEDE6E 吴酒店打球
+html_pics/2020_kitakyushu/public/beach.mp4
+https://youtu.be/v1WYgeCDqzA 角岛酒店海滩
+html_pics/2020_kitakyushu/public/tsunoshima.mp4
+https://youtu.be/tOvzqriT3Ok 角岛骑行
+html_pics/2020_kitakyushu/private/fishing.mp4
+https://youtu.be/TdyG6gS4kaQ 北九州钓鱼
+html_pics/2020_skiing/public/3.mp4
+https://youtu.be/5euCnKjjyzE 滑雪时索道
+html_pics/2020_skiing/private/1.mp4
+https://youtu.be/LODUR38HIaM 南岳滑雪
+html_pics/2021_autumn_shinseki/public/driving.mp4
+https://youtu.be/OWmJL9k6GFs 神石高原路上红叶
+html_pics/2021_autumn_shinseki/public/restaurant.mp4
+https://youtu.be/tJCs-aXq-nw 神石高原学校食堂
+html_pics/2021_kirara/public/japansea_D1.mp4
+https://youtu.be/gxjs9uwYuf4 盛夏畅游日本海 D1
+html_pics/2021_kirara/public/2行程地图.mp4
+盛夏畅游日本海广告 https://youtu.be/6YGoLPt_27g
+html_pics/2021_kirara/public/map.mp4
+https://youtu.be/hmRUBfW6An8 盛夏畅游日本海行程地图
+html_pics/2021_irori/private/3.mp4
+https://youtu.be/jeT1s4xDveE 七国见山滑梯下山
+html_pics/2022_shimane_momiji/public/driving.mp4
+https://youtu.be/vVy7W4Wf5dc 2022岛根路上红叶
+html_pics/2022_shimane_momiji/public/momiji_all.mp4
+https://youtu.be/X2DzepphA-M 八重滝入口红叶
+html_pics/2022_shimane_momiji/private/group.mp4
+https://youtu.be/urpRYVHEe1s 岛根八重滝跳红叶
+
+
+2020_kitakyushu 2020_ehime
+
+2019_hiruzen
+2019_sanbe
+2020_autumn_kenminnohama
+2020_ehime
+2020_kenminnohama_cycling
+2020_kitakyushu
+2020_shiraki
+2020_skiing
+2021_autumn_shinseki
+2021_cat_dog_market
+2021_hiyama
+2021_irori
+2021_kirara
+
+
+2022_akitakada
+2022_nagahama
+2022_newyear
+2022_shimane_momiji
+2022_yuki
+2023_kake_snow
+
+2023_hbm
+
+github_replace_pics_video.py
+2020_autumn_kenminnohama
+2020_ryoushima
+
+
+
+for the following, extract text from the pdf files, and the pictures are also extracted from them into tmp/folders
+2010_grassland.pdf		2014_padova.pdf			2016_israel.pdf			2017_nagano.pdf
+2014_denmark.pdf		2015_estonia.pdf		2016_slovenia_xiaojie.pdf	2017_tokushima.pdf
+2014_neusiedl.pdf		2015_istria.pdf			2017_kochi.pdf			2018_shiretoko.pdf
+
+
