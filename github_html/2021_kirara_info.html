@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title></title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
+</head>
+<body>
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+         
+         1.<a href="https://poonh.github.io/travel_blog/github_html/2021_kirara_ad.html" target=_blank>广告</a><br>
+         3.<a href="https://poonh.github.io/travel_blog/github_html/2021_kirara.html" target=_blank>游记</a><br><br>
+         <h3 align="center">2.相关行程信息<br><br></h3>
+         
+         我们的行程地图(线路取自navitime)：<br>
+             (红:住宿  &nbsp&nbsp蓝:景点 &nbsp&nbsp 绿:吃饭 &nbsp&nbsp 橙:超市&nbsp&nbsp啡:加油站 &nbsp&nbsp 黄:厕所&nbsp&nbsp紫:停车场)<br>
+             <div style="text-align: center;">
+                     <div class="iframe-container">
+                         <iframe
+                             src="https://www.google.com/maps/d/u/0/embed?mid=1lofafqlOnamnDxce2zI8xSkJF9x-GnLq&amp;usp=sharing"
+                             class="responsive-iframe"
+                             allowfullscreen
+                         ></iframe>
+                     </div></div><br/><br/>
+   
+
+        <b><a href ="https://izumo-kankou.gr.jp" target=_blank> 出云旅游官网</a></b><br><br>
+可能是我见过日本最好的官方旅游网站，信息出奇详细。大小景点，旅馆，餐厅都有介绍。<br><br>
+             
+      <b> <a href ="https://www.kirara-taki.co.jp/index.php" target=_blank>キララグループ</a>(kirara group)</b><br><br>
+          属于出云市政府的一个集团，经营kirara海滩附近的设施，包括酒店，营地小木屋，いちじく温泉，餐厅等(参看官网<a href ="https://www.city.izumo.shimane.jp/www/contents/1436341014316/html/common/other/672c7463012.pdf" target=_blank>地图</a>)。我只在本文详述我去过的。<br><br>
+          这里不是大景点，吃饭的地方不多，便利店超市都只有一家的。<br><br>
+                  
+          这个地方难得附近有车站(小田駅）。住酒店的话不开车也可以但我们住的地方在小山坡，还是有车好。<br><br>
+          
+       
+        <b>住宿</b><br>
+        1.<b><a href ="https://www.kirara-cottage.jp" target=_blank>キララコテージ</a>(kirara cottage)</b><br><br>
+        我们住的地方，由于在小山坡阳台风景特别好。离游泳的地方开车3分钟。除了营地，室内住宿有多种选择，最便宜的不带独立卫浴。有两种独立别墅，分别是コテージ(4或6人，没桑拿)及ログハウス(log house，4，6或8人，含桑拿,4人用超旺季(暑假黄金周)一栋22,900円，非超旺季周末19,400円，平时17,000円，2024价格)。这两种独立别墅即使淡季都特别受欢迎。我们超旺季中的淡季平时去(在8月底，当时海滩没有小卖部救生员但还有厕所浴室，游泳的人已经少很多)，提前两个月预约。租用烧烤场一桌2000（含所有烧烤工具）。按季节有不同的<a href ="https://www.kirara-cottage.jp/plan/index.php?stayYear=2024&stayMonth=12&stayDay=15&stayCount=1&adultNum=6&roomCount=1&x=65&y=9#" target=_blank>宿泊套餐</a>。除了官网，<a href ="https://travel.rakuten.co.jp/HOTEL/192669/?s_kwcid=paidsearch&&saf_src=google_g&saf_pt=&saf_kw=見晴らしの丘公園%20キララコテージ&saf_dv=&saf_cam=2035268853&saf_grp=167247231832&saf_ad=711624097152&account_id=3093437606&saf_acc=3093437606&saf_cam_tp=search&gad_source=1&gbraid=0AAAAAD-xRgNvU5kQ5B6h63HPdvnW_SRjn&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPvTiLDnLVmITMptCuUYI8diSy8n_3QRpU1njc-iFi3YwQUljQB86wgaAtsfEALw_wcB&gclsrc=aw.ds" target=_blank>乐天</a>,<a href ="https://www.jalan.net/yad346224/plan/?vos=evjlnpg0022&cxlt=n7lqmdjzmvlsm2k02zw2y82hq2ng&pog=mt_b_kw_kwd-314722864533_dv_c_cr_599153306805_gp_27218724562_cm_357337762&gad_source=1&gbraid=0AAAAADRk9QYc3w7ihD4NAKY00-dnktxZj&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPvY8aTHKy9YiXf0lUsw1SA1T-l9hX_Km6UCUFOizOe535KR4FSg8fYaAgvtEALw_wcB&gclsrc=aw.ds" target=_blank>jalan</a>也能预约住房。但宿泊套餐和烧烤场只能电话预定。夏天有游泳圈(浮き輪)出租。<br><br>
+             
+     如果你住这里,去集团下的いちじく温泉或酒店游泳池有优惠的，记得问前台。另外，这里可以用信用卡(我们住过一些只能用现金)。整个园区及道の駅(游泳地方哪里)都是北欧风格，所以小木屋有桑拿，不知道是不是因为出云和<a href ="https://www.city.izumo.shimane.jp/www/contents/1117513762784/index.html" target=_blank>芬兰Kalajoki</a>结为友好都市。<br><br>
+        
+        整个集团指定给株式会社多伎振興管理。管理公司老板是岛根JA(农业协同组合),JF（渔业协同组合）及出云市商工局。我们住过不少政府的营地，这次这家管理水平是最高的，除了前台很长的服务时间（早7至晚10，以前我们住的不是5点就是6点前就要入住），而且网站介绍设施非常详细的，厨房用品就连一个削皮刀都写了，烧烤厨房用具都很新。
+              
+              如果你看2022年政府对管理者的报告<a href ="https://www.city.izumo.shimane.jp/www/contents/1698646841404/index.html" target=_blank>《事業実施状況の評価結果》</a>的<a href ="https://www.city.izumo.shimane.jp/www/contents/1698646841404/simple/47.pdf" target=_blank>見晴らしの丘公園</a>(即kirara cottage)，2018-2022每年挣大概几百到接近1000万。人数方面，全年利用人数两三万。据出云市政府<a href ="https://www.city.izumo.shimane.jp/www/contents/1615176989022/files/shiryo2.pdf" target=_blank>报告</a>,此集团可能未来几年转为民间经营</a>。<br><br>
+        
+
+        
+        2.<a href ="https://www.talaso-izumo.jp" target=_blank>マリンタラソ酒店</a>(Marine Thalasso)<br><br>
+        集团下的酒店，主打海水泳池。室外池可以看日落，室内各种按摩池特别多。非宿泊者费用1080日元（2024价格）。餐厅有午晚餐，菜式不特别多。<br><br>
+
+        
+        <b><a href ="https://www.kirara-taki.co.jp/kirara-beach/" target=_blank>キララビーチ</a>(kirara海滩)</b><br><br>
+        
+        日本海滩有"海开""海闭"的说法。一般7月初海开(海開き日)。海开后厕所浴室(一般投币式收费，kirara是三百元三分钟)等设施才能用，还有小卖店救生员等服务。お盆（日本8月盆节）后可能没有小卖店救生员，但厕所浴室还开，直到海闭，一般在8月底，具体时间要看官网。但也有一些海滩例外，例如<a href ="https://poonh.github.io/travel_blog/github_html/2022_nagahama_ad.html" target=_blank>《长滨烧烤畅泳之旅》</a>的广岛江田島的长滨就全年开放。<br><br>
+        
+        另外，如果遇到高浪，海滩会关闭。日本海可能容易遇到这个情况,濑户内海可能较好。我们原计划第一天去游泳但没开（当天风速每秒五六米，第二天开放时两三米）。如果你一天往返，可以去之前打电话确定。过夜的话，计划行程时最好弹性点，今天不游可以明天游。当然kirara海滩游不了可以去酒店海水泳池。kirara官网有<a href ="http://www.kirara-taki.co.jp/spot_camera/index.html" target=_blank>摄像头</a>，你可以看看有没有人游泳，或者看天气预报的风速也可以估计能不能游。<br><br>
+   
+        
+        道の駅正面面对海滩游泳部分(整个海滩很大，开放一小部分)。kirara cottage 位于海滩东侧几百米的山丘上。两者中间有两个风车，你游泳时往沙滩一侧一看，以为自己去了欧洲，因为上述两个建筑都是欧风，美的不得了。再加上这里是清澈的日本海，比起我们的濑户内海确实不一样。<br><br>
+
+        这个海滩的水质是连续6年最高的AA级(截止2021)，具体定义参考岛根县<a href="https://www.pref.shimane.lg.jp/infra/kankyo/kankyo/mizu/kaisuiyoku/index.data/20210625.pdf" target=_blank> 令和3年度海水浴場の水質調査結果</a> 。 日本政府部门環境省 水・大気環境局每年海开前都做海水浴场海水质量调查，水质为最高级AA的海滩占调查一半以上。
+2024年全国调查报告在<a href="https://www.env.go.jp/press/press_03366.html#:~:text=その結果は、次の,の81％）でした%E3%80%82" target=_blank>
+    《令和6年度 水浴場(開設前)水質調査結果》</a>，里面有<a href="https://www.env.go.jp/content/000234324.pdf" target=_blank>全国个别海滩检查结果</a>，调查内容为"ふん便性大腸菌群数、油膜の有無、化学的酸素要求量(COD)、透明度 (水素イオン濃度<pH>、病原性大腸菌O-157"。<br><br>
+        
+
+        <b>附近其他海滩</b><br><br>
+
+        <a href ="http://kkisp.jp" target=_blank>石见海滨公园</a>也挺受欢迎，也有住的。小木屋只要每人1000左右，但里面什么都没有，没厨房也没厕所，床铺也要自己带或者租。想享受还是推荐kirara。<br><br>
+        
+        <b>立久恵峡</b><br><br>
+        郊游景点，路线简单，可以带老人，秋天可以看红叶,游步道2.3公里，官网给的时间是40分钟。此类型景点整个岛根很多，详见<a href ="https://izumo-kankou.gr.jp" target=_blank>旅游官网</a>。特别提醒去岛根这种地方事前查一下政府网站这页<a href ="https://www.pref.shimane.lg.jp/infra/nature/shizen/shimane/shimane_kouen/kiken.html" target=_blank>《国立公園・国定公園・県立公園の通行(使用)できない区間等》</a>。这些地方很多时候有落石，还有台风暴雨等车路会不通的。<br><br>
+        
+        这里有能边泡温泉边看红叶的温泉旅馆<a href ="https://hakkouen.com" target=_blank>八光園</a>及<a href ="https://travel.rakuten.co.jp/HOTEL/106129/106129.html" target=_blank>御所覧場</a>，都是小温泉不设散客。不知道有没有午饭提供，看官网，酒店有鮎（あゆ）鱼料理。这是日本一种河鱼，不便宜的，raku老师吃过野生的，有一种特殊的香味。我一直很想吃，后来终于在<a href ="https://poonh.github.io/travel_blog/github_html/2022_yuki_ad.html" target=_blank><《绝景梯田汤来百年古民家之旅》</a>吃过获奖的。<br><br>
+        
+        另外，这里有纯营地<a href ="http://wakaayu-izumo.jp/campsite.html" target=_blank>立久恵峡 わかあゆの里</a>。<br><br>
+        
+ 
+ <b>多岐特产</b><br><br>
+无花果(日语いちじく，即kirara附近温泉的名字），我们去的时候是当做季节。道の駅有很多，但后来发现超市（只有一家超市叫ラピタ）隔壁的无花果园能直接买，便宜很多。<br><br>
+        
+        <!--main content here-->
+        
+        1.<a href="https://poonh.github.io/travel_blog/github_html/2021_kirara_ad.html" target=_blank>广告</a><br>
+        3.<a href="https://poonh.github.io/travel_blog/github_html/2021_kirara.html" target=_blank>游记</a><br><br>
+        
+            <br><br>
+                    
+
+<br><br>
+
+
+<!--    <footer>
+        <p>&copy; 2024 Life in Saijo</p>
+    </footer>-->
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
+</article>
+</main>
+</body>
+</html>
+
