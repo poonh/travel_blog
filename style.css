@@ -223,15 +223,38 @@ nav ul li a{
     display: block;
     margin: 0 auto;
 }
-
+/*
 .picture {
     width: 100%;
     max-width: 500px; /* 500px */
-    max-height: 500px;
-    cursor: pointer;
+ /*   max-height: 500px;*/
+   /* cursor: pointer;
     display: block;
     margin: 0 auto;
 }
+*/
+
+.picture {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    aspect-ratio: auto; /* Allow natural aspect ratio */
+}
+
+/* Adjust portrait images (height > width) */
+@media (min-aspect-ratio: 1/1) {
+    .picture {
+        max-width: auto;
+        max-height: 500px;
+    }
+}
+
+
 /*
 .responsive-iframe {
     width: 100%;
@@ -379,7 +402,7 @@ p {
 .close-btn {
 /*    background: gray;
     background-color: gray*/
-    color: white;
+    color: black;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -387,7 +410,7 @@ p {
 }
 
 .close-btn:hover {
-    background: gray;
+    background: lightgray;
 }
 
 #close-panel-yuki,
