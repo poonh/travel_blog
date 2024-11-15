@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title></title>
     <style>
-        /* Styling for the information panel */
-        .info-panel {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            border: 2px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
+        /* Add your custom styles here */
 
-        .close-btn {
-            background: red;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        .close-btn:hover {
-            background: darkred;
-        }
         .menu-icon {
             display: none;
             cursor: pointer;
@@ -87,27 +72,23 @@
                 margin-left: 10px; /* Adjust margin as needed */
             }
         }
-        
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
-    <title>神石高原爱护动物红叶之旅</title>
+            </style>
+    
+    
+            
 </head>
 <body>
-    <header>        <div class="container">
-            <!-- Removed the logo div -->
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
             <nav>
                 <ul class="menu">
                     <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
-                    <li><a href="europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
                 </ul>
             </nav>
@@ -126,10 +107,14 @@
                 </ul>
             </div>
         </div>
+
 </header>
     <main class="content">
         <article>
            <br><br><br><br> 
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+
             
             2.<a href="https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki_info.html" target=_blank>相关行程资料</a><br>
             3.<a href="https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki.html" target=_blank>游记</a><br><br>
@@ -197,9 +182,22 @@ D2:11月4日(周四) 早上情况合适去恋人の聖地(<a href ="https://zins
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
- <div id="overlay" class="overlay">
-     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
- </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
+</article>
+</main>
 </body>
 </html>
