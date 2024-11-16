@@ -1,29 +1,132 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>Life in Saijo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>疫情下上山下海游爱媛</title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 <main class="content">
 <article>
-<p>上一章</p>
+    <br><br><br><br>
+    <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+    <br><br>
+
+    1.<a href="https://poonh.github.io/travel_blog/github_html/2020_ehime_ad.html" target=_blank>广告</a><br>
+    2.<a href="https://poonh.github.io/travel_blog/github_html/2020_ehime_info.html" target=_blank>相关行程资料</a><br>
+    4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/2020_ehime.pdf" target=_blank>行程单</a><br>
+    5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_ehime.kmz" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+    
+    
 <span style="font-size: medium;">原定五一黄金周爱媛高知五天四夜之旅，因为疫情取消。现在只剩下我一个人开车，所以把行程缩短至四天三夜，只玩爱媛县。<br/>
 <br/>
 </span>
 <span style="font-size: medium;">
 </span>
 <div>
+<!--
 <font size="3">我每个地区游玩及住宿介绍一下，只挑我研究过的地方。蓝色为景点，红色为住宿，绿色为吃。</font>
 </div>
 <div>
@@ -47,7 +150,7 @@
 <iframe height="480" src="https://www.google.com/maps/d/u/0/embed?mid=1uitKFXF1oe3AHViHwPwq_JYL_iW8PbXX" width="640">
 </iframe>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="561" data-original-width="687" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/1.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="561" data-original-width="687" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/1.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -65,7 +168,7 @@
 <div class="separator" style="clear: both;">
 <span style="font-size: medium;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="588" data-original-width="674" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/2.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="588" data-original-width="674" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -318,7 +421,7 @@
 <div class="separator" style="clear: both;">商业营运的钓鱼公司，电话预约，提供钓鱼用具租用及烧烤，每人约几千元。</div>
 <div class="separator" style="clear: both;"> </div>
 <div class="separator" style="clear: both;">西部：<div class="picture-container">
-<img border="0" class="picture" data-original-height="273" data-original-width="709" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/4.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="273" data-original-width="709" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/4.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -459,6 +562,7 @@
 </div>
 <p>
 <br/>
+-->
 7月16日（周四）<br/>
 住宿：久万高原ふるさと旅行村<br/>
 到达住宿地点5点多，先去看羊驼，之后晚饭吃番茄浓汤火锅。</p>
@@ -520,7 +624,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="400" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/5.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/5.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -539,7 +643,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/6.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/6.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -549,7 +653,7 @@
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/7.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/7.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -574,7 +678,7 @@
 下三图都是东京爱的故事 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1226" data-original-width="1336" height="586" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/8.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1226" data-original-width="1336" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/8.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -582,7 +686,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="826" data-original-width="1600" height="330" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/9.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="826" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/9.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -592,7 +696,7 @@
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/10.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/10.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -602,7 +706,7 @@
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/11.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/11.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -612,7 +716,7 @@
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/12.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/12.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -624,7 +728,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/13.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/13.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -636,7 +740,7 @@
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/14.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/14.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -652,14 +756,14 @@
 <br/>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/15.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/15.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/16.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/16.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -669,7 +773,7 @@
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/17.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/17.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -677,7 +781,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/18.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/18.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -685,7 +789,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="901" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/19.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="901" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/19.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -693,7 +797,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/20.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/20.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -701,14 +805,14 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/21.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/21.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/22.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/22.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -727,7 +831,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 </p>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/23.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/23.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -738,7 +842,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/24.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/24.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -747,7 +851,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/25.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/25.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -759,7 +863,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/26.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -769,7 +873,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/27.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/27.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -780,7 +884,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
   </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/28.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/28.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -790,7 +894,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <div style="text-align: center;"> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="882" height="400" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/29.JPG" width="220"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="882" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/29.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -804,7 +908,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="374" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/30.JPG" width="500"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/30.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -814,7 +918,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/31.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/31.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -824,7 +928,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/32.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/32.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -834,7 +938,7 @@ set勉强挤下，而且还有衣柜，独立的门及灯。我们看到都觉�
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/33.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/33.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -869,7 +973,7 @@ iphone，之后导致她手机资料全失.....我还和他一起回到羊驼那
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/34.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/34.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -881,7 +985,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/35.JPG" width="585"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/35.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -889,7 +993,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="400" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/36.JPG" width="299"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/36.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -898,7 +1002,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/37.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/37.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -919,7 +1023,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/38.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/38.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -927,7 +1031,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 门口大牌子</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="500" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/39.JPG" width="375"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/39.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -940,7 +1044,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/40.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/40.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -949,7 +1053,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/41.JPG" width="585"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/41.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -958,7 +1062,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
  刚开始路还挺好走的</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/42.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/42.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -967,7 +1071,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <div style="text-align: center;"> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/43.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/43.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -981,7 +1085,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/44.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/44.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -989,7 +1093,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/45.JPG" width="468"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/45.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -998,7 +1102,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/46.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/46.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1008,7 +1112,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 <div style="text-align: center;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/47.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/47.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1019,7 +1123,7 @@ lele在门口发现了薄荷，我们就摘了好些今晚继续喝mojito，薄�
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/48.JPG" width="468"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/48.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1030,13 +1134,13 @@ lele手上的小花</div>
  我们去程左手边是洪水，右手边有时候好像下雨那样。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/49.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/49.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="480" data-original-width="270" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/50.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="480" data-original-width="270" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/50.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1051,12 +1155,12 @@ lele手上的小花</div>
 <div class="separator" style="clear: both; text-align: center;">快到的时候会有一座红桥，洗碗公主今次作为摄影担当，在那里帮我们拍了很多好看的照片。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/51.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/51.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/52.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/52.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1065,7 +1169,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/53.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/53.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1078,7 +1182,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="901" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/54.JPG" width="450"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="901" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/54.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1087,7 +1191,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/55.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/55.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1098,12 +1202,12 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/56.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/56.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1078" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/57.JPG" width="598"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1078" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/57.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1116,7 +1220,7 @@ lele手上的小花</div>
 一路走下去水声一路变大，直到最后轰隆轰隆的，无论是视觉还是听觉都很壮观。走到尽头声音是最大的。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/58.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/58.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1129,21 +1233,21 @@ lele手上的小花</div>
 尽头的水很澎拜。 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/59.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/59.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/60.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/60.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/61.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/61.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1169,7 +1273,7 @@ lele手上的小花</div>
 <div style="text-align: center;">拍个团体照留个纪念先</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/62.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/62.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1231,7 +1335,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/63.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/63.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1240,7 +1344,7 @@ lele手上的小花</div>
 我们到四国喀斯特了</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/64.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/64.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1252,7 +1356,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/65.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/65.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>姬姬鹤庄外观 <br/>
@@ -1260,7 +1364,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/66.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/66.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1272,7 +1376,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/67.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/67.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>姬鹤庄外停车场，车位不到10个。  <br/>
@@ -1280,7 +1384,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/68.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/68.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1290,7 +1394,7 @@ lele手上的小花</div>
 由于是平时，姬鹤庄开始吃饭时只有我们呢，这里不贵，我吃的咖喱990日元，其他有些1000出头的。屋外有烧烤的地方，看的是山景。餐厅的员工都是上了年纪的，很热情给我们介绍。这里有个很有意思的地方，就是公路（国道383）北侧的牛属于爱媛的，南侧是高知的。<br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/69.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/69.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1301,7 +1405,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/70.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/70.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1313,7 +1417,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/71.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/71.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1324,7 +1428,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/72.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/72.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1333,7 +1437,7 @@ lele手上的小花</div>
      午饭合照</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/73.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/73.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1347,19 +1451,19 @@ lele手上的小花</div>
  姬鹤庄外面有条牛，lele把它给收了</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/74.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/74.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/75.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/75.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/76.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/76.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1369,7 +1473,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/77.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/77.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1379,7 +1483,7 @@ lele手上的小花</div>
  吃完饭我们去营地那边的观景台先看风景。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/78.JPG" width="468"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/78.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1394,18 +1498,18 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="586" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/79.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/79.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="585" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/80.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/80.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="585" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/81.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/81.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1414,7 +1518,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="585" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/82.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/82.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1424,7 +1528,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="585" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/83.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/83.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1434,14 +1538,14 @@ lele手上的小花</div>
 <div class="separator" style="clear: both; text-align: center;"> </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="586" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/84.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/84.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="585" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/85.JPG" width="781"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/85.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1450,7 +1554,7 @@ lele手上的小花</div>
 我们开车继续上路了~，沿着383天空之路走到天狗庄，部分路段比较窄，是单程路。这里是高原+喀斯特地貌+牧场，还有风车。看起来就像欧洲，非常漂亮，很梦幻。虽然以前也见过牛，但第一次在大牧场看它们吃草。在383上开车真有行走天空的感觉。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/86.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/86.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1461,7 +1565,7 @@ lele手上的小花</div>
 开车不酷，开摩托车才酷（我们在爱媛返程广岛的路上还不止一次遇到摩托车队，酷毙了）</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="270" data-original-width="480" height="360" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/87.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="270" data-original-width="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/87.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1476,7 +1580,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/88.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/88.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1487,13 +1591,13 @@ lele手上的小花</div>
 下面是路上看到的风景，有爱媛牛，也有高知牛。 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/89.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/89.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/90.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/90.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1501,7 +1605,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/91.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/91.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1509,7 +1613,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/92.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/92.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1517,7 +1621,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/93.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/93.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1525,7 +1629,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/94.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/94.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1533,14 +1637,14 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/95.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/95.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/96.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/96.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1591,19 +1695,19 @@ lele手上的小花</div>
 除了牧场景沿路还有山景。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/97.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/97.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/98.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/98.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/99.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/99.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1633,7 +1737,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/100.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/100.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1644,7 +1748,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/101.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/101.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1660,7 +1764,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/102.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/102.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1670,7 +1774,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/103.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/103.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1681,14 +1785,14 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/104.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/104.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/105.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/105.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1704,7 +1808,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/106.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/106.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1712,7 +1816,7 @@ lele手上的小花</div>
 店铺外观</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/107.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/107.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1723,12 +1827,12 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/108.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/108.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/109.JPG" width="598"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/109.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1737,7 +1841,7 @@ lele手上的小花</div>
  里面装修，是木制摆设</div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/110.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/110.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1749,7 +1853,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/111.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/111.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1762,14 +1866,14 @@ lele手上的小花</div>
 下两图：我们香浓的高原牛奶冰淇淋 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/112.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/112.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/113.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/113.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1785,7 +1889,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/114.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/114.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1804,7 +1908,7 @@ lele手上的小花</div>
 <br/>
 好不容易我们下山了，中途全是森林山路，有点森林旅游的感觉。我们到了西予市，先去桥本鲜鱼店买海鲜。这家店有网站我原来以为挺大，不过海鲜不太多，我们买了墨鱼，虾及炸鸡，之后就去附近的Fuji买菜了（当时好多特价，我们还奢侈一把吃了爱媛和牛，还有高档三文鱼）。这里还有家买菜的店卖本地新鲜食材，看网站还有很多试吃，但要绕一下我们就没去了（这家店叫<a href="https://www.facebook.com/nanyonomegumi/">shoppers</a>）。<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/115.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/115.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1820,7 +1924,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="300" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/116.JPG" width="400"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/116.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1839,7 +1943,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/117.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/117.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1847,7 +1951,7 @@ lele手上的小花</div>
 我们住这种大木屋，都面向大海。</div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/118.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/118.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1860,7 +1964,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/119.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/119.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1868,7 +1972,7 @@ lele手上的小花</div>
 车就放在一起 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/120.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/120.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1881,7 +1985,7 @@ lele手上的小花</div>
 从房子看是这个海景，明浜海滩，有几颗棕榈树，走下去不到1公里</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/121.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/121.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1896,7 +2000,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/122.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/122.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1912,7 +2016,7 @@ lele手上的小花</div>
 厨房什么都有，电磁炉有三个灶，烤箱还可以放两块面包。除了一般厨具还有一次性筷子，擦丝的东西，茶壶等。 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/123.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/123.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1922,7 +2026,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="375" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/124.JPG" width="500"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/124.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1932,7 +2036,7 @@ lele手上的小花</div>
 <div style="text-align: center;"> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/125.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/125.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1949,14 +2053,14 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/126.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/126.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/127.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/127.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1974,7 +2078,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/128.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/128.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1984,7 +2088,7 @@ lele手上的小花</div>
 <div style="text-align: center;"> </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/129.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/129.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1993,7 +2097,7 @@ lele手上的小花</div>
  洗脸的地方有两个，这个是大的，还有一个小的。</div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/130.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/130.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2004,14 +2108,14 @@ lele手上的小花</div>
 二层的客房有两个房间（进去小房间需要通过大房间），合共三个窗户，都向海。 大房间有三张床，小房间一张床+两个futon set。</div>
 <div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/131.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/131.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/132.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/132.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2020,7 +2124,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/133.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/133.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2032,7 +2136,7 @@ lele手上的小花</div>
 </div>
 <div>
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/134.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/134.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2043,7 +2147,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/135.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/135.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2055,7 +2159,7 @@ lele手上的小花</div>
 </div>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/136.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/136.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2068,7 +2172,7 @@ lele手上的小花</div>
 <br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/137.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/137.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2076,12 +2180,12 @@ lele手上的小花</div>
 这里烧烤卖的碳是3公斤，包装说是2-3人份量，但我们4个人也没用完。如果怕碳不够，又不想买太多的碳，确实不够时大可以用厨房的烤箱。 <br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/138.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/138.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="1000" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/139.JPG" width="748"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/139.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2090,7 +2194,7 @@ lele手上的小花</div>
 熊熊烈火<br/>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/140.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/140.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2099,14 +2203,14 @@ lele手上的小花</div>
 我们丰富的海鲜和牛烧烤<br/>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/141.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/141.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <br/>
 我们三个在外面烧烤时，lele在屋内把昨天没吃的粉丝做蒜蓉粉丝虾给我们吃（图里她正在拌）。 <br/>
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="468" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/142.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/142.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2116,14 +2220,14 @@ lele手上的小花</div>
 </div>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/143.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/143.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 这是lele的烤甜椒，第一次吃很好吃，配上烟熏味很独特。我吃了好多，大爱这个,怪不得国外有smoked paprika powder这个调料。<br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/144.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/144.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2132,7 +2236,7 @@ lele手上的小花</div>
 这个烤茄子也是lele做的（锡箔纸要自己带）。<br/>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/145.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/145.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2143,7 +2247,7 @@ lele手上的小花</div>
  我们把所有东西烤好后就会屋内开空调继续吃了，大家都觉得我种的甜玉米很好吃呢。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/146.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/146.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2153,14 +2257,14 @@ lele手上的小花</div>
 <br/>
  吃完饭又到了最关键的时候 - 洗碗！洗碗王子又发挥他最大的本事 。两位女士就全程低下头看手机。<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/147.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/147.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/148.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/148.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2169,7 +2273,7 @@ lele手上的小花</div>
 当她们抬头一看，惊叹洗碗王子已经全部做好。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/149.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/149.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2180,7 +2284,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/150.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/150.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2191,7 +2295,7 @@ lele手上的小花</div>
 之后lele做了完美的mojito，11点多我们还在喝酒，今天非常非常尽兴。<br/>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/151.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/151.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2203,7 +2307,7 @@ lele手上的小花</div>
 早上醒来，发现床上有大蚂蚁，还有我手上有纸巾，直接了当的解决了。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/152.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/152.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2211,7 +2315,7 @@ lele手上的小花</div>
 <br/>
 今天不赶时间，我计划九点左右出发，最后吃完早餐在外面拍照搞到快10点才check out。早上我们享用了炒鸡蛋，烤面包，橙子（洗碗公主切的）及热咖啡，非常丰盛。之后我们就去观景台拍照。<br/>
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/153.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/153.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2222,7 +2326,7 @@ lele手上的小花</div>
 <br/>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/154.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/154.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2232,7 +2336,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="1000" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/155.JPG" width="750"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/155.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2243,7 +2347,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="1000" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/156.JPG" width="750"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/156.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2252,7 +2356,7 @@ lele手上的小花</div>
  这个是观景台顶点，不过是坏的，上不去。</div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/157.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/157.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2267,7 +2371,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/158.JPG" width="600"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/158.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2277,7 +2381,7 @@ lele手上的小花</div>
 前台那边种了太阳花，很漂亮。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/159.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/159.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2285,7 +2389,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/160.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/160.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2294,7 +2398,7 @@ lele手上的小花</div>
 </div>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/161.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/161.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2304,7 +2408,7 @@ lele手上的小花</div>
 还有好像辣椒颜色的花，就叫它们做辣椒花吧。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/162.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/162.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2319,7 +2423,7 @@ lele手上的小花</div>
 下几图都是明浜去西予市的路上，有山景和海景，农村及渔村</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/163.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/163.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2329,7 +2433,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1045" data-original-width="1473" height="454" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/164.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1045" data-original-width="1473" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/164.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2338,7 +2442,7 @@ lele手上的小花</div>
 <br/>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/165.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/165.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2346,17 +2450,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/166.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</div>
-<div style="text-align: center;">
-<br/>
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/167.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/166.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2366,7 +2460,17 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/168.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/167.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+</div>
+<div style="text-align: center;">
+<br/>
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/168.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2378,7 +2482,7 @@ lele手上的小花</div>
 经过西予，我们就往八幡浜，接近市区时堵车，不过整体还好，这里有平原，我们在经过村子还看到下面很可爱的稻草大象（可能比真实的更大）。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/169.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/169.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2398,13 +2502,13 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/170.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/170.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 餐厅环境</div>
 <div class="separator" style="clear: both; text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/171.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/171.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2413,7 +2517,7 @@ lele手上的小花</div>
 我们原来想吃海鲜当はなはな当，不过快到我们时卖完了，最后我们吃了刺身定食（1200元那种）。买完票找到座位还要等很久才有得吃，我们就分开去逛了。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/172.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/172.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2429,7 +2533,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/173.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/173.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2442,7 +2546,7 @@ lele手上的小花</div>
 这里的生鱼片很鲜美，芥末味道更是足，和一般超市包装好的完全不是一个味，应该是新鲜的。饭后我们逛商店，看到伊势海老鲍鱼海鲜套餐5000日元，送料无料，我们当中有三个人都没吃过伊势海老，价格又能接受，就定了下周日送货了。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/174.JPG" width="600"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/174.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2451,7 +2555,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/175.JPG" width="600"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/175.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2463,7 +2567,7 @@ lele手上的小花</div>
 这个景区还有音乐之路介绍呢</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/176.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/176.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2477,7 +2581,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/177.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/177.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2489,7 +2593,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/178.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/178.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2497,7 +2601,7 @@ lele手上的小花</div>
 这里是景区介绍</div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/179.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/179.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2510,14 +2614,14 @@ lele手上的小花</div>
 下几图是路况介绍，完全不滑的情况很好走，1.8公里不到半小时就能走到，不过我们这节奏走了1小时。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/180.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/180.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/181.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/181.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2528,7 +2632,7 @@ lele手上的小花</div>
  半岛的岩石很好看，拍照效果很好，要是懂地质的该更感兴趣。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/182.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/182.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2538,13 +2642,13 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/183.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/183.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="881" data-original-width="1456" height="386" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/184.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="881" data-original-width="1456" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/184.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 帅气的洗碗王子</div>
@@ -2552,7 +2656,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/185.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/185.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2561,7 +2665,7 @@ lele手上的小花</div>
 这条路虽然很短，不过路上有厕所的，不过到了灯塔那边，我忘记有没有了。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/186.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/186.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2569,13 +2673,13 @@ lele手上的小花</div>
 去灯塔之前会经过椿山展望台，就是上面的恋之灯台了。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/187.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/187.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/188.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/188.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2586,7 +2690,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/189.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/189.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2598,13 +2702,13 @@ lele手上的小花</div>
 去灯台之前我们先看了一个军事要点，以前是放射灯的，晚间用。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/190.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/190.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/191.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/191.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2614,14 +2718,14 @@ lele手上的小花</div>
 路上还有山茶花果实。顺便科普一下，山茶花油是最滋润的精油，因为油酸（oleic acid)含量最高。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/192.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/192.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/193.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/193.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2629,7 +2733,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/194.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/194.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2647,14 +2751,14 @@ lele手上的小花</div>
 <br/>
 入口处远景<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/195.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/195.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <br/>
 入口处近景  ，左侧就是半岛尽头了。<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/196.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/196.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2662,7 +2766,7 @@ lele手上的小花</div>
 下两图：炮台说明 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/197.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/197.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2672,7 +2776,7 @@ lele手上的小花</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/198.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/198.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2680,7 +2784,7 @@ lele手上的小花</div>
 里面有点像长野的松代大本营（1944年年底，日军垂死挣扎时想迁都过去的地方）</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/199.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/199.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2690,7 +2794,7 @@ lele手上的小花</div>
 <div class="separator" style="clear: both; text-align: center;">
 隧道里好些下面的山洞，可能用来放兵器。  </div>
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/200.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/200.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2698,7 +2802,7 @@ lele手上的小花</div>
 炮台仿制品 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/201.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/201.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2708,7 +2812,7 @@ lele手上的小花</div>
 山洞其实不止一个的，其他的没开发，但看到入口</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/202.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/202.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2719,7 +2823,7 @@ lele手上的小花</div>
 <div class="separator" style="clear: both; text-align: center;">
 这是另一侧的另外两个炮台 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/203.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/203.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2729,7 +2833,7 @@ lele手上的小花</div>
 先遥望一下 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/204.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/204.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2737,7 +2841,7 @@ lele手上的小花</div>
 好漂亮啊！ <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/205.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/205.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2749,14 +2853,14 @@ lele手上的小花</div>
 顶塔 </div>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/206.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/206.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 <br/>
 托塔 （洗碗公主这张照片其实很甜美的）<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/207.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/207.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2764,7 +2868,7 @@ lele手上的小花</div>
 <br/>
 最后来个合照 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/208.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/208.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2774,24 +2878,24 @@ lele手上的小花</div>
 </div>
 来些灯台独照<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/209.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/209.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/210.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/210.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/211.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/211.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/212.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/212.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2799,7 +2903,7 @@ lele手上的小花</div>
 <br/>
  我们要一步一步靠近了~<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/213.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/213.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2808,7 +2912,7 @@ lele手上的小花</div>
 <br/>
  抬头一看<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/214.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/214.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2818,13 +2922,13 @@ lele手上的小花</div>
 <br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/215.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/215.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/216.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/216.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2833,13 +2937,13 @@ lele手上的小花</div>
 这里就是四国最西端御笼岛 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/217.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/217.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/218.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/218.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2847,13 +2951,13 @@ lele手上的小花</div>
 <br/>
 遥望大分<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/219.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/219.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/220.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/220.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2862,13 +2966,13 @@ lele手上的小花</div>
 这里的海景+岩石景也很好看的。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/221.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/221.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/222.JPG" width="600"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/222.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2877,7 +2981,7 @@ lele手上的小花</div>
 半岛南面是宇和海（连接太平洋），北面是濑户内海。南面明显浪大，因为连接太平洋（下图就在最西端位置拍摄）。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/223.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/223.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2888,7 +2992,7 @@ lele手上的小花</div>
 之后我们到另一侧的观景点拍照，这个拍照点很浪漫~<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/224.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/224.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2900,7 +3004,7 @@ lele手上的小花</div>
 跑题，路上一景 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/225.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/225.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2917,7 +3021,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/226.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/226.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2925,7 +3029,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/227.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/227.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2946,7 +3050,7 @@ lele手上的小花</div>
 看下照片。</div>
 <div style="text-align: left;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/228.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/228.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2960,7 +3064,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/229.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/229.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2969,7 +3073,7 @@ lele手上的小花</div>
  酒店园林<br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/230.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/230.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2980,7 +3084,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/231.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/231.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -2995,12 +3099,12 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/232.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/232.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/233.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/233.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3016,7 +3120,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/234.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/234.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3028,7 +3132,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/235.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/235.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 房间衣柜鞋柜齐全，还有温泉用浴巾。浴衣需要租用，300日元。 </div>
@@ -3037,7 +3141,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/236.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/236.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 这个日式小灯很别致。 </div>
@@ -3046,7 +3150,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/237.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/237.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3059,7 +3163,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/238.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/238.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3070,7 +3174,7 @@ lele手上的小花</div>
  房间空间足够，厕所和洗脸是分开的</div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/239.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/239.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3080,7 +3184,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/240.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/240.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3091,7 +3195,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/241.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/241.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3104,7 +3208,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/242.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/242.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3112,7 +3216,7 @@ lele手上的小花</div>
 <div style="text-align: center;">
  房间还有one-push 防虫。<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/243.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/243.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3126,7 +3230,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/244.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/244.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3139,7 +3243,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/245.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/245.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3150,7 +3254,7 @@ lele手上的小花</div>
 <div style="text-align: center;">
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/246.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/246.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3161,7 +3265,7 @@ lele手上的小花</div>
 <div style="text-align: left;">
  下面是酒店公共地方的手工摆设，很漂亮，我拍下来，什么时候研究一下~<div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/247.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/247.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3169,7 +3273,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/248.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/248.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3180,7 +3284,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/249.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/249.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3239,7 +3343,7 @@ lele手上的小花</div>
 玩了一小时，我们准备吃饭了，吃饭前先喝冰牛奶，真爽，200多元一瓶。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/250.JPG" width="478"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/250.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3249,7 +3353,7 @@ lele手上的小花</div>
 今天高兴，晚饭我吃了最贵的套餐。<br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/251.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/251.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3258,7 +3362,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/252.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/252.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 这是全部,左下的蝾螺焖饭很香~</div>
@@ -3266,7 +3370,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/253.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/253.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3278,7 +3382,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/254.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/254.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3287,7 +3391,7 @@ lele手上的小花</div>
 <br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/255.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/255.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3301,7 +3405,7 @@ lele手上的小花</div>
  下面是其他人的晚餐，也很不错，大概1400日元<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/256.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/256.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3312,7 +3416,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/257.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/257.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3320,7 +3424,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/258.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/258.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3330,7 +3434,7 @@ lele手上的小花</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/259.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/259.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3338,7 +3442,7 @@ lele手上的小花</div>
 <br/>
 我们买了啤酒，购物完毕就回去房间喝了。今天不用做饭洗碗，很轻松！我带了百元店的智力游戏大家一起玩，不过没搞定。<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/260.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/260.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3350,7 +3454,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/261.JPG"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/261.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3365,7 +3469,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: left;">8点40分，我们先去龟池温泉走一圈晨运。原来龟池是个铺好路的湿地公园。走一圈大概2公里，我们花了大概40分钟，全程包场。<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/262.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/262.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 我们从酒店小门去龟池，看到这个锅。<br/>
@@ -3373,7 +3477,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/263.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/263.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3384,7 +3488,7 @@ lele手上的小花</div>
 <br/>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/264.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/264.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -3395,7 +3499,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/265.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/265.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3407,7 +3511,7 @@ lele手上的小花</div>
 </div>
 <div style="text-align: center;">
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/266.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/266.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3417,7 +3521,7 @@ lele又在研究花草。</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="480" data-original-width="270" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/267.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="480" data-original-width="270" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/267.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3427,7 +3531,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/268.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/268.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3435,7 +3539,7 @@ lele又在研究花草。</div>
 池边的农村。<br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1200" data-original-width="1600" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/269.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1200" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/269.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3444,7 +3548,7 @@ lele又在研究花草。</div>
 <br/>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1600" data-original-width="1200" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/270.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1600" data-original-width="1200" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/270.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -3477,13 +3581,13 @@ lele又在研究花草。</div>
 <div style="text-align: center;">
 <span style="color: red;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="320" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/271.JPG" width="239"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/271.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="320" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/272.JPG" width="239"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/272.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3498,7 +3602,7 @@ lele又在研究花草。</div>
 11点多，我们终于到白猪瀑布了！公园有停车场及厕所的。停车场大概20个车位，厕所干净程度尚可。虽然是周日，停的车不到10部。这是大门口的停车场，步行1.8公里（上坡，不难走的）去瀑布，不想走的离瀑布500米有收费停车场。</div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/273.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/273.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3509,7 +3613,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/274.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/274.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3520,7 +3624,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/275.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/275.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3535,7 +3639,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: left;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/276.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/276.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3546,13 +3650,13 @@ lele又在研究花草。</div>
 <div style="text-align: center;">入口处</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/277.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/277.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">我们的旅途要开始了，这里的花，高大的树木，令人觉得很舒服。<div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/278.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/278.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3560,7 +3664,7 @@ lele又在研究花草。</div>
 <div style="text-align: center;">感谢洗碗公主，给我们拍了很多好看的探险照。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/279.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/279.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3572,7 +3676,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/280.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/280.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3583,7 +3687,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/281.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/281.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3594,7 +3698,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/282.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/282.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3606,18 +3710,18 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/283.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/283.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/284.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/284.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/285.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/285.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3627,7 +3731,7 @@ lele又在研究花草。</div>
 <tr>
 <td style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/286.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/286.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3641,12 +3745,12 @@ lele又在研究花草。</div>
 </table>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/287.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/287.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/288.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/288.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3658,52 +3762,52 @@ lele又在研究花草。</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/289.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/289.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/290.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/290.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/291.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/291.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="500" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/292.JPG" width="375"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/292.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/293.JPG" width="625"/>
-</div>
-<div style="text-align: center;">
-</div>
-<br/>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/294.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/293.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/295.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/294.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<br/>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/295.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/296.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/296.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/297.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/297.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3714,7 +3818,7 @@ lele又在研究花草。</div>
 <div style="text-align: center;">除了紫阳花，这里还有烧饼花（因为长得像烧饼）。这花是从底部开始开花的，开到最后一朵就表示梅雨季节结束。这花的特点还有可以玩纹身（以上信息由花草专家lele提供）。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/298.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/298.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3726,7 +3830,7 @@ lele又在研究花草。</div>
 <div style="text-align: center;">要玩纹身，首先，把完整的花瓣摘下来。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/299.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/299.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3737,12 +3841,12 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="320" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/300.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/300.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="320" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/301.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/301.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3754,7 +3858,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/302.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/302.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3765,7 +3869,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/303.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/303.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3775,7 +3879,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/304.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/304.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3791,7 +3895,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">我们到了！瀑布实在太壮观，水太清澈了，我们都忍不住要先洗个头。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="480" data-original-width="270" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/305.JPG" width="439"/>
+<img border="0" class="picture" data-original-height="480" data-original-width="270" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/305.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3801,7 +3905,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="625" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/306.JPG" width="469"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/306.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3812,7 +3916,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">洗碗公主还要喝口泉水，真甜。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1334" data-original-width="750" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/307.JPG" width="439"/>
+<img border="0" class="picture" data-original-height="1334" data-original-width="750" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/307.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3824,7 +3928,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="480" data-original-width="270" height="976" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/308.JPG" width="549"/>
+<img border="0" class="picture" data-original-height="480" data-original-width="270" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/308.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3838,7 +3942,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/309.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/309.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3850,7 +3954,7 @@ lele又在研究花草。</div>
 不同角度看的瀑布<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/310.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/310.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3858,7 +3962,7 @@ lele又在研究花草。</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/311.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/311.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3866,7 +3970,7 @@ lele又在研究花草。</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/312.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/312.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3876,7 +3980,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">站在我们下面位置，有股凉气飘过，还有些水花<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/313.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/313.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3884,7 +3988,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/314.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/314.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3892,7 +3996,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">来个合照~<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/315.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/315.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3904,7 +4008,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">这是瀑布另一侧，铺了楼梯的<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="781" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/316.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/316.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3923,7 +4027,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: left;">在路上我们还看到下面牌子，一开始都不知道是啥，日语老师lele最快反应做来，是美国Americaアメリカ的汉字写法。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="500" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/317.JPG" width="374"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/317.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3943,7 +4047,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/318.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/318.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3954,7 +4058,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/319.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/319.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3965,7 +4069,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/320.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/320.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3976,7 +4080,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="469" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/321.JPG" width="625"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/321.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3985,7 +4089,7 @@ lele又在研究花草。</div>
 <div class="separator" style="clear: both; text-align: center;">继续上路，岛波海道（しまなみ海道）那边连接几个岛的几座桥很漂亮。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="800" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/322.JPG" width="600"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/322.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3993,7 +4097,7 @@ lele又在研究花草。</div>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/323.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/323.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4006,7 +4110,7 @@ lele又在研究花草。</div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/324.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/324.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4047,19 +4151,19 @@ lele又在研究花草。</div>
 <br/>
 </div>
 <div style="text-align: center;">万众期待的伊势海老要登场了！到的时候还会动的。<div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/325.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/325.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/326.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/326.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/327.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/327.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4070,14 +4174,14 @@ lele又在研究花草。</div>
 <div style="text-align: center;">我们全部的海鲜</div>
 <div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/328.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/328.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/329.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/329.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4089,7 +4193,7 @@ lele又在研究花草。</div>
 <div style="text-align: center;">接着，lele处理鲍鱼</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/330.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/330.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4099,7 +4203,7 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/331.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/331.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4110,14 +4214,14 @@ lele又在研究花草。</div>
 <div style="text-align: center;">之后他们弄蝾螺</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/332.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/332.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/333.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/333.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4132,7 +4236,7 @@ lele又在研究花草。</div>
 <div>这个伊势海老壳鲜鱼豆腐番茄脓汤真是超级好喝，虽然壳不多，不过一锅都有浓浓的鲜味，我们每个人都喝了几大碗。</div>
 <div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/334.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/334.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4143,7 +4247,7 @@ lele又在研究花草。</div>
 </div>
 <div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/335.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/335.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4151,7 +4255,7 @@ lele又在研究花草。</div>
 <div>这个伊势海老由于处理手法得宜，肉质特别有质感。另外，这个摆盘是不是好像店里吃的？感谢设计师lele。</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/336.JPG"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/336.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4159,7 +4263,7 @@ lele又在研究花草。</div>
 <div style="text-align: center;">这个酱油鲍鱼蝾螺特别有创意</div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/337.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/337.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4170,14 +4274,14 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/338.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/338.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>由于伊势海老的肉太矜贵，我们每一口吃着都很珍惜。</div>
 <div style="text-align: center;">饭后，洗碗王子又大显身手 - 洗碗。他把主人家很久没擦过的地方都擦干净了，我们都大爱他。</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2839" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/339.JPG"/>
+<img border="0" class="picture" data-original-height="2839" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/339.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4196,7 +4300,7 @@ lele又在研究花草。</div>
 <div style="text-align: center;">
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/340.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ehime/340.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -4208,18 +4312,36 @@ lele又在研究花草。</div>
 </div>
 <div style="text-align: left;">下次四国去四万十~<br/>
 </div>
-<p>下一章</p>
+<br><br>
+
+1.<a href="https://poonh.github.io/travel_blog/github_html/2020_ehime_ad.html" target=_blank>广告</a><br>
+2.<a href="https://poonh.github.io/travel_blog/github_html/2020_ehime_info.html" target=_blank>相关行程资料</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/2020_ehime.pdf" target=_blank>行程单</a><br>
+5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_ehime.kmz" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+
 <br/>
 <br/>
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
 </div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
 </article>
 </main>
 </body>
 </html>
+
+
