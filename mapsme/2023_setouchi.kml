@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+  <name>2023_setouchi.kml</name>
+  <visibility>1</visibility>
+    <Style id="line-ff0000ff">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff0000ff">
+      <Pair>
+        <styleUrl>#line-ff0000ff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff00ffff">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff00ffff">
+      <Pair>
+        <styleUrl>#line-ff00ffff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffff0000">
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffff0000">
+      <Pair>
+        <styleUrl>#line-ffff0000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff008000">
+      <LineStyle>
+        <color>ff008000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff008000">
+      <Pair>
+        <styleUrl>#line-ff008000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800080">
+      <LineStyle>
+        <color>ff800080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800080">
+      <Pair>
+        <styleUrl>#line-ff800080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff336699">
+      <LineStyle>
+        <color>ff336699</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff336699">
+      <Pair>
+        <styleUrl>#line-ff336699</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffff00ff">
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffff00ff">
+      <Pair>
+        <styleUrl>#line-ffff00ff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800000">
+      <LineStyle>
+        <color>ff800000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800000">
+      <Pair>
+        <styleUrl>#line-ff800000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffffff00">
+      <LineStyle>
+        <color>ffffff00</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffffff00">
+      <Pair>
+        <styleUrl>#line-ffffff00</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff003300">
+      <LineStyle>
+        <color>ff003300</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff003300">
+      <Pair>
+        <styleUrl>#line-ff003300</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff00ff00">
+      <LineStyle>
+        <color>ff00ff00</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff00ff00">
+      <Pair>
+        <styleUrl>#line-ff00ff00</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff008080">
+      <LineStyle>
+        <color>ff008080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff008080">
+      <Pair>
+        <styleUrl>#line-ff008080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff006666">
+      <LineStyle>
+        <color>ff006666</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff006666">
+      <Pair>
+        <styleUrl>#line-ff006666</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff7acaff">
+      <LineStyle>
+        <color>ff7acaff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff7acaff">
+      <Pair>
+        <styleUrl>#line-ff7acaff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff808080">
+      <LineStyle>
+        <color>ff808080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff808080">
+      <Pair>
+        <styleUrl>#line-ff808080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800000">
+      <LineStyle>
+        <color>ff800000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800000">
+      <Pair>
+        <styleUrl>#line-ff800000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffe22b8a">
+      <LineStyle>
+        <color>ffe22b8a</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffe22b8a">
+      <Pair>
+        <styleUrl>#line-ffe22b8a</styleUrl>
+      </Pair>
+    </StyleMap>
+  <Style id="placemark-red">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-blue">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-blue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-purple">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-yellow">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-pink">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-pink.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-brown">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-brown.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-green">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeppurple">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-deeppurple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lightblue">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-lightblue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-cyan">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-cyan.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-teal">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-teal.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lime">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-lime.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeporange">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-deeporange.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-gray">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-gray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-bluegray">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-bluegray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Onomichi Station</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.193159,34.4048654,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>cafe holoholo</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.1937233,34.4078767,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>千光寺新道</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.199249,34.40898,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Hanutei Cafe</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.1997938,34.4093447,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">http://onomichi.sakura.ne.jp/han-u/</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>猫の小道</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.196888,34.4085478,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>ごはんと珈琲アルト coffee</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.1957534,34.4076096,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://www.instagram.com/alto_onomichi/</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Uminomieru Park</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.1975961,34.4057487,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>satie（bar,coffee）600</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.1975454,34.4069763,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://www.instagram.com/satiecoffee/?hl=ja</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Esquina / エスキーナ</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.191878,34.4058494,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://www.instagram.com/esquina_coffee/</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>MATIN SUN BLE cake</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.193873,34.405501,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://matinsunble-onomichi.jimdofree.com</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>石鎚山鎖修行</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.2119691,34.4126736,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>禅和庵 zenna-an lunch </name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.1967271,34.40716,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://zenna-an.crayonsite.net/p/2/</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Totoan 甜品店 800</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.1967448,34.4060651,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">http://totoan.onomichi.shop/wp/category/kanmi/</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Cat Alley (Neko no Hosomichi)</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.1998069,34.4104329,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>登山口
+</name>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>
+                    133.1928094,34.4054148,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Hotel</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Coyote(咖喱及咖啡店)</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    133.196828,34.4062275,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Onomichihiraharaonsen Popponoyu</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    133.1789917,34.4100419,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  </Document>
+</kml>
