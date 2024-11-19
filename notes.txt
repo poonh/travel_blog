@@ -1,9 +1,23 @@
+maps to do: mobile version, copy izumo kankou 
+
+add irori desktop movie, change all youtube frame
+
 python_programs/extract_ehime_links.js
 open the video link in blogger_new_html, run the above in the console. when a link shows up, open it and save it as mp4 manually.
 put the youtube links in ehime_youtube_link.txt in github_html using python_programs/github_replace_pics_2020_ehime.py
 
  <a href ="" target=_blank>
 
+
+  <div style="text-align: center;">
+      <iframe width="70%" height="415" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+                <div class="picture-container">
+                <img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2022_yuki/101.JPG"/>
+                </div>
+<div style="text-align: center;">
+</div>
 
 
 youtube large files:
