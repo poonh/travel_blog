@@ -10,14 +10,116 @@
 <link href="http://gmpg.org/xfn/11" rel="profile"/>
 <link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
 <title>豪华包岛五星服务之龍王島与世隔绝之旅</title>
+<style>
+    /* Add your custom styles here */
+
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60%; /* Adjust width as needed */
+        background-color: #fff; /* Adjust as needed */
+        padding: 20px;
+        border-right: 1px solid #ccc; /* Adjust as needed */
+        z-index: 1000; /* Ensure it's above other content */
+        flex-direction: column; /* Display items vertically */
+        transition: width 2s;
+    }
+    
+    .mobile-menu-list.active {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu-title {
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+
+    .menu-icon {
+        margin-right: 10px; /* Adjust margin as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu-list li {
+        display: block; /* Display list items vertically */a
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .menu-icon {
+            display: inline-block;
+            margin-left: 280px; /* Adjust as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+
+        .menu-title {
+            margin-right: auto; /* Pushes 目錄 to the far left */
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+    }
+        </style>
+
+
+        
 </head>
 <body>
+<a id="back"></a>
 <header>
-<!--        <h1>Life in Saijo</h1>-->
+    <div class="container">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="menu-title">目錄</div>
+            <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+            <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+            <ul class="mobile-menu-list">
+                <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
-<main class="content">
-<article>
-<p>上一章</p>
+<main>
+    <article>
+        <br><br>
+        <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+        <br><br>
+     
+     1.<a href="https://poonh.github.io/travel_blog/github_html/2020_ryoushima_ad.html" target=_blank>广告</a><br>
+     2.<a href="https://poonh.github.io/travel_blog/github_html/2020_ryoushima_info.html" target=_blank>相关行程资料</a><br>
+     3.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_ryoushima.kml" target=_blank>maps.me地图</a>(maps.me app用)
+     <h3 align="center">1.豪华包岛五星服务之龍王島与世隔绝之旅 - 广告<br><br></h3>
+
 <p>日期：2020年10月18-19日</p>
 <p>这是欢送洗碗公主去四万十之前之旅。 今次没有洗碗王子在，我办了一次女子会。</p>
 <p>也许去过这个岛的人不太多，网上资料都不详细，日本人写的也简单。我来一个史上龙王岛最详尽的攻略吧。 <br/>
@@ -69,7 +171,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="664" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/1.JPG" width="498"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/1.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -80,7 +182,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="593" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/2.JPG" width="445"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -91,7 +193,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="567" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/3.JPG" width="425"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/3.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -102,7 +204,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="549" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/4.JPG" width="412"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/4.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -114,7 +216,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="539" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/5.JPG" width="404"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/5.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  </span>
@@ -124,7 +226,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="547" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/6.JPG" width="410"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/6.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -143,7 +245,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="413" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/7.JPG" width="551"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/7.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -152,7 +254,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="403" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/8.JPG" width="537"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/8.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -167,7 +269,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="515" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/9.JPG" width="386"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/9.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -180,7 +282,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="508" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/10.JPG" width="381"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/10.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -195,13 +297,13 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1440" height="370" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/11.JPG" width="492"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1440" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/11.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1440" height="381" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/12.JPG" width="507"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1440" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/12.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -212,7 +314,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="635" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/13.JPG" width="477"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/13.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -223,7 +325,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="497" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/14.JPG" width="373"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/14.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -238,7 +340,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="370" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/15.JPG" width="493"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/15.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -246,7 +348,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1440" height="383" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/16.JPG" width="509"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1440" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/16.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -254,7 +356,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="703" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/17.JPG" width="527"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/17.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -264,7 +366,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1440" data-original-width="1080" height="460" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/18.JPG" width="345"/>
+<img border="0" class="picture" data-original-height="1440" data-original-width="1080" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/18.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -300,12 +402,12 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="403" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/19.JPG" width="537"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/19.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="414" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/20.JPG" width="553"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/20.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -316,7 +418,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="749" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/21.JPG" width="562"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/21.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -335,7 +437,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="387" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/22.JPG" width="516"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/22.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -355,7 +457,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="372" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/23.JPG" width="496"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/23.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -363,7 +465,7 @@
 <p style="text-align: center;">这里好多葫芦工艺品</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="431" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/24.JPG" width="323"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/24.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -371,7 +473,7 @@
 <p style="text-align: center;">放长筷子的竹筒</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="393" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/25.JPG" width="524"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/25.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -410,7 +512,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="597" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/26.JPG" width="448"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -428,7 +530,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="348" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/27.JPG" width="464"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/27.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -462,12 +564,12 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="395" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/28.JPG" width="527"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/28.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="397" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/29.JPG" width="530"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/29.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -508,7 +610,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="394" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/30.JPG" width="525"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/30.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -547,7 +649,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="357" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/31.JPG" width="476"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/31.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -566,7 +668,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="377" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/32.JPG" width="503"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/32.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -585,7 +687,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="377" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/33.JPG" width="502"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/33.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -641,7 +743,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="348" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/34.JPG" width="463"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/34.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -651,7 +753,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="492" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/35.JPG" width="369"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/35.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -664,7 +766,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="623" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/36.JPG" width="467"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/36.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -697,7 +799,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="344" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/37.JPG" width="458"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/37.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -715,7 +817,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="353" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/38.JPG" width="470"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/38.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -770,7 +872,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="371" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/39.JPG" width="495"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/39.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -788,7 +890,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="628" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/40.JPG" width="471"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/40.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -832,7 +934,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="322" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/41.JPG" width="429"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/41.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -859,7 +961,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="354" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/42.JPG" width="472"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/42.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -875,7 +977,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="389" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/43.JPG" width="518"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/43.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -895,7 +997,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="389" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/44.JPG" width="518"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/44.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -928,7 +1030,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/45.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/45.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -962,7 +1064,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="429" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/46.JPG" width="572"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/46.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -983,7 +1085,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1513" data-original-width="2048" height="472" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/47.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1513" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/47.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1027,7 +1129,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="323" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/48.JPG" width="431"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/48.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1041,7 +1143,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="363" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/49.JPG" width="484"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/49.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1064,7 +1166,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="348" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/50.JPG" width="464"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/50.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1079,7 +1181,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="356" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/51.JPG" width="474"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/51.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1097,7 +1199,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="345" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/52.JPG" width="460"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/52.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1147,7 +1249,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="960" data-original-width="1706" height="335" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/53.JPG" width="596"/>
+<img border="0" class="picture" data-original-height="960" data-original-width="1706" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/53.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1161,7 +1263,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="515" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/54.JPG" width="386"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/54.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1174,7 +1276,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="428" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/55.JPG" width="571"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/55.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1183,17 +1285,17 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="414" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/56.JPG" width="552"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/56.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="430" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/57.JPG" width="573"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/57.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="440" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/58.JPG" width="586"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/58.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1213,7 +1315,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="414" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/59.JPG" width="551"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/59.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1239,7 +1341,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="407" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/60.JPG" width="543"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/60.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1247,7 +1349,7 @@
 <p style="text-align: center;">终于登上无人岛了~</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="471" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/61.JPG" width="353"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/61.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1267,7 +1369,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1285" height="513" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/62.JPG" width="322"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1285" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/62.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1282,7 +1384,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="472" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/63.JPG" width="354"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/63.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1335,7 +1437,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="496" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/64.JPG" width="372"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/64.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1350,7 +1452,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="450" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/65.JPG" width="338"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/65.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1374,7 +1476,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="309" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/66.JPG" width="411"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/66.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1398,7 +1500,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="376" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/67.JPG" width="501"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/67.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1412,7 +1514,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="371" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/68.JPG" width="494"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/68.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1438,7 +1540,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="323" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/69.JPG" width="431"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/69.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1470,7 +1572,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="541" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/70.JPG" width="406"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/70.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1484,7 +1586,7 @@
 </span>往左边走就是斜坡，楼梯上面那个塔就是帐篷区。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="488" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/71.JPG" width="366"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/71.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1495,7 +1597,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="623" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/72.JPG" width="467"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/72.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1566,7 +1668,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/73.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/73.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1592,12 +1694,12 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/74.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/74.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/75.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/75.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1608,7 +1710,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/76.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/76.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -1640,7 +1742,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/77.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/77.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1658,14 +1760,14 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/78.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/78.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">爷爷指导我们扎帐篷（下图）</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/79.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/79.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1681,7 +1783,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/80.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/80.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1697,7 +1799,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="479" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/81.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/81.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1733,7 +1835,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/82.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/82.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1760,7 +1862,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/83.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/83.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1769,7 +1871,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/84.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/84.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1779,7 +1881,7 @@
 <p style="text-align: center;">完成图~比沙发床要舒服的。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/85.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/85.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1787,21 +1889,21 @@
 <p>帐篷弄好了，我们先先休息一下看一下营地，然后再去钓鱼吧。停船码头那里就是钓鱼区，我们从这里开始。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/86.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/86.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p style="text-align: center;"> 离码头一二十米，就是海滩，可以游泳的。</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/87.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/87.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/88.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/88.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1810,33 +1912,33 @@
 <p> 离开码头就是吃饭区了。桌子我数过有6张，每张可以坐6-8人，每张桌子都带有烧烤炉的。这里还有看海的平台。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/89.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/89.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">上图最里面是垃圾桶，放生垃圾（有机垃圾），这里可能是自然分解。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/90.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/90.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">下面是可燃垃圾，是个烟囱，放在厨房另一侧。 如果你喝了啤酒，吃了罐头，瓶子就要自己带回本土上扔了。</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/91.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/91.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p style="text-align: center;">这是厨房，也是洗漱的地方（这里没专门的洗漱间）</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/92.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/92.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/93.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/93.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1844,7 +1946,7 @@
 <p style="text-align: center;"> 厨房可以烧柴做釜饭，人多真不错。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="2048" height="400" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/94.JPG" width="400"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/94.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1853,7 +1955,7 @@
 <p style="text-align: center;">下两图：吃饭的地方就是面朝大海的</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/95.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/95.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1862,7 +1964,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/96.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/96.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1872,7 +1974,7 @@
 </p>
 <p>浴室和厕所也在这，厕所有一个是残疾人用的，做的很贴心，其余是蹲厕。这里的厕所没有流动水洗手，要用下面抽井水的来洗（当时抽不上，不知道是不是近日没下雨，但有很多储存的）。想要流动水就去厨房。</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/97.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/97.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1880,20 +1982,20 @@
 <p> 浴室是下面这样。虽然没暖气但我们晚上洗澡很暖和。水温不能调但足够暖（热水器记得要开关）。有足够的柜子放东西的。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/98.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/98.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/99.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/99.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/100.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/100.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1901,7 +2003,7 @@
 <p>岛上是有兔子的，我们见到一黑一白，不过每次没来得及拍照就走了。</p>
 <p>我们现在走楼梯上去帐篷区了，如果走斜坡的话，路上有厕所的。岛上看到很多这种罐子（装饰用），是用来养章鱼的，据爷爷说，安芸滩生产这种罐子是全国有名的。</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/101.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/101.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1909,7 +2011,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/102.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/102.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1921,7 +2023,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/103.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/103.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1929,20 +2031,20 @@
 <p style="text-align: center;">走斜坡就是下面这样的。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/104.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/104.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">黄昏时从下往上拍</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/105.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/105.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>帐篷区全景，可以放16个帐篷，有几张桌椅。由于包岛，我们东西都随便放在桌上，不够爷爷提醒注意钱包，因为乌鸦（只限白天）。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/106.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/106.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1960,19 +2062,19 @@
 <p style="text-align: center;">这个塔是岛上标志建筑，不过不能爬上去的。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="400" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/107.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/107.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="400" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/108.JPG" width="300"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/108.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/109.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/109.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1982,28 +2084,28 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/110.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/110.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/111.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/111.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/112.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/112.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/113.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/113.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/114.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/114.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2034,24 +2136,24 @@
 <p> 龙王岛参观完毕，我们开始钓鱼吧~这个淘宝买的伸缩鱼竿，我是新手完全不会弄，不过还算凑合。我们钓到快天黑，没有钓到（第二天我庆幸自己没钓到，原因下面再说），就拍了几张装模做样的照片。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/115.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/115.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">四个人傻傻的拿着抓昆虫的网去抓鱼。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/116.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/116.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/117.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/117.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/118.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/118.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2059,26 +2161,26 @@
 <p>太阳快要下山了，我们肚子也饿了，要准备晚餐了。工作人员提前给我们开了灯，然后告诉我们都准备好了（话说吃饭用的灯很亮，不需要手电筒）。准备晚餐时，我们各人做不同的事情，raku老师和郭mm生火。我们就好像上次爱媛那样，把着火剂放在木炭里，之后把报纸点燃放进去。此时，职员过来帮忙了，用喷火器帮我们点火，还给我们送了几块大碳，并且教我们烤牡蛎！他们还说，用着火剂其实并不好，因为含有油分，烤出来的肉没那么好吃，最好是用木筷子助燃。我又学会了一招了。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/119.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/119.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">现在没有学长，开火的工作我来做吧，我带了冲姜蒜花椒八角过来的。<div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/120.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/120.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">洗碗公主在切菜</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/121.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/121.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/122.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/122.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2106,7 +2208,7 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/123.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/123.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2115,13 +2217,13 @@
 <p style="text-align: center;">
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/124.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/124.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/125.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/125.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2129,14 +2231,14 @@
 <p style="text-align: center;">
 <span> </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/126.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/126.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/127.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/127.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2161,14 +2263,14 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/128.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/128.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="805" data-original-width="917" height="562" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/129.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="805" data-original-width="917" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/129.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2177,7 +2279,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/130.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/130.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2187,7 +2289,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/131.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/131.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2203,7 +2305,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/132.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/132.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2257,7 +2359,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/133.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/133.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2323,7 +2425,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/134.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/134.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2347,7 +2449,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/135.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/135.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2370,7 +2472,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/136.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/136.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2393,7 +2495,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/137.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/137.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2435,7 +2537,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/138.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/138.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2449,7 +2551,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/139.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/139.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2463,7 +2565,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/140.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/140.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2495,7 +2597,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/141.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/141.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2506,7 +2608,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/142.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/142.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2570,7 +2672,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/143.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/143.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2589,28 +2691,28 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/144.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/144.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>                                                          洗碗公主打鸡蛋</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/145.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/145.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">我做大厨</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/146.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/146.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">面向大海的户外早餐，尽享野营乐趣。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/147.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/147.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2626,7 +2728,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/148.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/148.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2646,7 +2748,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/149.JPG" width="320"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/149.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2693,7 +2795,7 @@
 <span style="color: red;">
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/150.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/150.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2713,7 +2815,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/151.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/151.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2727,7 +2829,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/152.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/152.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2751,7 +2853,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/153.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/153.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2763,7 +2865,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1536" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/154.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/154.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2776,7 +2878,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/155.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/155.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2784,7 +2886,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/156.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/156.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2793,13 +2895,13 @@
 <p>白日梦做完，我和raku老师钓了好一会都没有动静，不过鱼饵换了好几次。试过看到鱼游过来，但始终没钓上。后来郭mm来了，不到一会~</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/157.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/157.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/158.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/158.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -2807,7 +2909,7 @@
 <p> </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/159.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/159.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2827,7 +2929,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/160.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/160.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2859,7 +2961,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/161.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/161.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2872,7 +2974,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="480" data-original-width="270" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/162.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="480" data-original-width="270" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/162.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2895,7 +2997,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/163.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/163.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2949,7 +3051,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/164.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/164.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -2964,7 +3066,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/165.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/165.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2973,7 +3075,7 @@
 </span>
 </span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/166.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/166.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2998,36 +3100,36 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/167.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/167.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;">穿上救生衣，准备游濑户内海，看看大家兴奋的样子。</p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1478" data-original-width="1108" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/168.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1478" data-original-width="1108" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/168.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/169.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/169.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/170.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/170.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/171.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/171.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> 我们当时觉得好像坐了私人游艇那样，洗碗公主忽然明白，为什么富豪都喜欢私人游艇了，那种在大海奔驰吹着海风的感觉，真是很奢华很享受的。</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1108" data-original-width="1478" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/172.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1108" data-original-width="1478" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/172.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3069,7 +3171,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/173.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/173.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3077,7 +3179,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/174.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/174.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3085,7 +3187,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/175.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/175.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3093,7 +3195,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/176.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/176.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3101,7 +3203,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/177.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/177.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3111,7 +3213,7 @@
 <div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/178.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/178.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3119,7 +3221,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/179.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/179.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3140,7 +3242,7 @@
 <span>
 <span>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/180.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/180.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </span>
@@ -3252,7 +3354,7 @@
 <p style="text-align: center;">
 <strike>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1334" data-original-width="750" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/181.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="1334" data-original-width="750" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/181.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3269,7 +3371,7 @@
 <span>
 <span style="color: black;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1334" data-original-width="750" height="640" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/182.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="1334" data-original-width="750" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/182.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3284,7 +3386,7 @@
 <p>11月中旬再看网站，发现已经修改过来了。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="312" data-original-width="673" height="296" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/183.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="312" data-original-width="673" src="https://poonh.github.io/travel_blog/html_pics/2020_ryuoshima/183.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -3305,69 +3407,37 @@
 </span>
 </span>
 </span>
-</span>
-</span>
-</p>
-<p>
-<span style="color: red;">
-<span>
-<span style="color: black;">
-<span style="color: red;">
-<span>
-<span style="color: black;"> </span>
-</span>
-</span>
-</span>
-</span>
-</span>
-</p>
-<p>
-<span style="color: red;">
-<span>
-<span style="color: black;">
-<span style="color: red;">
-<span>
-<span style="color: black;"> </span>
-</span>
-</span>
-</span>
-</span>
-</span>
-</p>
-<p>
-<span style="color: red;">
-<span>
-<span style="color: black;">
-<span style="color: red;">
-<span>
-<br/>
-</span>
-</span>
-</span>
-</span>
-</span>
-</p>
-<br/>
-<p>
-<span> </span>
-</p>
-<p>
-<span>  <br/>
-</span>
-</p>
-</div>
-<p>下一章</p>
-<br/>
-<br/>
+
+
+    1.<a href="https://poonh.github.io/travel_blog/github_html/2020_ryoushima_ad.html" target=_blank>广告</a><br>
+    2.<a href="https://poonh.github.io/travel_blog/github_html/2020_ryoushima_info.html" target=_blank>相关行程资料</a><br>
+    3.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_ryoushima.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+    
+        <br><br>
+
+
+
 <!--    <footer>
-        <p>&copy; 2024 Life in Saijo</p>
-    </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
+    <p>&copy; 2024 Life in Saijo</p>
+</footer>-->
+<div id="overlay" class="overlay">
+<img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
 </div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+function toggleMobileMenu() {
+    var menuList = document.querySelector('.mobile-menu-list');
+    menuList.classList.toggle('active');
+}
+
+function hideMobileMenu() {
+    var menuList = document.querySelector('.mobile-menu-list');
+    menuList.classList.remove('active');
+}
+</script>
 </article>
 </main>
 </body>
 </html>
+
+
