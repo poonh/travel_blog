@@ -1,398 +1,431 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>留学生活动 - 加计雪体验</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>外国人活动 - 加计雪体验</title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
-<main class="content">
-<article>
-<p>上一章</p>
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
 <p>日期：2023年2月10日（周五）</p>
-<p>这是<a href="https://hiroshima-ic.or.jp/">广岛国际中心</a>（広島国際センター）的官方活动。该中心其中一个工作就是给留学生办活动，让他们体验本地。今次参加的是去安芸太田一所高中（加計高芸北分校生）和学生交流，内容包括雪体验，看学生表演神乐，体验神乐服装及留学生表演跳舞。这次活动还有中国新闻来采访（<a href="https://www.chugoku-np.co.jp/articles/-/269543">神楽や雪合戦で留学生らと交流　広島・加計高芸北分校生</a>）</p>
+<p>这是<a href="https://hiroshima-ic.or.jp/" target="_blank">广岛国际中心</a>（広島国際センター）的<a href="https://hiroshima-ic.or.jp/info/event/14081/" target="_blank">官方活动</a>。该中心其中一个工作就是给留学生办活动，让他们体验本地。今次参加的是去安芸太田一所高中（加計高芸北分校生）和学生交流，内容包括雪体验，看学生表演神乐，体验神乐服装及留学生表演跳舞。这次活动还有中国新闻来采访（<a href="https://www.chugoku-np.co.jp/articles/-/269543" target="_blank">神楽や雪合戦で留学生らと交流　広島・加計高芸北分校生</a>）</p>
 <p>早上于东广岛出发，大概10：30到校。今天是上好的日子，去年这个活动因为没有雪变了室内活动，但去之前一天刚好下过雪，大家玩的很开心。</p>
 <p>这个学校海拔较高，我们开车经过森林，一路是雪景。</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1920" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/1.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1920" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/1.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> </p>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align: center;">
+</div> 
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1920" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/2.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1920" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-</td>
-</tr>
-<tr>
-<td class="tr-caption" style="text-align: center;">
-<br/>
-</td>
-</tr>
-</tbody>
-</table>
+
+
 <p>今天因为有客人，他们不上课。到了他们就在门口欢迎我们，跟我们挥手说hello,之后校长致辞，我们就开始。</p>
 <p>我们人数大概三十人，分成约7人一组，之后分组活动。这样的小组形式，更容易和陌生人熟悉，毕竟里面好些人是一个人参加活动的。</p>
 <p>我们开始雪体验了。这里的操场全是雪，大概有几十里面米厚。我组首先进行雪战，学生给我们弄好雪球了。我不小心被打到脸，而很痛！</p>
-<p>厚厚的积雪</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/3.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/3.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">厚厚的积雪
 </div>
-</p>
-<p>雪球 <br/>
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/4.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/4.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>准备作战了</p>
-<p>
+<div style="text-align: center;">雪球
+</div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/5.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/5.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">准备作战了
 </div>
-</p>
-<p>进攻！</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/6.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/6.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
+<div style="text-align: center;">进攻！
+</div>
 <p>雪战完毕，我们开始玩雪人了。我学了这个日语ごろごろ，意思就是咕噜咕噜，让雪球在地上滚大。首先用一个小雪球，压实，然后就ごろごろ。</p>
-<p> ごろごろ</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/7.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/7.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p> 我们的雪人</p>
-<p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/8.JPG" width="480"/>
+<div style="text-align: center;">ごろごろ
 </div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>我们的雪人</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/9.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/8.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>大家看到几个雪人？</p>
-<p>
+<div style="text-align: center;">我们的雪人
+</div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/10.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/9.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> <br/>
-</p>
-<p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1280" data-original-width="1707" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/11.JPG" width="640"/>
+    
 </div>
-<div style="text-align: center;">
-</div>大家随后玩起雪战来</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/12.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/10.JPG"/>
+</div>
+<div style="text-align: center;">大家看到几个雪人？
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1280" data-original-width="1707" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/11.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> </p>
-<p> 他们还给我们挖了冰道，用来拍照呢。</p>
-<p>
-</p>
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/12.JPG"/>
+</div>
+<div style="text-align: center;">大家随后玩起雪战来
+</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/13.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/13.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
+
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/13A.JPG"/>
 </div>
-<br/>
-<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiCqTglYrOlsiZ_MJodD0oqzDXXy9GThDoPRYnIYgplXwSdmjeR1xA3KTGXdRN7o4Z_Y89WNK5K9yVmcCW8AsADX4n8K7jzHSQXCo80mF5sneEE0PQrDzpuEXeQg9a1voCyi3yokeI_he0bmi2xqgEEg0qrBdr1-yPIpjzTP8NvigUpEoeonS83HSI/s4032/2023-02-10%20114229.jpg" style="margin-left: 1em; margin-right: 1em;"> </a>
-<p>
-</p>
-<p>很好的拍照效果，好像去了北极</p>
-<p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1280" data-original-width="1707" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/14.JPG" width="640"/>
+<div style="text-align: center;">他们还给我们挖了冰道，用来拍照呢
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1707" data-original-width="1280" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/15.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1280" data-original-width="1707" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/14.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>
+<div style="text-align: center;">很好的拍照效果，好像去了北极
+</div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1707" data-original-width="1280" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/16.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1707" data-original-width="1280" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/15.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1707" data-original-width="1280" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/16.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
-</p>
+
 <p>第三个雪体验就是雪滑梯了。我们每人都玩了好几轮，十分刺激呢。</p>
-<p>冲啊！ <br/>
-</p>
-<p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/17.JPG" width="480"/>
+
+ <div class="picture-container">
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/17.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> </p>
-<p>大合照 <br/>
-</p>
-<p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="1280" data-original-width="1707" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/18.JPG" width="640"/>
+<div style="text-align: center;">冲啊！
 </div>
-<div style="text-align: center;">
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1280" data-original-width="1707" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/18.JPG"/>
 </div>
-</p>
-<p>到了中午时候，我们就在学校吃便当。由于有伊斯兰，便当都是清真的。 学生们还给我们做了用本地苹果榨的苹果汁和团子（だんご）呢。看到这些我感受到他们的爱心。</p>
-<p>
-</p>
+<div style="text-align: center;">大合照
+</div>
+
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/19.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/19.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">到了中午时候，我们就在学校吃便当。由于有伊斯兰，便当都是清真的。 学生们还给我们做了用本地苹果榨的苹果汁和团子（だんご）呢。看到这些我感受到他们的爱心
 </div>
-</div>
-<p> 大家一起开心吃午餐</p>
-<p>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/20.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/20.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
+<div style="text-align: center;">大家一起开心吃午餐
+</div>
 <p>下午活动就是神乐表演了。我一直很想看，之前有个机会但因为新冠肺炎没看成。这次非但有的看，还可以随便拍照，更棒的是还可以试穿衣服。他们的表演真很有水平，这个龙舞特别好看。</p>
-<p>
-</p>
-<p> 神乐乐队</p>
-<p>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1080" data-original-width="1920" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/21.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1080" data-original-width="1920" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/21.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>演出开始</p>
-<p>
+<div style="text-align: center;">神乐乐队
+</div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/22.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/22.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">演出开始
 </div>
-</p>
-<p>很精彩的龙舞 </p>
-<p>
+
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/23.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/23.JPG"/>
 </div>
+<div style="text-align: center;">很精彩的龙舞
+</div>
+
 <div style="text-align: center;">
-</div>
-</p>
-<p>
-<div style="text-align: center;">
-</div>
+
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://youtube.com/embed//b4G_Fp1pjYY" width="60%">
-</iframe> <br/>
-</p>
-<p>观众都看得很投入</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/24.JPG" width="640"/>
+</iframe>
 </div>
-<div style="text-align: center;">
-</div> </p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/24.JPG"/>
+</div>
+<div style="text-align: center;">观众都看得很投入
+</div>
 <p>完了大家试穿龙舞的衣服，原来很重的，所以龙都是男生。他们练了一年，一周练5天，很不容易的。</p>
-<p>学生帮我们穿衣服</p>
-<p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/25.JPG" width="480"/>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/25.JPG"/>
+</div>
+<div style="text-align: center;">学生帮我们穿衣服
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="4032" data-original-width="2268" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-<br/>
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="2268" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/26.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/27.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2268" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/28.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/29.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/30.JPG"/>
+</div>
+<div style="text-align: center;">音乐学习
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/31.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/32.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/27.JPG" width="480"/>
-</div>
-<div style="text-align: center;">
-</div> </p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="2268" data-original-width="4032" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/28.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/33.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/29.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> </p>
-<p>音乐学习</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/30.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> </p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/31.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/32.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/33.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
+
 <p>随后就是留学生的舞蹈表演，有孟加拉，尼日尼亚，还有几位印尼妹妹教大家跳maurere dance。</p>
-<p>孟加拉学生开始唱歌时，日本学生就马上一同鼓掌。</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/34.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/34.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>尼日尼亚舞蹈</p>
-<p>
+<div style="text-align: center;">孟加拉学生开始唱歌时，日本学生就马上一同鼓掌
+</div>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/35.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/35.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">尼日尼亚舞蹈
 </div>
-</p>
-<p>大家一起跳印尼舞</p>
-<p>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/36.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/36.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">大家一起跳印尼舞
 </div> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/37.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/37.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-</p>
-<p>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/38.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/38.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> <br/>
-</p>
-<p> 最后就是学生们和花田舞太郎（<a href="https://www.town.kitahiroshima.lg.jp/soshiki/11/1681.html">当地吉祥物</a>）一起跳舞。当舞台郎不容易，上下楼梯都要人搀扶的。当时所有人都参加了，玩的很开心。</p>
-<p>舞台郎和学生们 <br/>
-</p>
-<p>
+</div>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/39.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/39.JPG"/>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center;">最后就是学生们和花田舞太郎（<a href="https://www.town.kitahiroshima.lg.jp/soshiki/11/1681.html" target="_blank">当地吉祥物</a>）一起跳舞。当舞台郎不容易，上下楼梯都要人搀扶的。当时所有人都参加了，玩的很开心。
 </div>
-</p>
-<p>大家一起来跳舞</p>
-<p>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3080" data-original-width="5472" height="360" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/40.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3080" data-original-width="5472" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/40.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>很多人都和舞台郎合照 <br/>
-</p>
-<p>
+<div style="text-align: center;">大家一起来跳舞
+</div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1280" data-original-width="1707" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/41.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1280" data-original-width="1707" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/41.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> 最后大合照</p>
-<p>
+<div style="text-align: center;">很多人都和舞太郎合照
+</div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/42.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/42.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p> 临走前和学生合照<br/>
-</p>
-<p>
+
+<div style="text-align: center;">最后大合照
+</div>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1707" data-original-width="1280" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/43.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="1707" data-original-width="1280" src="https://poonh.github.io/travel_blog/html_pics/2023_kake_snow/43.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
+<div style="text-align: center;">临走前和学生合照
+</div>
+
 <p>由于今天有体力劳动，大家回程都很累，不过真的非常开心。丰富的雪体验，和本地学生交流，认识新朋友及尝试不同国家的舞蹈。非常棒的一天！</p>
-<p>
-<br/>
-</p>
-<p> </p>
-<p> </p>
-<p>
-</p>
-<p>下一章</p>
-<br/>
+
+
 <br/>
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
 </div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
 </article>
 </main>
 </body>
 </html>
+
