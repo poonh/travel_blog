@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+  <name>2020_firefly.kml</name>
+  <visibility>1</visibility>
+    <Style id="line-ff0000ff">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff0000ff">
+      <Pair>
+        <styleUrl>#line-ff0000ff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff00ffff">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff00ffff">
+      <Pair>
+        <styleUrl>#line-ff00ffff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffff0000">
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffff0000">
+      <Pair>
+        <styleUrl>#line-ffff0000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff008000">
+      <LineStyle>
+        <color>ff008000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff008000">
+      <Pair>
+        <styleUrl>#line-ff008000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800080">
+      <LineStyle>
+        <color>ff800080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800080">
+      <Pair>
+        <styleUrl>#line-ff800080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff336699">
+      <LineStyle>
+        <color>ff336699</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff336699">
+      <Pair>
+        <styleUrl>#line-ff336699</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffff00ff">
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffff00ff">
+      <Pair>
+        <styleUrl>#line-ffff00ff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800000">
+      <LineStyle>
+        <color>ff800000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800000">
+      <Pair>
+        <styleUrl>#line-ff800000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffffff00">
+      <LineStyle>
+        <color>ffffff00</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffffff00">
+      <Pair>
+        <styleUrl>#line-ffffff00</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff003300">
+      <LineStyle>
+        <color>ff003300</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff003300">
+      <Pair>
+        <styleUrl>#line-ff003300</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff00ff00">
+      <LineStyle>
+        <color>ff00ff00</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff00ff00">
+      <Pair>
+        <styleUrl>#line-ff00ff00</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff008080">
+      <LineStyle>
+        <color>ff008080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff008080">
+      <Pair>
+        <styleUrl>#line-ff008080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff006666">
+      <LineStyle>
+        <color>ff006666</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff006666">
+      <Pair>
+        <styleUrl>#line-ff006666</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff7acaff">
+      <LineStyle>
+        <color>ff7acaff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff7acaff">
+      <Pair>
+        <styleUrl>#line-ff7acaff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff808080">
+      <LineStyle>
+        <color>ff808080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff808080">
+      <Pair>
+        <styleUrl>#line-ff808080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800000">
+      <LineStyle>
+        <color>ff800000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800000">
+      <Pair>
+        <styleUrl>#line-ff800000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffe22b8a">
+      <LineStyle>
+        <color>ffe22b8a</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffe22b8a">
+      <Pair>
+        <styleUrl>#line-ffe22b8a</styleUrl>
+      </Pair>
+    </StyleMap>
+  <Style id="placemark-red">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-blue">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-blue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-purple">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-yellow">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-pink">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-pink.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-brown">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-brown.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-green">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeppurple">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-deeppurple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lightblue">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-lightblue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-cyan">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-cyan.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-teal">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-teal.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lime">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-lime.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeporange">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-deeporange.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-gray">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-gray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-bluegray">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-bluegray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>近距离观看
+</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    132.8444505,34.3761803,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>远距离观看
+</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    132.8432005,34.3758438,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>停车场（多车位）
+</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    132.846339,34.3761058,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>停车场（三四个车位）
+</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    132.8426755,34.3774646,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>停车场（多车位）
+</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    132.843024,34.3789738,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>停车场入口
+</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    132.8431152,34.3790402,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>电影里的萤火虫
+</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    132.821419,34.389666,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>路边停车
+</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    132.8215799,34.3899007,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  </Document>
+</kml>
