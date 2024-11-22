@@ -8,27 +8,124 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
-    <title>黄金周登山（一） - 白木山（一天游）</title>
+    <title>广岛百名山 - 白木山</title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
+    <a id="back"></a>
     <header>
-<!--        <h1>Life in Saijo</h1>-->
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="content">
+    <main>
         <article>
-            <p>上一章</p>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+         
+         1.<a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki_ad.html" target=_blank>广告</a><br>
+         2.<a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki_info.html" target=_blank>相关行程资料</a><br>
+         4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_shiraki.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+         <h3 align="center">3.广岛百名山白木山 - 游记<br><br></h3>
 
 
 
 
 日期：2020年4月25日（周六）
 <br/>
-
-
-<br/>
-
-
-<div>
+    
+    <!--
 本来黄金周是要出门的，不过疫情关系，我就改办了一天往返的登山团。第一击是离西条约四五十分钟车程的白木山。yamaquest广岛县排名<a href="http://www.yamaquest.com/list_p_pa/hiroshima_all_1.html">第四</a>。白木山简介：起点约海拔68米，山顶800多米，我们原路往返，走短的路线，上下都是两小时。这个山楼梯挺多，但不全是。不算最安全的路，但也不危险，对体能有要求，我们下来都很累，大家的腿也疼了好几天。由于体能有要求，爬这个山最好有登山杖。</div>
 
 
@@ -66,6 +163,8 @@
 <b>停车场：</b>登山口附近没看见正式停车场，我们停在大概1公里外的Shoji超市。<br/>
 <b>厕所：</b>登山路上没厕所的，还有标志禁止随地上，要上就在超市上。 <br/>
 <br/>
+    
+    -->
 <b>行程开始：</b>我们8点多出发，大概10点正式登山，停好车后，经过农村，跨国铁路及小河，我们到登山口了。<br/>
 <div style="text-align: center;">
 <div class="picture-container">
@@ -100,215 +199,157 @@
 <div style="text-align: center;">
 这个穿过农村的铁路很漂亮</div>
 <br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/9.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<div style="text-align: center;">
- 每一个半小时才有一次的火车，被我们遇到了，这是芸备线，去三次的。</div>
-<div style="text-align: center;">
-<br/></div>
-<div style="text-align: center;">
+<div style="text-align: center;"></div>
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/6.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></div>
-<div style="text-align: center;">
-车站附近的农村 </div>
-<br/>
-<div style="text-align: center;">
+<div style="text-align: center;"> 每一个半小时才有一次的火车，被我们遇到了，这是芸备线，去三次的</div>
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/7.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></div>
-<div style="text-align: center;">
- 这个下水道很有特色，上面是鱼鱼。</div>
-<br/>
-<br/>
+<div style="text-align: center;">车站附近的农村
+</div>
+
 <div style="text-align: center;">
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/8.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></div>
-<div style="text-align: center;">
+<div style="text-align: center;">这个下水道很有特色，上面是鱼鱼</div>
+<br>
+<div style="text-align: left;">
 我们一开始走错了，走了地图上左边的线路，但没找到具体的路所以原路返回去正式登山口，但走错的路上遇到这个寺庙，很漂亮，这个照片没真实的漂亮。</div>
 <br/>
-下面是去登山口路上的农村景 <br/>
-<div style="text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/10.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<div style="text-align: center;">
+<div style="text-align: center;">去登山口路上的农村景</div>
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/11.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div style="text-align: center;">
- 我们终于到登山口了</div>
-<div style="text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/12.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a> </div>
-<br/>
-我首先要记录一下，这次及之后那次，洗碗王子全程背着垃圾袋方便我们扔垃圾。 <br/>
-<br/>
-<div style="text-align: center;">
+<div style="text-align: center;">我们终于到登山口了</div>
+
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/13.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-路上一般是这样的，危险性不大（除了下山可能部分有点滑），但800米攀升还是需要些体能的。<br/>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
+<div style="text-align: center;">我首先要记录一下，这次及之后的<a href ="https://poonh.github.io/travel_blog/github_html/2020_takeyama_ad.html" target=_blank>岳山</a>，洗碗王子全程背着垃圾袋方便我们扔垃圾。</div></a></div>
+
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/14.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+<div style="text-align: center;">路上一般是这样的，危险性不大（除了下山可能部分有点滑），但800米攀升还是需要些体能的</div>
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/15.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/16.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-开始没多久，看到这个“入山禁止”的标志，不用管的，大家都进去。 <br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/17.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-无惊无险，到山顶了！这里是360度全景的，很棒！顶上有小草坪，可以带个垫子来坐。这天风有点大，山顶有点冷呢。<br/>
-<div class="separator" style="clear: both; text-align: center;">
+<div style="text-align: center;">开始没多久，看到这个“入山禁止”的标志，不用管的，大家都进去</div>
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/18.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
+<div style="text-align: center;">无惊无险，到山顶了！这里是360度全景的，很棒！顶上有小草坪，可以带个垫子来坐。这天风有点大，山顶有点冷呢</div>
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/19.JPG" class="picture">
 </div>
 <div style="text-align: center;"></div></a><div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/20.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/21.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/22.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/23.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
 <div style="text-align: center;">
  我们就坐在草地上吃午饭，爬了两小时大家都很饿。</div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/24.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
 <div style="text-align: center;">
  这里还有免费望远镜</div>
-<div style="text-align: center;">
-<br/></div>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/25.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-山顶景色很棒！</div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+<div style="text-align: center;">山顶景色很棒！</div>
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/26.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
 <div style="text-align: center;">
  拿旗拍照留念</div>
-<br/>
-<div style="text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/27.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
+
 <div style="text-align: center;">
 下山时洗碗王子和公主又在后面聊.....</div>
-<br/>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
     <img src="https://poonh.github.io/travel_blog/html_pics/2020_shiraki/28.JPG" class="picture">
 </div>
-<div style="text-align: center;"></div></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-下山时看到原来这里明治时代就有的。</div>
-<div class="separator" style="clear: both; text-align: left;">
-<br/></div>
-<div class="separator" style="clear: both; text-align: left;">
-下来去Shoji吃下午茶及买菜，今天行程完满结束！天气很好，拍照很美，运动量很大，腿很疼！特别鸣谢小z路上一直贴心照顾，一看到我有需要就来扶我。</div>
+<div style="text-align: center;">下山时看到原来这里明治时代就有的</div>
+
+<br>
+下来去Shoji吃下午茶及买菜，今天行程完满结束！天气很好，拍照很美，运动量很大，腿很疼！特别鸣谢小z路上一直贴心照顾，一看到我有需要就来扶我。</br>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/></div>
 
 
-<br/>
+1.<a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki_ad.html" target=_blank>广告</a><br>
+2.<a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki_info.html" target=_blank>相关行程信息</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_shiraki.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
 
-<p>下一章</p>
-<br><br>
+    <br><br>
 
 
 <!--    <footer>
-        <p>&copy; 2024 Life in Saijo</p>
-    </footer>-->
- <div id="overlay" class="overlay">
-     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
- </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+<p>&copy; 2024 Life in Saijo</p>
+</footer>-->
+<div id="overlay" class="overlay">
+<img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+function toggleMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.toggle('active');
+}
+
+function hideMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.remove('active');
+}
+</script>
+</article>
+</main>
 </body>
 </html>
+
