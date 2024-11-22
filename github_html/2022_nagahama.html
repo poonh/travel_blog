@@ -10,18 +10,121 @@
 <link href="http://gmpg.org/xfn/11" rel="profile"/>
 <link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
 <title>江田岛长滨畅泳之旅</title>
+<style>
+    /* Add your custom styles here */
+
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60%; /* Adjust width as needed */
+        background-color: #fff; /* Adjust as needed */
+        padding: 20px;
+        border-right: 1px solid #ccc; /* Adjust as needed */
+        z-index: 1000; /* Ensure it's above other content */
+        flex-direction: column; /* Display items vertically */
+        transition: width 2s;
+    }
+    
+    .mobile-menu-list.active {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu-title {
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+
+    .menu-icon {
+        margin-right: 10px; /* Adjust margin as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu-list li {
+        display: block; /* Display list items vertically */a
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .menu-icon {
+            display: inline-block;
+            margin-left: 280px; /* Adjust as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+
+        .menu-title {
+            margin-right: auto; /* Pushes 目錄 to the far left */
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+    }
+        </style>
+
+
+        
 </head>
 <body>
+<a id="back"></a>
 <header>
-<!--        <h1>Life in Saijo</h1>-->
+    <div class="container">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="menu-title">目錄</div>
+            <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+            <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+            <ul class="mobile-menu-list">
+                <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
-<main class="content">
-<article>
-<p>上一章</p>
-<p>
+<main>
+    <article>
+        <br><br>
+        <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+        <br><br>
+     
+     1.<a href="https://poonh.github.io/travel_blog/github_html/2022_nagahama_ad.html" target=_blank>广告</a><br>
+     2.<a href="https://poonh.github.io/travel_blog/github_html/2022_nagahama_info.html" target=_blank>相关行程信息</a><br>
+     4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2022_nagahama.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+     <h3 align="center">3.江田岛长滨畅游之旅 - 游记<br><br></h3>
+     
 <b>引言：</b>去年去过日本海海滩，在高级带欧风的旅游区度过两天，非常愉快。原来今年没打算去，7月底去了带有滑梯的泳池（还和小朋友抢滑梯玩），玩的期间勾起我去年海滩玩浪的感觉，引发我强烈想去海滩的欲望，之后一个下午在办公室上网做白日梦，找附近的海滩。后来决定去江田岛長浜。
 </p>
 <p>
+
+<!--
 先来整理一下我搜集的资料，以下是我考虑过的地方：
 </p>
 <p>
@@ -88,7 +191,8 @@ facebook: <a href="https://www.facebook.com/profile.php?id=100039397383915">http
 <span style="font-weight: normal;">
 <iframe height="480" src="https://www.google.com/maps/d/embed?mid=1o1G-QC2CRUW4nF4HD_5hNpZUnKzUaAo&amp;ehbc=2E312F" width="640">
 </iframe> </span>
-<b>行程安排：</b><br/>
+-->
+<b>行程开始：</b><br/>
 
 日期：2022年8月19日（周五） <br><br/>
 
@@ -98,252 +202,186 @@ facebook: <a href="https://www.facebook.com/profile.php?id=100039397383915">http
 开支：<br/>
 </b>
 海滩入场费：500（每人）<br/>
-
 租用小房子：2000（4人平坦） <br/>
 晚饭：1760(每人）<br/>
-
-另外就是午饭及车费了。<br>
+另外就是午饭及车费了,合共不到5000。<br>
 <p>这次因为要吃烧烤，去到海滩不马上吃，又没有冰箱，所以我的准备工作较多。我提前两天把食物买好，把包装拆掉放在密封袋里冰冻好（不拆包装太占空间，而且万一到时候来不及解冻我要泡在水里解冻所以要用密封袋）。而且我还做了很多快大块的冰放在保温箱给饮料保冷（冰太小表面面积大，容易达到热平衡，冷冻的饮料很快就不冷，毕竟我们要上午玩到下午的）。还要准备一个大碗带过去解冻用（刚好当时onion学长在别人那里收了一个），我还把烤的蔬菜洗干净了切好了才带过去。</p>
 <p>我们的烧烤食品，先放在密封袋再连保冷剂放在大袋子里。</p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/1.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/1.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-<br>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/2.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-<p>用豆腐盒做的大块冰 </p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/3.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
+<img border="0" class="picture" data-original-height="3024" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/3.JPG"/>
+
+<div style="text-align: center;">用豆腐盒做的大块冰
+</div></div>
 <p>今次出门实在把xxx当作自己的家，拿了好多东西。我发现那里好多杂物，连碳都有，放了不知道多少年没用（&gt;5年），还有两个夹肉的夹子，我洗干净了才拿去烧烤用。原来我是想拿个瓦斯炉+煎盘过去烤肉，之后挑剔的onion学长说没追求...<br>
 </p>
 <p>
 早上8：45大西条出发，大概1.5小时到。长滨有点隐秘，到达前要经过两三段单程小路，不过还好都不长，印象中每段不超过100米。 一入场就每人给500入场费，老板知道我们是中国人还用中文跟我们说“谢谢”。我们停车收拾好后就准备下海了。老板给了我们一人一个浮轮（浮き輪，游泳圈的意思），我挑了个最大的。如果想坐在上面，用大的好。如果想游泳，用小的好，不然肩膀要一直往上抬会很累，我第二天也是有点疼的。
 </p>
 
-<p>
-我们到了，当时已经有不少车。
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/4.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
-小浪哥来上个镜先~它的后面是扎营的地方。
-</p>
-<div class="separator" style="clear: both; text-align: center;">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/4.JPG"/>
+
+<div style="text-align: center;">我们到了，当时已经有不少车
+</div></div>
+
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/5.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</div>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/5.JPG"/>
+
+<div style="text-align: center;">小浪哥来上个镜先~它的后面是扎营的地方
+</div></div>
+
 <br> 我先带大家参观一下 <br>
 <p>
  先是厕所及更衣室，离我们的小房子接近100米，在入口处，里面挺干净的，还有温水浴。
 </p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/6.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/6.JPG"/>
 </div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
+
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/7.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>更衣室门口还贴着告示，这里有偷食物的，盗贼是猫及乌鸦...
-</p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/7.JPG"/>
+<div style="text-align: center;">更衣室门口还贴着告示，这里有偷食物的，盗贼是猫及乌鸦...
+</div></div>
+
 <p>
   接着看海滩
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/8.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/8.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> <br>
-</br></p>
-<p>
+</div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/9.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/9.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> 
-</p>
-<p>
-这里是另一家经营手ぶらbbq及高档水上活动的。
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/10.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> <br>
-</br></p>
-<p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/10.JPG"/>
+
+<div style="text-align: center;">这里是另一家经营手ぶらbbq及高档水上活动的。
+</div></div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/11.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/11.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/12.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/12.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> </p>
-<p>
-我们到了不久就有高中生来玩皮筏艇，日本学生的生活真丰富~
-</p>
-<p>
+</div>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/13.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> </p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/13.JPG"/>
+
+<div style="text-align: center;">我们到了不久就有高中生来玩皮筏艇，日本学生的生活真丰富~
+</div></div>
 <p>
 安定下来后，我喝了点冷冻好的饮料，我发现咖啡和绿茶都很淡，像是水。原来冷冻过程会把水和不是水的成分分开，水在最外面，表示是先冷冻的，这是不是因为水的冰点高一些，而茶和咖啡的冰点低一些呢？这个物理问题我这里先记着，以后解答。 <br/>
 </p>
-<p>
- 我们要准备下海了，这是我们四个的浮轮，都不同大小。
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/14.JPG" width="640"/>
-</div>
 
-</p>
-<p>
-我们要下海了，大家先看看我的新泳衣。有了去年的经验，今年全副武装上场，全程带上帽子墨镜。话说今年也是我有生以来下水最多的一个夏天，我比以前爱游泳了，不过跑步还是第一~
-</p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/14.JPG"/>
+
+<div style="text-align: center;">
+ 我们要准备下海了，这是我们四个的浮轮，都不同大小。
+</div></div>
+
+<br>
+我们要下海了，大家先看看我的新泳衣。有了去年的经验，今年全副武装上场，全程带上帽子墨镜。话说今年也是我有生以来下水最多的一个夏天，我比以前爱游泳了，不过跑步还是第一~<br>
+
 
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/15.JPG" width="480"/>
-</div>
-<div style="text-align: center;">
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/15.JPG"/>
 </div>
 
-<p>
-我的巨大浮轮~
-</p>
-<p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/16.JPG" width="480"/>
-</div>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/16.JPG"/>
 
-</p>
+<div style="text-align: center;">我的巨大浮轮~
+</div></div>
+
+
 <p>
 我首先和W大哥出海，一起去到很远，之后他不能回去岸边...我就在后面推他，一路把他推回去，我感觉自己救了人那样，顿时很有英雄感。在海边时，我有时候坐在浮轮上，好想有人推我出海，不过他们都不会游泳，不能推我...不过这愿望下午实现了。
 </p>
 <p>
 玩到不知道什么时候，饿了，回去开餐~我准备了1000克多一点的肉，包括猪肉牛肉鸡翅鱼虾等。我喜欢吃鸡翅所以买的多点~
 </p>
-<p>
-先看看我们小房子的环境。我们租的是和室。
-</p>
-<p>
+
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/17.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- 外面好些桌子，放东西空间很足。
-</p>
-<p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/17.JPG"/>
+
+<div style="text-align: center;">先看看我们小房子的环境。我们租的是和室
+</div></div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/18.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/19.JPG" width="480"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
-这里还有水源，方便处理食物。
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/20.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div> <br/>
-</p>
-<p>
- 从阳台看的风景 
-</p>
-<div class="separator" style="clear: both; text-align: center;">
-<div style="text-align: center;">
-</div>
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://youtube.com/embed//0mDlGxfyduo" width="60%">
-</iframe>
-</div>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/21.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- 看到下图的岩石吗？叫天狗岩石。
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/22.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- 我们要开餐了，地方已经被我们搞到乱七八糟。
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/23.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- 准备炉子~不知道几年没有用过，长腿有点不稳，所以我们就用短腿了。
-</p>
-<p>
-<div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/24.JPG" width="480"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
-之前连续两年夏天都玩烧烤的我，以为自己已经会生火了，开始搬起碳来，不过发现自己还是不对的~
-</p>
-<p>
-我看上去好像很会是嘛~
-</p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/18.JPG"/>
+<div style="text-align: center;">外面好些桌子，放东西空间很足
+</div></div>
 
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/25.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/19.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/20.JPG"/>
+<div style="text-align: center;">这里还有水源，方便处理食物
+</div></div>
+
+<div style="text-align: center;">
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://youtube.com/embed//0mDlGxfyduo" width="60%">
+</iframe>
+<div style="text-align: center;">从阳台看的风景
+</div>
+</div>
+
+<p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/21.JPG"/>
+
+<div style="text-align: center;">看到下图的岩石吗？叫天狗岩石
+</div></div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/22.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/23.JPG"/>
+<div style="text-align: center;">我们要开餐了，地方已经被我们搞到乱七八糟
+</div></div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/24.JPG"/>
+
+<div style="text-align: center;">准备炉子~不知道几年没有用过，长腿有点不稳，所以我们就用短腿了
+</div></div>
+
+之前连续两年夏天都玩烧烤的我，以为自己已经会生火了，开始搬起碳来，不过发现自己还是不对的~
+
+ <div class="picture-container">
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/25.JPG"/>
+<div style="text-align: center;">我看上去好像很会是嘛~
+</div>
 </div>
 
 <p>
@@ -351,7 +389,7 @@ facebook: <a href="https://www.facebook.com/profile.php?id=100039397383915">http
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/26.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -359,60 +397,40 @@ facebook: <a href="https://www.facebook.com/profile.php?id=100039397383915">http
 <p>
 还好我记得龙王岛爷爷教我们用木筷子一招。我放了很多木筷子进去，有用！折腾了很久终于成功了，耶！我觉得问题还是我开始时碳没放对。不过有今次的经验，下次我更有把握了。
 </p>
-<p>
- 肉果然没有完全解冻好，还好我带了个大盘来解冻，果然用的上。
-</p>
+
 
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/27.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/27.JPG"/>
+<div style="text-align: center;">肉果然没有完全解冻好，还好我带了个大盘来解冻，果然用的上
+</div>
 </div>
 
-<p>
-开始准备食物了
-</p>
-<p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/28.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/28.JPG"/>
 </div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
-终于有的吃了。这扇子十分给力。
-</p>
-<p>
+<div style="text-align: center;">开始准备食物了
+</div></div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/29.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/29.JPG"/>
+
+<div style="text-align: center;">终于有的吃了。这扇子十分给力
+</div></div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/30.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/30.JPG"/>
 </div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- 我最喜欢的鸡翅~
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/31.JPG" width="480"/>
-</div>
-<div style="text-align: center;">
-</div>
-</p>
-<p>
- 每只都烤的刚好，皮脆脆的，十分好吃。不需要什么调味，放点盐就行。还有我最爱烧烤吃的蔬菜 - 甜椒及蒜。
-</p>
-<p>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/31.JPG"/>
+
+<div style="text-align: center;">我最喜欢的鸡翅~
+</div></div>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/32.JPG" width="480"/>
-</div>
-<div style="text-align: center;">
-</div>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/32.JPG"/>
+<div style="text-align: center;">每只都烤的刚好，皮脆脆的，十分好吃。不需要什么调味，放点盐就行。还有我最爱烧烤吃的蔬菜 - 甜椒及蒜
+</div></div>
 </p>
 <p>
 最后肉及蔬菜都全部吃完，我的份量真是算的刚好。吃完快三点了，继续下半场。
@@ -432,115 +450,107 @@ Onion学长在我后面有时候也练练水。他自由泳式踢脚时我确实
 <p>
 在我们穿插在牡蛎田之间的时候，听到蜜蜂嗡嗡声，原来是无人机找到我们了，赶快打个招呼先~
 </p>
-<p>
-下面三个人大家知道谁是谁吗？ <br/>
-</p>
+
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/33.JPG" width="640"/>
-</div>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/33.JPG"/>
+
+<div style="text-align: center;">下面三个人大家知道谁是谁吗？
+</div></div>
+
 <div style="text-align: center;">
-</div>
-</div>
-<br/>特别鸣谢无人机机主~<br/>
-<div class="separator" style="clear: both; text-align: center;">
-<div style="text-align: center;">
-</div>
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://youtube.com/embed//50xxnxxkCYw" width="60%">
 </iframe> 
-</div>
-<div class="separator" style="clear: both; text-align: center;">
- 
-</div>
-<div class="separator" style="clear: both; text-align: center;">
- 
-</div>
-<div class="separator" style="clear: both; text-align: left;">
-最后玩到超时，5点多了。原定皮筏艇玩一小时的 ，最后玩了两个，人家还说不收我们多了的钱，不过我们不好意思还是给了。最后快六点才开车返程。我原来以为我们三四点就能返程的。
-</div>
+<div style="text-align: center;">特别鸣谢无人机机主~
+</div></div>
+
+<p>最后玩到超时，5点多了。原定皮筏艇玩一小时的 ，最后玩了两个，人家还说不收我们多了的钱，不过我们不好意思还是给了。最后快六点才开车返程。我原来以为我们三四点就能返程的。</p>
+
 <p>
 走的时候和老板聊了几句，他很亲切。问我们是不是从西条来，可能看得出我们是留学生。他女儿也在广大， 自己也常去西条呢。
 </p>
-<p>
-老板的背影。 <br/>
-</p>
 
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/34.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/34.JPG"/>
+<div style="text-align: center;">老板的背影
+</div></div>
 
-<p>
- 玩的很开心的长滨，再见了~<br/>
-</p>
-<div class="separator" style="clear: both; text-align: center;">
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="6048" data-original-width="8064" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/35.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
+<img border="0" class="picture" data-original-height="6048" data-original-width="8064" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/35.JPG"/>
+<div style="text-align: center;">玩的很开心的长滨，再见了~
 </div>
 </div>
 
 <p>
 回去路上因为快到饭点，就准备在吴吃海鲜，碰巧现在有paypay8折，我们去了一家比较高档的寿司店。寿司都是现场做的，吃的那个套餐叫樱，2200日元共8块，全部生鱼片。第一个是金枪鱼，最后一个是海胆。不过我印象最深刻是カンパチ及一个是炙り的，两种都去年在鵜来島吃过，勾起我的回忆。カンパチ一口吃下去肉质很劲道，我就马上想起来去年吃的了。
 </p>
-<p>
-这里寿司不放在盘子上的。<br/>
-</p>
+
 
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/36.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-<p>
- 最后上的海胆寿司特别鲜美。
-</p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/36.JPG"/>
+
+<div style="text-align: center;">这里寿司不放在盘子上的
+</div></div>
 
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/37.JPG" width="640"/>
-</div>
-<div style="text-align: center;">
-</div>
-<p>
- 这家店是高消费的，我们没喝酒，而且后面也有人预定了。吃完时老板笑着和我们说话，希望我们能快点走的意思...那我们也不为难了，早点撤吧。
-</p>
-<p>
-我之前在路上因为开车太右离，搞到轮胎有点破损。上高速前我们检查过，确保没事才上路。最后我们安全回来，很高兴的一天。 <br/>
-</p>
-<p>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/37.JPG"/>
+
+<div style="text-align: center;">最后上的海胆寿司特别鲜美
+</div></div>
+
+<div style="text-align: left;">
+ 这家店是高消费的，我们没喝酒，而且后面也有人预定了。吃完时老板笑着和我们说话，希望我们能快点走的意思...那我们也不为难了，早点撤吧。<br><br>
+
+我之前在路上因为开车太右离，搞到轮胎有点破损。上高速前我们检查过，确保没事才上路。最后我们安全回来，很高兴的一天。 <br/><br>
+
 周六早上，给自己做了个丰富的港式早餐，之后照常去健身房。晚上泡超多泡泡的冷水泡泡浴，睡觉~
-</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/38.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/38.JPG"/>
 </div>
-<div style="text-align: center;">
-</div>
-</p>
+
 
  <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/39.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2022_nagahama/39.JPG"/>
 </div>
-<div style="text-align: center;">
-</div> 
 
 <p>
 9月迎接洗碗公主大驾光临，到时候和她一起再去~
 </p>
-<p>下一章</p>
-<br/>
-<br/>
+
+
+
+
+<!--main content here-->
+1.<a href="https://poonh.github.io/travel_blog/github_html/2022_nagahama_ad.html" target=_blank>广告</a><br>
+3.<a href="https://poonh.github.io/travel_blog/github_html/2022_nagahama.html" target=_blank>游记</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2022_nagahama.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+    <br><br>
+            
+
+<br><br>
+
+
 <!--    <footer>
-        <p>&copy; 2024 Life in Saijo</p>
-    </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
+<p>&copy; 2024 Life in Saijo</p>
+</footer>-->
+<div id="overlay" class="overlay">
+<img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
 </div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
-</br></br></br></br></br></br></br></article>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+function toggleMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.toggle('active');
+}
+
+function hideMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.remove('active');
+}
+</script>
+</article>
 </main>
 </body>
 </html>
