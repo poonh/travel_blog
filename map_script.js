@@ -147,6 +147,10 @@ document.addEventListener('DOMContentLoaded', function () {
         togglePanel('ikata', 'info-panel-ikata');
     });
     
+    document.getElementById('seiyo').addEventListener('click', function() {
+        togglePanel('seiyo', 'info-panel-seiyo');
+    });
+    
     document.getElementById('iyo').addEventListener('click', function() {
         togglePanel('iyo', 'info-panel-iyo');
     });
@@ -278,6 +282,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
     document.getElementById('close-panel-ikata').addEventListener('click', function() {
         document.getElementById('info-panel-ikata').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-seiyo').addEventListener('click', function() {
+        document.getElementById('info-panel-seiyo').style.display = 'none';
     });
     
     document.getElementById('close-panel-iyo').addEventListener('click', function() {
