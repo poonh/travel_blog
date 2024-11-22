@@ -1,12 +1,19 @@
-maps to do: mobile version, copy izumo kankou 
+maps to do: mobile version, copy izumo kankou
+make this map:https://seiyojikan.jp/map/
+https://cycling-ehime.com/routes/imabarisaijo/
+change your maps to the marks here:
+https://www.kankou-shimane.com/cycling/cyclingroute/nakaumihokubu/
 
-add irori desktop movie, change all youtube frame
+
+2022_shimane_momiji_info add cafe
+80年前、地域の町長選の候補者の選挙事務所
+道の駅頓原http://www.r-yamanami.com
 
 python_programs/extract_ehime_links.js
 open the video link in blogger_new_html, run the above in the console. when a link shows up, open it and save it as mp4 manually.
 put the youtube links in ehime_youtube_link.txt in github_html using python_programs/github_replace_pics_2020_ehime.py
 
- <a href ="" target=_blank>
+<a href ="" target=_blank>
 
 
   <div style="text-align: center;">
@@ -14,10 +21,24 @@ put the youtube links in ehime_youtube_link.txt in github_html using python_prog
   </div>
 
                 <div class="picture-container">
-                <img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2022_yuki/101.JPG"/>
+                <img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/202/.JPG"/>
                 </div>
 <div style="text-align: center;">
 </div>
+
+
+<h4 align="center"> (所有价格2024年底更新)<br><br></h4>
+            我们的行程地图(线路取自navitime)：<br>
+                (红:住宿  &nbsp&nbsp蓝:景点 &nbsp&nbsp 绿:吃饭 &nbsp&nbsp 橙:超市&nbsp&nbsp啡:加油站 &nbsp&nbsp 黄:厕所&nbsp&nbsp紫:停车场)<br>
+                <div style="text-align: center;">
+                        <div class="iframe-container">
+                            <iframe
+                                src="https://www.google.com/maps/d/u/0/embed?mid=1RzHsQD13cxYJPh17Ct9kajhNgj23Ghoi"
+                                class="responsive-iframe"
+                                allowfullscreen
+                            ></iframe>
+                        </div></div><br/><br/>
+            
 
 
 youtube large files:
