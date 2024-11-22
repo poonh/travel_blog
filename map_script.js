@@ -70,6 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
         togglePanel('shirokiyama', 'info-panel-shirokiyama');
     });
     
+    document.getElementById('mihara').addEventListener('click', function() {
+        togglePanel('mihara', 'info-panel-mihara');
+    });
+    
     document.getElementById('higashihiroshima').addEventListener('click', function() {
         togglePanel('higashihiroshima', 'info-panel-higashihiroshima');
     });
@@ -198,6 +202,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Close panel for Akitakada
     document.getElementById('close-panel-akitakada').addEventListener('click', function() {
         document.getElementById('info-panel-akitakada').style.display = 'none';
+    });
+    
+    document.getElementById('close-panel-mihara').addEventListener('click', function() {
+        document.getElementById('info-panel-mihara').style.display = 'none';
     });
     
     document.getElementById('close-panel-higashihiroshima').addEventListener('click', function() {
