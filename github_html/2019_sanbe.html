@@ -8,15 +8,116 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
-    <title>深秋石见三瓶之旅</title>
+    <title>深秋三瓶石见红叶之旅</title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
+    <a id="back"></a>
     <header>
-<!--        <h1>Life in Saijo</h1>-->
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="content">
+    <main>
         <article>
-            <p>上一章</p>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+         
+         2.<a href="https://poonh.github.io/travel_blog/github_html/2019_sanbe_info.html" target=_blank>相关行程资料</a><br>
+         3.<a href="https://poonh.github.io/travel_blog/github_html/2019_sanbe.html" target=_blank>游记</a><br>
+         4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2019_sanbe.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+         <h3 align="center">2.深秋三瓶石见红叶之旅 - 游记</h3>
 
 
 
@@ -24,6 +125,7 @@
 前言：上次《夏日消暑勇闯中国第一峰》后，我就开始筹划这次旅程。我就在谷歌地图上点，看看中国地区的山和营地，搜到岛根县全国200名山之一的三瓶山，这里附近还有很棒的小木屋可以住。由于有两整天时间，就顺便去附近的世界文化遗产石见银山了。
 <br/>
 
+<!--
 下面是我们的行程地图，更详细更具体可以看我的谷歌地图。
 <br/>
 
@@ -83,7 +185,7 @@
 <a href="https://drive.google.com/open?id=1Nw7i-rr04g1rFIyph4OLh4dBDOyvgryn&amp;usp=sharing">https://www.gungendo.co.jp/pages/details/000116.php</a>
 <br/>
 
-去龙源寺间步，如果时间不够，最好租自行车（电动2小时700，时间足够由于），不然步行超过半小时去停车场的。
+去龙源寺间步，如果时间不够，最好租自行车（电动2小时700，时间足够有余），不然步行超过半小时去停车场的。
 <br/>
 
 
@@ -209,17 +311,19 @@ nishinihon.acoop.jp
 我当时怕万一下小雨准备的后备计划，适合我们的有6.三瓶山麓コース及７．石見銀山街道コース
 <br/>
 
+-->
+
 好了，我们要出发了！
-<br/>
+<br/><br>
 
 日期：2019年11月22-23日
-<br/>
+<br/><br>
 
 D1：东广岛市 - 石见银山 - 北の原キャンプ場 - さひめ野温泉 - 火锅晚餐 - 观星
 <br/>
 
 开支:午饭（石见银山意大利餐）1320+电动自行车700+温泉300+冰淇淋310+晚餐及第二天早午餐1500+住宿3000
-<br/>
+<br/><br>
 
 D2: 姬逃池登山口上男三瓶山定然后从名号登山口下来 -东广岛市
 <br/>
@@ -228,7 +332,7 @@ D2: 姬逃池登山口上男三瓶山定然后从名号登山口下来 -东广�
 <br/>
 
 合共~9000
-<br/>
+<br/><br>
 
 出发前一天，刚好是学校的菜收成的日子，洗碗公主主动的提出把菜贡献出来！有大白菜，菠菜，油菜，萝卜及かぶ(kabu,好像萝卜的东西，可以生吃，口感好像桃子）。
 <br/>
@@ -1110,16 +1214,36 @@ D2: 姬逃池登山口上男三瓶山定然后从名号登山口下来 -东广�
 <br/>
 
 
-<p>下一章</p>
+1.<a href="https://poonh.github.io/travel_blog/github_html/2019_sanbe_info.html" target=_blank>广告</a><br>
+3.<a href="https://poonh.github.io/travel_blog/github_html/.html" target=_blank>游记</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+
+    <br><br>
+            
+
 <br><br>
 
 
 <!--    <footer>
-        <p>&copy; 2024 Life in Saijo</p>
-    </footer>-->
- <div id="overlay" class="overlay">
-     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
- </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+<p>&copy; 2024 Life in Saijo</p>
+</footer>-->
+<div id="overlay" class="overlay">
+<img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+function toggleMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.toggle('active');
+}
+
+function hideMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.remove('active');
+}
+</script>
+</article>
+</main>
 </body>
 </html>
+
