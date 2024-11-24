@@ -1,0 +1,29 @@
+git pull --rebase origin main
+git reset --hard HEAD~1
+git config --global http.postBuffer 524288000
+git config http.postBuffer 157286400
+
+
+
+
+mkdir html_pics
+touch html_pics/test
+git add html_pics/test
+git commit -m "add html_pics/test"
+git push origin main
+
+
+git rm --cached html_pics/2022_akitakada/*.JPG
+git commit -m "Deleted images locally but kept them on GitHub"
+git push
+
+git rm --cached html_pics/2022_akitakada/*.JPG
+git add .gitignore
+git commit -m "Added .DS_Store to .gitignore"
+git push
+
+delete all files normally, then
+git stash
+
+delete files locally but commit no change
+git update-index --assume-unchanged <file>
