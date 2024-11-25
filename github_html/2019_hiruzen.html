@@ -8,21 +8,123 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
-    <title>Life in Saijo</title>
+    <title></title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
+    <a id="back"></a>
     <header>
-<!--        <h1>Life in Saijo</h1>-->
-    </header>
-    <main class="content">
-        <article>
-            <p>上一章</p>
+        <div class="container">
 
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+
+            
+          1.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen_ad.html" target=_blank>广告</a><br>
+            
+         2.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen_info.html" target=_blank>相关行程信息</a><br>
+         4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2019_hiruzen.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+         <h3 align="center">3.夏日消暑勇闯中国第一峰 - 相关行程信息</h3>
 
 
 
 日期：2019年8月23至24日
-<br/>
+<br/><br/>
 
 
 行程：
@@ -30,26 +132,26 @@
 
 
 D1: 广岛县出发 --> 蒜山牛乳牧场 --> 蒜山酒厂 -->塩釜camping village入住 -->超市买菜 -->准备晚餐
-<br/>
 
 
 （全部都冈山县）
-<br/>
+<br/><br/>
 
 
-（午餐：2500牛排套餐，甜品：350（半份冰淇淋+5.0牛乳）， 住宿：~3800， 超市买早午餐三餐：~2400，全程车资（自驾）：1100） 
-<br/>
+（午餐：2500牛排套餐，甜品：350（半份冰淇淋+5.0牛乳）， 住宿：~3800， 超市买早午餐三餐：~2400，车资（5人团）：1100）
+<br/><br/>
 
 
 D2: 鬼女山展望台 -->登中国第一峰大山 -下山后泡冷泉足浴
 <br/>
 
 
-（下午茶：约400） 
+（下午茶：约400）<br/>
 <br/>
+全程合共～10500<br/><br/>
 
-
-下面是蒜山高原的游玩地图，这里大概海拔500米 
+<!--
+下面是蒜山高原的游玩地图，这里大概海拔500米
 （当然不能跟中国的真正高原相比）。夏天去温度稍低，我们去的时候温度正好合适，不冷不热非常舒服。我们住的地方是7.塩釜camping 
 village。下面的地方相距都不远，从塩釜camping village到西侧的6. Hiruzen Jersey 
 Land开车大概十分钟。从camping 
@@ -521,30 +623,30 @@ https://www.pref.tottori.lg.jp/dd.aspx?menuid=81810 (打不开的话google"大�
 
  我的学习笔记写完了，我们行程终于开始了。
 <br/>
-
+-->
 
 前言：我已经忘记为什么想去蒜山及大山了。大山很久以前看过，当时有点兴趣，不过没具体计划，蒜山嘛，超市经常看见牛奶，不过也没具体查过资料。大概是上次去跑西瓜十公里，路上经常看到蒜山标志，加上现在有车了，这些累加起来激发我要去蒜山及大山吧。这两个地方都超级好玩，高度推荐，也适合一家大小！！！今次是第一次自己自驾游，学的比别人慢，考试考过无数次的情况下，驾照才拿了一个月零一周就出远门了。
-<br/>
+<br/><br/>
 
 
 为了吸引人参加，今次行程我刻意写了个广告的。
+<br/><br/>
+
+
+“有人有兴趣参加7，8月份《夏日消暑勇闯中国第一峰》两天一夜之旅吗？想周五去周六返。去蒜山牛奶牧场，吃最新鲜的奶制品及高原牛扒，试喝当地葡萄酒（只有日本才有的品种，获奖的），想学习可以参观奥大山天然水厂，想吃水果可以去蓝莓园。晚上在高原草地睡帐篷，户外烧烤，还可以和天文学家一起观星。第二天登中国第一峰大山。（广告配有照片，此处省略）(后来补充，这是历史第一团，广告没写的那么规范)
 <br/>
-
-
-“有人有兴趣参加7，8月份《夏日消暑勇闯中国第一峰》两天一夜之旅吗？想周五去周六返。去蒜山牛奶牧场，吃最新鲜的奶制品及高原牛扒，试喝当地葡萄酒（只有日本才有的品种，获奖的），想学习可以参观奥大山天然水厂，想吃水果可以去蓝莓园。晚上在高原草地睡帐篷，户外烧烤，还可以和天文学家一起观星。第二天登中国第一峰大山。（广告配有照片，此处省略）”
 <br/>
-
 
 我的广告引起了liangliang的疑惑，因为写的好像一个正式旅行团那样，也成功吸引了她了。也有人误会我是想爬珠峰呢。
-<br/>
+<br/><br/>
 
 
 之后我就开始准备行程，找营地了。我其实看过很多资料，还知道日本有网上出租帐篷，邮递寄出及返还的。偶然机会下，知道学校体育会可以借帐篷。出发前借回来，人家让我们检查有没有问题，我和洗碗王子在室外打开试试看，弄了半小时完全不知道如何弄。那些支架很多，都不知道放在那里，连帐篷如何正确打开都不知道，最后回去办公室找职员求救。虽然她也不懂，不过她让我们在会议室，开了空调给我们弄，当日虽然不太热但我们在外面弄了一会还是出了一身汗的，我们是去借东西的，也没给钱，真是很感动啊，最难的是那里竟然有饮水机，水是凉的，那个时候喝下去真痛快呢～我们被整了两小时，总算大体会了，如果现在先不弄，到时候恐怕弄到天黑都弄不完。后来我们到办公室试瓦斯炉，我们两个都竟然不懂如何开火.....还好这个不难，我们折腾一会就会了，这么简单的东西，我们两个竟然都没用过，每次都是等别人开火.....
-<br/>
+<br/><br/>
 
 
 经过一个月梅雨天，在天气不稳定的情况下，我们预定的那两天算是好天，能出发了！8点出发计划中午时吃牛排的，不过路上停了三次，两次包括买菜，加上拍照等，最后1点半到牧场吃牛排。按照地图其实是先去酒厂顺路的，不过我们实在太饿了，所以先吃牛排。我们先在日南町的道の駅(http://nichinan-hinogawanosato.jp/)买了一些蔬菜，之后在蒜山的也买了一些（网址上面有）。去年这个时候蒜山道の駅正好开向日葵，不过今年开完了。那里的高原蔬菜，新鲜又便宜，一个北海道南瓜只要100日元，那里的圣女果特别好吃。我们在这买了好些蔬菜晚上做火锅。
-<br/>
+<br/><br/>
 
 
 
@@ -1370,9 +1472,36 @@ bell。这边很多吃的，不过关门都很早....我们在去的路上不小
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
- <div id="overlay" class="overlay">
-     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
- </div>
- <script src="../script.js"></script> <!-- Link to your JS file -->
+1.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen.html" target=_blank>广告</a><br>
+2.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen_info.html" target=_blank>相关行程信息</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2019_hiruzen.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+
+    <br><br>
+            
+
+<br><br>
+
+
+<!--    <footer>
+<p>&copy; 2024 Life in Saijo</p>
+</footer>-->
+<div id="overlay" class="overlay">
+<img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+function toggleMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.toggle('active');
+}
+
+function hideMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.remove('active');
+}
+</script>
+</article>
+</main>
 </body>
 </html>
+

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title></title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
+</head>
+<body>
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+         
+         2.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen_info.html" target=_blank>相关行程信息</a><br>
+         3.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen.html" target=_blank>游记</a><br>
+         4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2019_hiruzen.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+         <h3 align="center">2.夏日消暑勇闯中国第一峰 - 相关行程信息</h3>
+         <h4 align="center"> (所有价格2024年底更新)</h4>
+                     我们的行程地图(线路取自navitime)：<br>
+                         (红:住宿  &nbsp&nbsp蓝:景点 &nbsp&nbsp 绿:吃饭 &nbsp&nbsp 橙:超市&nbsp&nbsp啡:加油站 &nbsp&nbsp 黄:厕所&nbsp&nbsp紫:停车场)<br>
+                         <div style="text-align: center;">
+                                 <div class="iframe-container">
+                                     <iframe
+                                         src="https://www.google.com/maps/d/u/0/embed?mid=1ZJ_xUJ4FAsMg_X8z9HJ53xiFCwGetEtY&ehbc=2E312F"
+                                         class="responsive-iframe"
+                                         allowfullscreen
+                                     ></iframe>
+                                 </div></div><br/><br/>
+                         
+    
+    下面是蒜山高原的游玩地图，这里大概海拔500米
+    （当然不能跟中国的真正高原相比）。夏天去温度稍低，我们去的时候温度正好合适，不冷不热非常舒服。我们住的地方是7.塩釜camping
+    village。下面的地方相距都不远，从塩釜camping village到西侧的6. Hiruzen Jersey
+    Land开车大概十分钟。从camping
+    village去东侧最远的13.津黑川河川公园大概半个多小时。这边公交车覆盖不全，必须自驾。确实想坐公交，可以参考：http://www.city.maniwa.lg.jp/webapps/www/service/detail_2.jsp?id=2279
+    <br/>
+
+
+    从大城市过去，可以从冈山站出发先去中国勝山駅，再倒公交去蒜山高原（详见navitime）。
+    <br/>
+
+
+
+    <div class="picture-container">
+        <img src="https://poonh.github.io/travel_blog/html_pics/2019_hiruzen/1.JPG" class="picture">
+    </div>
+    <div style="text-align: center;"></div>
+
+    <br/>
+
+
+    蒜山属于冈山县真庭市(maniwa)，旅游官网：
+    <br/>
+
+
+    https://www.maniwa.or.jp/
+    <br/>
+
+
+    上面游玩地图我总结一下，当初我们就是从1开始然后往北再往东走。
+    <br/>
+
+
+    1.道の駅 風の家
+    <br/>
+
+
+    http://ww52.tiki.ne.jp/~kazenoie/
+    <br/>
+
+
+    去年这个时候有向日葵，不过今年开完了。不过没关系，我们在那里买了很多菜，那些高原的菜既新鲜又便宜。
+    <br/>
+
+
+    2. 游乐场ヒルゼン高原センター?ジョイフルパーク
+    <br/>
+
+
+    http://www.hkcenter.co.jp/
+    <br/>
+
+
+    有过山车，入场费700, free pass 3500。
+    <br/>
+
+
+    3. 休暇村(旅馆)
+    <br/>
+
+
+    休暇村是全国连锁，很多在郊区。这边一个在蒜山，另一个在大山（大山这个不在地图上）。
+    <br/>
+
+
+    蒜山休暇村：https://www.qkamura.or.jp/hiruzen/
+    <br/>
+
+
+    奥大山休暇村：https://www.qkamura.or.jp/daisen/
+    <br/>
+
+
+    休暇村是有一般酒店那种一泊两食，泡温泉，但同时也提供野营。这边草地很多，很适合野营，所以营地也很多的。我其实一开始是想住奥大山休暇村，海拔900米，位于深山野岭之间，观星的好地方。他们有个带晚饭烧烤的一泊两食套餐，每人7500元，但后来发现这个不带帐篷，而且他家官网也没说有野营装备出租，我就放弃了。在日本租营地有些地方要注意的，下面“日本野营攻略”再说。
+    <br/>
+
+
+    蒜山休暇村风景很漂亮，那里的草地很赞，秋天看红叶时住相信很棒！散客也能用温泉。
+    <br/>
+
+
+    4.蒜山酒厂
+    <br/>
+
+
+    https://hiruzenwine.com/en/
+    <br/>
+
+
+    官网说这里的葡萄是高原品种，蒜山独有，欧洲也没的。这里的红酒是获奖的（约3000一瓶）。这个独有的葡萄品种做出来的果汁很特别，我们买了一瓶（约3000一瓶）。这里有午餐（要预约），有偿酒，大部分免费，少部分收100日元。
+    <br/>
+
+
+    5.三木ケ原
+    <br/>
+
+
+    https://www.maniwa.or.jp/web/?c=spot-2&pk=3402
+    <br/>
+
+
+    一个看风景的景点，我们没去。
+    <br/>
+
+
+    6. Hiruzen Jersey Land蒜山牛乳牧场
+    <br/>
+
+
+    http://jerseyland.hiruraku.com/
+    <br/>
+
+
+    Jersey是一种牛的品种,特点是牛奶脂肪含量比一般牛高。蒜山4.2牛乳是全超市最贵的牛奶。一般牛奶1000毫升卖200多日元，这个价格要翻倍。酸奶的价格也是比一般贵的。这个牧场的餐厅格调非常高级（下面详述），但价格不特别贵,吃这里的特色蒜山炒面1000日元（当然外面吃会便宜些）。这里你可以吃最新鲜的高原牛排，各种奶制品，及在漂亮草原游玩，甚至骑马。这里不用门票的。特定日子还有挤牛奶，造冰淇淋等各种活动。
+    <br/>
+
+
+    ​
+    <br/>
+
+
+    7.塩釜camping village
+    <br/>
+
+
+    https://shiogama-campingvillage.jp/
+    <br/>
+
+
+    （下文有日本野营及搭帐篷攻略）
+    <br/>
+
+
+    你想好好享受，可以住已经搭好的固定帐篷，不过比酒店还贵。最低8000多一人，有些帐篷真的很酷毙，吊上树上的（下文有照片）。想便宜，可以自己带帐篷，也可以在那边租。不是每个营地都有出租用品的，这家是很全。住方面，我们定了一个四人套餐，包括帐篷睡袋垫子，吃饭用桌椅，手电筒等，价格12000。我们自己另外带了个帐篷。我们租了个带电源的地，连上车位98平米，5000日元。
+    <br/>
+
+
+    吃方面，除了没有瓦斯炉和锅可以租之外，其他都有，烧烤有炭用的及瓦斯用的炉子。一次性碗筷这些都有卖的。带酒精的饮料也有。
+    <br/>
+
+
+    洗澡是每6分钟300日元，只接受100硬币，没有去自动售卖机买饮料换。浴室条件很好，洗的很舒服。
+    <br/>
+
+
+    不想做饭这里有餐厅的。营地里还有一个小小菜市场，但没有肉卖。
+    <br/>
+
+
+    无论你只租一块地，还是搭好的帐篷都可以官网预约。但官网不能预定租贷用品的，我们当时打电话去预约的。现场租可能也可以。
+    <br/>
+
+
+    租用物品价格和清单官网看“レンタル販売品”。
+    <br/>
+
+
+    这里海拔500多米。盛夏还是可能会热。
+    <br/>
+
+
+    这里可以提前退房的，几点都可以，把东西收拾好放在指定地方就行。
+    <br/>
+
+
+    ８.塩釜冷泉
+    <br/>
+
+
+    https://www.maniwa.or.jp/web/?c=spot-2&pk=13
+    <br/>
+
+
+    营地往北走一点就是冷泉，营地内也有泉水可以接。我们当时时间不够，只接了泉水，没去泉源看。这里有咖啡店可以喝冷泉咖啡。
+    <br/>
+
+
+    9.中蒜山登山口
+    <br/>
+
+
+    蒜山三座登山线路图:
+    <br/>
+
+
+    https://www.env.go.jp/park/guide/daisen/recommend/02.html
+    <br/>
+
+
+    日本人游记：
+    <br/>
+
+
+    http://marchan.e5.valueserver.jp/cabin/mntn/okay/hiruzen/hiruzen1.html
+    <br/>
+
+
+    蒜山分开上，中，下，统称“蒜山三座”。中蒜山登山口在营地里面，上和下的登山口离这分别为东侧和西侧几公里吧。可以进行蒜山三座纵走的，但你从一座山上去，另一座下来是没有公交车的。
+    <br/>
+
+
+    我看日本人写的蒜山游记，路上是有点滑的，新手再加上没有合适鞋子爬大山可能好些。
+    <br/>
+
+
+    10.蒜山塩釜養魚センター(蒜山塩釜養魚center)
+    <br/>
+
+
+    http://siogama.sakura.ne.jp/index.html
+    <br/>
+
+
+    冷泉钓鱼，收费挺贵，首400克1500日元，而且鱼干鱼饵我从其他地方看要1000日元，有时间去津黑河川钓比较划算。
+    <br/>
+
+
+    调上来的鱼提供全套收费配套服务，例如取内脏，提供冰和泡沫方便带走。
+    <br/>
+
+
+    11.快湯館 | 蒜山高原スポーツ公園（sports公园）
+    <br/>
+
+
+    http://www.kaiyukan.co.jp/
+    <br/>
+
+
+    营地开车过去约10分钟，散客温泉每人740，晚十点关门，比营地洗澡划算的。这里也是温泉酒店，提供1泊2食。此外，也是个很大的运动公园。室内有羽毛球，兵乓球，室外有网球，游泳池，还有哥儿夫球。部分球类运动还可以租拍子。哥儿夫球由于不是正宗的所以很便宜，首小时600元，之后每小时300。没玩过过把瘾不错的。
+    <br/>
+
+
+    这里还有自行车出租，可以骑高原自行车道。
+    <br/>
+
+
+    12.蒜山展望台
+    <br/>
+
+
+    看风景地方，我们没去。看google地图是雪景，很漂亮的说。
+    <br/>
+
+
+    13.津黑河川公园（津黒いきものふれあいの里）
+    <br/>
+
+
+    http://plus.harenet.ne.jp/~tsuguro/index.html
+    <br/>
+
+
+    从我们营地开车过去约半个多小时。
+    <br/>
+
+
+    看官网像是个环保教育的地方。定期会搞活动，例如晚上看动物。这里有1小时徒步道（免费)，看各种植物。官网说路上蚊子很多。
+    <br/>
+
+
+    这里有河流，能徒手抓鱼或钓鱼（要租金）。收费为鱼每公斤2000日元。钓鱼后可以现场烧烤。外带可以买冰，但不提供泡沫盒子。想玩自己带好塑料袋。
+    <br/>
+
+
+    14.津黑高原莊
+    <br/>
+
+
+    http://www.tsuguro.jp/
+    <br/>
+
+
+    津黑河川公园附近的温泉一泊两食酒店，也有营地，也有游泳池网球场。体验活动有染布(http://www.tsuguro.jp/web/natural_ex/DOC161201-20161201134013.pdf)，还有环保学习
+     （应该针对日本学生）。这里也有钓鱼。营地看官网没有任何租贷营地用品的信息。
+    <br/>
+
+
+    15.蓝莓园
+    <br/>
+
+
+    这边蓝莓园好几个，这个离我们最近
+    <br/>
+
+
+    Cultivate Garden
+    <br/>
+
+
+    https://cultivategarden201.wixsite.com/cultivate-garden/map?fbclid=IwAR0EaALUBa1abrMupwVj5GyeDb20EbOsb1GkYv-dJZy-Y12sWf2WmFwSyKY
+    <br/>
+
+
+    除了摘蓝莓，这个地方提供已经搭好的帐篷住宿。蓝莓园入场费700日元。
+    <br/>
+
+
+    这个蓝莓园在奥大山天然水厂隔壁：
+    <br/>
+
+
+    https://www.okudaisen.co.jp/
+    <br/>
+
+
+    这个蓝莓园在大山那边的：
+    <br/>
+
+
+    <a href="http://www.blueberry-jitou-farm.com/">http://www.blueberry-jitou-farm.com/</a>
+    <br/>
+
+
+    16.超市
+    <br/>
+
+
+    http://mikamostore.net/
+    <br/>
+
+
+    离我们最近的超市，开车约10分钟。基本食物齐全。
+    <br/>
+
+
+    17.蒜山高原自行车道
+    <br/>
+
+
+    地图1(里面有租车店铺信息)：http://cms.top-page.jp/system/site/upload/live/475/atc_1477740418.pdf
+    <br/>
+
+
+    地图2：https://www.okayama-kanko.jp/hareiro-cycling/route08.html
+    <br/>
+
+
+    官网说两小时能完成。秋天能看蒜山三座的红叶，风景很漂亮。
+    <br/>
+
+
+    18.奥大山天然水厂
+    <br/>
+
+
+    https://webapl.suntory.co.jp/factory/okudaisen/
+    <br/>
+
+
+    属于三得利集团，奥大山天然水超市见得多，工厂在这。有两个免费导游团（包括试饮），一个1小时，另一个1.5小时，网上预约，只有日语团。我们后来开车开错了去了水厂那边，风景非常漂亮。我们原来想去这的，不过时间不够放弃了。
+    <br/>
+
+
+    另外，三得利全国都有分布，很多都有参观的，山梨那个红酒厂我觉得不错。
+    <br/>
+
+
+    19.蒜山bible camp
+    <br/>
+
+
+    http://wjelc.or.jp/hiruzenbc/
+    <br/>
+
+
+    这不是一个酒店，是给基督教团体租用的地方。
+    <br/>
+
+
+    整体来说，蒜山玩的非常非常多，而且都是在自然的环境中。特别提醒，营地必须要穿长裤，不然会被咬的很惨，而且这里可能是毒蚊子，另外带拖鞋在草地上会舒服很多。确实被咬，可以用日本很出名的ムヒ(muhi)，可以止痒的。
+    <br/>
+
+
+    大山：
+    <br/>
+
+
+    官网：
+    <br/>
+
+
+    http://tourismdaisen.com/climb/
+    <br/>
+
+
+    大山是中国地区最高峰（1700米），日本名峰中排行第三（https://www.tottori-guide.jp/tourism/tour/view/198），有“伯耆富士”之称，是鸟取县引而为傲的地方。你在官网搜，它的确很像富士山。因为海拔较高，秋天就积雪，登山夏天最合适。
+    <br/>
+
+
+    大山那里是群山，有不同线路。虽说是中国第一峰，不过路线除了体力外基本不需要技巧，小朋友也能爬。官网有线路，我们走的“夏山登山コース（course)"。起点海拔已经有700多，其实攀升不到1000米的。登顶的确很冷，由于四周都比我们矮，风特别大.....
+    <br/>
+
+
+    大山登山点是旅游区，吃的很多。那边还有好些寺庙，不过我们没兴趣，我就没研究了。下山可以豪円湯院泡个温泉，或者去"大山火の神岳温泉足湯"冷泉泡脚（官网有资料）。
+    <br/>
+
+
+    大山脚下旅馆及营地都非常多，下面这个位于西北方，租贷用品齐备的，其他营地我没了解过。
+    <br/>
+
+
+    森の国
+    <br/>
+
+
+    <a href="http://www.blueberry-jitou-farm.com/">http://www.sanin.com/site/page/daisen/institution/morinokuni2/camp/camp/</a>
+    <br/>
+
+
+    公交：从米子过来最近，公交从米子站到登山的地方约50分钟 。
+    <br/>
+
+
+    https://www.pref.tottori.lg.jp/dd.aspx?menuid=81810 (打不开的话google"大山 米子 バス“
+    <br/>
+
+
+    ，属于日本交通株式会社)
+    <br/>
+
+
+    中文公交信息：https://matcha-jp.com/cn/5175
+    <br/>
+
+
+    另外，去大山最好用登山杖，不然下山很要命的，第二天就不要安排任何体力活动了。
+    <br/>
+
+
+    最后，蒜山和大山冬天是可以滑雪的哦。
+    <br/>
+
+
+    日本登山参考：https://www.yamakei-online.com/
+    <br/>
+
+
+    这里有别人写的简单评价及照片。
+    <br/>
+
+
+    日本野营攻略
+    <br/>
+
+
+    我其实一开始没打算去野营，因为不知道有。看住宿的时候看到休暇村，由于也没玩过所以就产生兴趣了。因为没试过所以一开始有些误解。首先要租一块地，一般几千元。这块地是不包括帐篷的。我一开始不知道，以为是包括的。帐篷要自己带，或者营地租用。
+    <br/>
+
+
+    租完一块地后，你还需要
+    <br/>
+
+
+    - 垫子テントマット(tent map) (因为帐篷可能不太干净，而且不够厚实的下雨会渗水)
+    <br/>
+
+
+    - 睡袋
+    <br/>
+
+
+    - 床垫
+    <br/>
+
+
+    枕头一般都没得租的，要自己带。如果要营地做饭还要租食器桌子凳子手电筒等。
+    <br/>
+
+
+     我的学习笔记写完了，我们行程终于开始了。
+    <br/>
+     
+
+        <!--main content here-->
+        
+        2.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen_info.html" target=_blank>相关行程信息</a><br>
+        3.<a href="https://poonh.github.io/travel_blog/github_html/2019_hiruzen.html" target=_blank>游记</a><br>
+        4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2019_hiruzen.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+        
+            <br><br>
+                    
+
+<br><br>
+
+
+<!--    <footer>
+        <p>&copy; 2024 Life in Saijo</p>
+    </footer>-->
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
+</article>
+</main>
+</body>
+</html>
+
