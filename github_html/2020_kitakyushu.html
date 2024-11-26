@@ -1,27 +1,130 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>2020深秋山口北九州之旅（四天三夜）</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>山口北九州喀斯特傻瓜钓鱼海景之旅</title>
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+                margin-left: 280px; /* Adjust as needed */
+                cursor: pointer;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                margin-right: auto; /* Pushes 目錄 to the far left */
+                margin-left: 10px; /* Adjust margin as needed */
+            }
+        }
+            </style>
+    
+    
+            
 </head>
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
-<main class="content">
-<article>
-<p>上一章</p>
-<p>
+    <a id="back"></a>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <br><br>
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+            <br><br>
+         
+         1.<a href="https://poonh.github.io/travel_blog/github_html/2020_kitakyushu_ad.html" target=_blank>广告</a><br>
+         2.<a href="https://poonh.github.io/travel_blog/github_html/2020_kitakyushu_info.html" target=_blank>相关行程信息</a><br>
+         4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/2020_kitakyushu.pdf" target=_blank>行程单</a><br>
+         5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_kitakyushu.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
+         <h3 align="center">3.山口北九州喀斯特傻瓜钓鱼海景之旅 - 游记</h3>
+
 <b>前言：</b>这是一次说了
   
 很久，一拖再拖之旅。自从学长去了北九州后就一直说要去找他，因为疫情拖来拖去。我们大概出发前两三周确定行程，当时疫情还稳定，但出发前一周开始爆发第三波，不过我们都定好酒店了，这次第三波我们去的地方不是重灾区，不过要是我们计划去的时候爆发就肯定不会去了。既然决定了，就安心的去吧。不同时间就会发生不同的故事，由于这个时候去才有两位新旅伴，今次的女子会非常愉快呢。</p>
+
+<!--
 <p>我先介绍一下这条线路我研究过的地方，包括我们有去及没有去的。</p>
 <p>
 </p>
@@ -277,43 +380,32 @@
 </p>
 <p>这是个佛教的山，有寺庙等可以看，也是北九州看红叶出名的地方，海拔1200米。</p>
 <p>
-<b>开支：</b>
+
+-->
+<b>开支：</b><br>
+D1: 秋吉台-青海岛-元乃隅神社-Mermaid Lodge</br>
+高速：4310 &nbsp&nbsp 停车场：800 &nbsp&nbsp 住宿：5840&nbsp&nbsp午饭：~950 <br/><br>
+
+D2:角岛 - 川棚温泉 - 北九州<br/>
+住宿：~6000 (两晚北九州酒店，用go to优惠)&nbsp&nbsp角岛自行车：410&nbsp&nbsp关门隧道：160&nbsp&nbsp
+
+停车费：700*2&nbsp&nbsp午晚饭+温泉：~1500 <br/><br>
+
+D3: 钓鱼<br>
+早午餐：~ 800&nbsp&nbsp晚餐：~ 1000(家里自己做)&nbsp&nbsp停车费：300&nbsp&nbsp钓鱼入场及渔具租用：1800&nbsp&nbspD4: 平尾台 - 返程&nbsp&nbsp早餐：~500&nbsp&nbsp高速：4840&nbsp&nbsp停车费：300&nbsp&nbsp
+午饭：1500&nbsp&nbsp全程油费：~6300<br><br>
+另外：西日本高速周末打折的，所以返程虽然走的高速更长，但费用更低。<br/><br>
+
+上面有些是个人费用，有些平坦，最后个人支出分析如下：<br>
+路费（包括停车费）：~4600（18.5%）<br>
+住宿：11840（三晚）（47.6%）</br>
+吃：~6250（25.1%）</br>
+游玩： 2210（8.9%）<br/>
+
+合共：~25000<br/>
 </p>
-<p>D1: 秋吉台-青海岛-元乃隅神社-Mermaid Lodge</p>
-<p>高速：4310</p>
-<p>停车场：800</p>
-<p>住宿：5840</p>
-<p>午饭：~950 <br/>
-</p>
-<p>D2:角岛 - 川棚温泉 - 北九州<br/>
-</p>
-<p>住宿：~6000 (两晚北九州酒店，用go to优惠)</p>
-<p>角岛自行车：410</p>
-<p>关门隧道：160</p>
-<p>停车费：700*2晚</p>
-<p>午饭+温泉：~1500 <br/>
-</p>
-<p>D3: 钓鱼</p>
-<p>早午餐：~ 800</p>
-<p>晚餐：~ 1000(家里自己做)</p>
-<p>停车费：300</p>
-<p>钓鱼入场及渔具租用：1800</p>
-<p>D4: 平尾台 - 返程</p>
-<p>早餐：~500</p>
-<p>高速：4840</p>
-<p>停车费：300</p>
-<p>午饭：1500</p>
-<p>全程油费：~6300</p>
-<p>另外：西日本高速周末打折的，所以返程虽然走的高速更长，但费用更低。<br/>
-</p>
-<p>上面有些是个人费用，有些平坦，最后个人支出分析如下：</p>
-<p>路费（包括停车费）：~4600（18.5%）</p>
-<p>住宿：11840（三晚）（47.6%）</p>
-<p>吃：~6250（25.1%）</p>
-<p>游玩： 2210（8.9%）<br/>
-</p>
-<p>合共：~25000<br/>
-</p>
+
+<!--
 <p>我们的行程地图：<br/>
 </p>
 <iframe height="480" src="https://www.google.com/maps/d/u/0/embed?mid=18jzqmixcodFLph9N_KID-87LsvYiZRzY" width="640">
@@ -321,12 +413,11 @@
 <p>
 <br/>
 </p>
-<p>日期：2020年11月19至22日（21-23是三连休，我是刻意安排这周出门，好让周一可以休息）</p>
-<p>11月19日D1:</p>
-<p>秋吉台-青海岛-元乃隅神社-Mermaid Lodge</p>
+-->
 <p>行程开始~<br/>
 </p>
-早7:30大西条出发，10:30到秋吉台。出发时ln很贴心的给每人在便利店买了一瓶水。
+<p>日期：2020年11月19至22日（21-23是三连休，我是刻意安排这周出门，好让周一可以休息）</p>
+
 <p>11月19日周四：</p>
 <p>早7:30大西条出发，10:30到秋吉台。这是我们路过的地方，没有多待，直接去观景台拍照，附近绕一圈然后就坐车走カルストロード(Karst Road)去长门午饭了。</p>
 <p>吃饭之前我们先看看秋吉台风景，现在是秋天，景色一片金黄的。</p>
@@ -418,27 +509,24 @@
 <div style="text-align: center;">
 </div>11:30，我们现在要出发去长门午饭了</p>
 <p>约半小时后，我们到长门了。车停在A-coop超市，吃了连锁店長崎 ちゃんぽん(ちゃんぽん是长崎的海鲜面)，三人点了海鲜很多的一种面（连税900多），另外一人点了辣的。两种都很好吃，汤很鲜。</p>
-<p>
+
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_kitakyushu/14.JPG"/>
+<img border="0" class="picture" src="https://poonh.github.io/travel_blog/html_pics/2020_kitakyushu/14.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
-</p>
-<br/>
+
 <div class="picture-container">
-<img border="0" class="picture rotate-left" data-original-height="1536" data-original-width="2048" height="480" src="https://poonh.github.io/travel_blog/html_pics/2020_kitakyushu/15.JPG" width="640">
+<img border="0" class="picture"  src="https://poonh.github.io/travel_blog/html_pics/2020_kitakyushu/15.JPG" width="640">
 </div>
 <div style="text-align: center;">
 </div>
-<p>
-</p>
-<p>
+
 <div class="picture-container">
 <img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2020_kitakyushu/16.JPG"/>
 </div>
 <div style="text-align: center;">
-</div> </p>
+</div>
 <p> 餐厅外面</p>
 <p>
 <div class="picture-container">
@@ -2308,16 +2396,37 @@
 <br/>
 </p>
 <br/>
-<p>下一章</p>
-<br/>
-<br/>
-<!--    <footer>
-        <p>&copy; 2024 Life in Saijo</p>
-    </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
-</div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
+1.<a href="https://poonh.github.io/travel_blog/github_html/2020_kitakyushu_ad.html" target=_blank>广告</a><br>
+2.<a href="https://poonh.github.io/travel_blog/github_html/2020_kitakyushu_info.html" target=_blank>相关行程信息</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/2020_kitakyushu.pdf" target=_blank>行程单</a><br>
+5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2020_kitakyushu.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
 
+    <br><br>
+            
+
+<br><br>
+
+
+<!--    <footer>
+<p>&copy; 2024 Life in Saijo</p>
+</footer>-->
+<div id="overlay" class="overlay">
+<img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+function toggleMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.toggle('active');
+}
+
+function hideMobileMenu() {
+var menuList = document.querySelector('.mobile-menu-list');
+menuList.classList.remove('active');
+}
+</script>
+</article>
+</main>
+</body>
+</html>
 
