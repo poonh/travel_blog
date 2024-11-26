@@ -22,8 +22,7 @@ git add .gitignore
 git commit -m "Added .DS_Store to .gitignore"
 git push
 
-delete all files normally, then
-git stash
+
 
 delete files locally but commit no change
 git update-index --assume-unchanged <file>
