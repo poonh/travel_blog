@@ -195,6 +195,10 @@ nav ul li a{
     .mobile-menu-list {
         display: block;
     }
+    
+    .container-search {
+      display: none;
+    }
 }
 
 
