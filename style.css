@@ -162,19 +162,14 @@ nav ul li a{
     /*additional ends*/
 }
 
-/*
-.menu-icon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-*/
 
 .menu-icon {
     display: inline-block;
     margin-left: 280px; /* Adjust as needed */
     cursor: pointer;
 }
+
+
 
 .mobile-menu-list {
     display: none;
@@ -196,10 +191,19 @@ nav ul li a{
     .menu {
         display: none;
     }
-
+/*original begins
     .mobile-menu {
         display: block;
     }
+ original ends*/
+ 
+ .mobile-menu {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-right: 10px;
+ }
+
 
     .mobile-menu-list {
         display: block;
