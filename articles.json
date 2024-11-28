@@ -26,7 +26,51 @@
       "url": "https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki_info.html",
       "description": "広島県観光客数の動向，《神石高原町観光振興企画》里面有调查数据，具体政策，增长目标等。",
       "tags": ["广岛数据","広島県観光客","动态调查","广岛县动态调查","政府报告", "振兴计划", "观光振兴"]
+    },
+    
+    {
+      "title": "广岛百名山岳山",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_takeyama_ad.html",
+      "description": "一天往返登白木山(攀升800米，难度适中)",
+      "tags": ["登山", "1天游", "一天游","一日", "1日", "府中","世罗", "冰淇淋", "锁场","岩石"]
+    },
+
+    {
+      "title": "广岛百名山岳山",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "《第2期世羅町観光振興基本計画》(商工観光課)",
+      "tags": ["政府报告", "振兴计划", "观光振兴"]
+    },
+    
+    {
+      "title": "濑户贵宾列车尾道休闲一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2023_setouchi_ad.html",
+      "description": "日本观光列车，濑户内海风景，看猫，休闲徒步，温泉，咖啡，求签",
+      "tags": ["1天游", "一天游","一日", "1日", "观光列车", "火车游", "火车之旅","求签", "猫", "濑户内海","咖啡", "登顶", "登山","千光寺", "电影拍摄地", "etsetora","エトセトラ", "温泉", "尾道"]
+    },
+    
+    {
+      "title": "濑户贵宾列车尾道休闲一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2023_setouchi_info.html",
+      "description": "令和5年尾道市観光客統計について(観光課)",
+      "tags": ["数据", "政府报告"]
+    },
+
+    
+    {
+      "title": "初秋东广岛岩海小资一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_yanhai_ad.html",
+      "description": "公园高尔夫球，国天然記念物岩海",
+      "tags": ["1天游", "一天游","一日", "1日", "东广岛", "三原","早餐", "福富","パークゴルフ", "公园高尔夫","park golf", "白龍湖観光農園","岩海", "Ncafe","hana cafe"]
+    },
+    
+    {
+      "title": "初秋东广岛岩海小资一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_yanhai_info.html",
+      "description": "三原市観光戦略プラン",
+      "tags": ["振兴计划", "观光振兴","政府报告"]
     }
+    
     
     
 ]
