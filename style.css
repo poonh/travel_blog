@@ -165,7 +165,8 @@ nav ul li a{
 
 .menu-icon {
     display: inline-block;
-    margin-left: 280px; /* Adjust as needed */
+    margin-right: 5px;
+    /*margin-left: 280px; *//* Adjust as needed */
     cursor: pointer;
 }
 
