@@ -46,6 +46,38 @@ function searchArticles() {
   }
 }
 
+function searchMobileArticles() {
+  const query = document.getElementById("search-mobile-box").value.toLowerCase().trim();
+
+  // Split query into individual keywords by spaces
+  const keywords = query.split(/\s+/);
+
+  const resultsContainer = document.getElementById("search-mobile-results");
+  resultsContainer.innerHTML = ""; // Clear previous results
+
+  if (keywords.length > 0) {
+    const filteredArticles = articles.filter(article => {
+      // Check if any of the keywords match the article
+      return keywords.some(keyword =>
+        article.title.toLowerCase().includes(keyword) ||
+        article.description.toLowerCase().includes(keyword) ||
+        article.tags.some(tag => tag.toLowerCase().includes(keyword))
+      );
+    });
+
+    // Display results
+      if (filteredArticles.length > 0) {
+        // Store search results in sessionStorage (this is temporary data for the session)
+        sessionStorage.setItem('searchResults', JSON.stringify(filteredArticles));
+
+        // Open a new tab with the search results
+        window.open('search_results.html', '_blank');
+      } else {
+        alert('没有结果');
+      }
+  }
+}
+
 // Add event listener to the "Search" button
 document.getElementById("search-button").addEventListener("click", searchArticles);
 document.getElementById("search-box").addEventListener("keypress", (event) => {
