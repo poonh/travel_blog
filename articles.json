@@ -1,15 +1,227 @@
 [
+    {
+      "title": "神石高原爱护动物红叶之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki_ad.html",
+      "description": "昭和时代学校吃神石和牛牛排，云海，爱护狗只公园Tiergarten见学及寻宝，道后山赏红叶，柿子味冰淇淋，温泉",
+      "tags": ["学校食堂", "神石牛", "狗场","红叶","温泉","云海","米见山","恋人之圣地","羊肉","神石高原","狗","陶艺","牧场","森林セラピ","森林therapy","滑梯","小木屋","登山","道后山","柿子","野生猕猴桃","冰淇淋","温泉","2天1夜","2日1夜","两天一夜","两日一夜"]
+    },
+    
+    
+    {
+      "title": "神石高原爱护动物红叶之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki_info.html",
+      "description": "広島県観光客数の動向，《神石高原町観光振興企画》里面有调查数据，具体政策，增长目标等。",
+      "tags": ["广岛数据","広島県観光客","动态调查","广岛县动态调查","政府报告", "振兴计划", "观光振兴"]
+    },
+    
+    
+    {
+      "title": "广岛百名山岳山",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_takeyama_ad.html",
+      "description": "一天往返登白木山(攀升800米，难度适中)",
+      "tags": ["登山", "1天游", "一天游","一日", "1日", "府中","世罗", "冰淇淋", "锁场","岩石"]
+    },
+
+    {
+      "title": "广岛百名山岳山",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "《第2期世羅町観光振興基本計画》(商工観光課)",
+      "tags": ["政府报告", "振兴计划", "观光振兴"]
+    },
+    
+    {
+      "title": "濑户贵宾列车尾道休闲一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2023_setouchi_ad.html",
+      "description": "日本观光列车，濑户内海风景，看猫，休闲徒步，温泉，咖啡，求签",
+      "tags": ["1天游", "一天游","一日", "1日", "观光列车", "火车游", "火车之旅","求签", "猫", "濑户内海","咖啡", "登顶", "登山","千光寺", "电影拍摄地", "etsetora","エトセトラ", "温泉", "尾道"]
+    },
+    
+    {
+      "title": "濑户贵宾列车尾道休闲一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2023_setouchi_info.html",
+      "description": "令和5年尾道市観光客統計について(観光課)",
+      "tags": ["数据", "政府报告"]
+    },
+
+    
+    {
+      "title": "初秋东广岛岩海小资一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_yanhai_ad.html",
+      "description": "公园高尔夫球，国天然記念物岩海",
+      "tags": ["1天游", "一天游","一日", "1日", "东广岛", "三原","早餐", "福富","パークゴルフ", "公园高尔夫","park golf", "白龍湖観光農園","岩海", "Ncafe","hana cafe"]
+    },
+    
+    {
+      "title": "初秋东广岛岩海小资一天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_yanhai_info.html",
+      "description": "三原市観光戦略プラン",
+      "tags": ["振兴计划", "观光振兴","政府报告"]
+    },
+    
+    
+    {
+      "title": "安芸高田美容历史文化之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/2022_akitakada_ad.html",
+      "description": "森林酵素风吕店，神乐门前汤治村神乐+特色美食，登毛利元就城",
+      "tags": ["酵素风吕", "神乐","melody road", "森林","吊床", "秋千","毛利元就", "镜山","乡土料理", "郡山城","メロディーロード", " 神楽門前湯治村","神乐门前汤治村","温泉","古代米", "冰淇淋","田舎料理","1天游", "一天游","一日", "1日"
+    },
+    
+    
+    {
+      "title": "安芸高田美容历史文化之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/2022_akitakada_info.html",
+      "description": "疫情2020年获得政府补助2000万。2018年债务高达1400万。2022年政府《観光関連施設の一体管理に係る官民連携手法検討調査業務》的模拟(p20)显示，假设宿泊饮食一定的增长率下，升级一定客房数及增加一定客房数需要成本。由于成本太高（每个客房最多接近7万），难以吸引民间投资，所以不进行升级而进行更新，但报告内一些设施会考虑和民间营运。",
+      "tags": ["政府报告", "亏本","赤字"]
+    },
+    
+    
+    {
+      "title": "广岛百名山白木山",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_shiraki_ad.html",
+      "description": "一天往返登白木山(攀升800米，难度适中)",
+      "tags": ["广岛市", "安佐北区","1天游", "一天游","一日游", "1日游","白木山", "森林小火车","上深川", "火车站","駅"]
+    },
+    
+    
+    {
+      "title": "豪华包岛五星服务之龍王島与世隔绝之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/2020_ryuoshima_ad.html",
+      "description": "平民价格包岛，教钓鱼，坐私人游艇，广岛牡蛎烧烤，野营，流星",
+      "tags": ["龙王岛", "野营","扎营", "烧烤","牡蛎", "私人游艇", "钓鱼", "低消费","东广岛", "安芸津","2天1夜","2日1夜","两天一夜","两日一夜","游泳", "观星","帐篷", "シルバー人材センター","silver center", "silver centre","投诉"]
+    },
+    
+    
+    
+    {
+      "title": "绝美浪漫新年东广岛1天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2022_newyear_ad.html",
+      "description": "新年400级楼梯登山，濑户内海美景，伪法国名胜，心形小岛，戦迹",
+      "tags": ["1天游", "一天游","一日游", "1日游","战绩", "船","混凝土", "心形小岛","濑户内海", "greenpia setouchi","グリンピアせとうち", "水ヶ浦山","水浦山", "登山","モンサンミッシェル", "Mont Saint-Michel","大芝島", "ハート島","小芝島", "潮涨","潮退", "武治丸","吴", "くれ","呉", "安芸津","新年"]
+    },
+    
+
+    
+    {
+      "title": "绝美浪漫新年东广岛1天游",
+      "url": "https://poonh.github.io/travel_blog/github_html/2022_newyear_info.html",
+      "description": "Greenpia问题被揭发后是当时一件大丑闻。(以下主要摘自 维基百科)Green Pia是日本的公共疗养设施( 我感觉有点像前苏联的国营水疗设施。1961年10月政府通过法案为提升年金被保险者福祉而设，希望为他们及家人提供有意义的生活。全国总共有13所Greenpia，总共花8年建成(1980-1988，日本经济最发达的时候)。 建造费用低至80亿到接近300亿。但实际上年金是被挪用兴建。截止2003年累计亏损8亿。当时还揭发了其他年金挪用项目。问题曝光后，Green pia就被废除，2005年年底全部设施被出售（主要卖给地方政府)。售价甚至少于建造成本1%，亏损了3000多亿(参见日本共产党 《年金保険料の損失３６８２億円二束三文で売却》)。",
+      "tags": ["丑闻", "浪费","共产党", "亏本","指定管理者","欠电费","打官司"]
+    },
+    
+    
+    {
+      "title": "西条寻找历史之旅(活动记录)",
+      "url": "https://poonh.github.io/travel_blog/github_html/2021_jike_walk.html",
+      "description": "本地历史团体导游团，探索西条历史",
+      "tags": ["NPO", "志愿者","寺家", "历史","徒步", "中世の山陽道を探そうin下寺家","東広島郷土史研究会専門", "乡土史","历史研究", "神社","平泰寺", "镜山","幼儿园", "隈研吾","严岛神社", "野坂完山","华佗", "东广岛","江熊桥", "见性院","完步证", "婚恋","恋まち東広島", "民间团体","活动记录"]
+    },
+    
+    
+    {
+      "title": "西条看猫看狗记（アンの時間／日本猫狗收容所见学）(西条生活记录)",
+      "url": "https://poonh.github.io/travel_blog/github_html/2021_cat_dog_market.html",
+      "description": "アンの時間カフェ",
+      "tags": ["ワンハート", "one heart","活动记录", "生活记录","民间团体", "猫狗让渡会","アンの時間", "小谷","蛋糕", "领养","猫", "狗","拼图", "安妮","Anne", "小白","浴衣祭","东广岛"]
+    },
+    
+    
+    {
+      "title": "东广岛西高屋フリーマーケット（跳蚤市场）(西条生活记录)",
+      "url": "https://poonh.github.io/travel_blog/github_html/2021_takaya_free_market.html",
+      "description": "东广岛定期跳蚤市场",
+      "tags": ["跳蚤市场", "フリーマーケット","free market", "小谷","アンの時間", "おでん","杯", "盘","日本制造", "二手市场","名牌杯子","东广岛"]
+    },
+    
+    
+    
+    {
+      "title": "东广岛团体HBM防灾活动(活动记录)",
+      "url": "https://poonh.github.io/travel_blog/github_html/2023_hbm.html",
+      "description": "",
+      "tags": ["活动记录", "东广岛","HBM", "防灾","民间团体", "NPO","广岛国际中心", "広島国際センター","补助金", "補助金","消防局", "福富","游戏", "防灾食品"]
+    },
+    
+    
+    {
+      "title": "绝景梯田汤来百年古民家之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    
+    {
+      "title": "绝景梯田汤来百年古民家之旅",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    {
+      "title": "",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    
+    {
+      "title": "",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    {
+      "title": "",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    
+    {
+      "title": "",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    {
+      "title": "",
+      "url": "https://poonh.github.io/travel_blog/github_html/",
+      "description": "",
+      "tags": ["", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "",]
+    },
+    
+    
+    
+    
   {
     "title": "夏日消暑勇闯中国第一峰",
     "url": "https://poonh.github.io/travel_blog/github_html/2019_hiruzen_ad.html",
     "description": "大山",
     "tags": ["大山", "蒜山", "温泉"]
   },
+  
+  
   {
     "title": "比看电影更幸福的萤火虫之旅 ",
     "url": "https://poonh.github.io/travel_blog/github_html/2021_firefly_ad.html",
-    "description": "竹原",
-    "tags": ["竹原", "晚饭", "6月"]
+    "description": "竹原萤火虫，绝美，开车停车容易,萤火虫イベント",
+    "tags": ["竹原", "イベント","活动","萤火虫","ホタル","祭り"]
+  },
+  {
+    "title": "比看电影更幸福的萤火虫之旅 ",
+    "url": "https://poonh.github.io/travel_blog/github_html/2021_firefly_info.html",
+    "description": "2024年竹原市観光振興計画。",
+    "tags": ["政府报告", "振兴","观光振兴"]
   }
 ]
 

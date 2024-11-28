@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('pictures/lightgreen.jpg');
+  /*  background-image: url('pictures/lightgreen.jpg');*/
     background-size: cover;
 }
 
@@ -29,6 +29,7 @@ main {
 
 nav {
    padding: 0px; /*distance between the menu bar and the top*/
+   height: 30px;
 }
 
 /* Menu with Two Horizontal Rows */
@@ -63,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White #000 for black */
+    color: #000; /* White #000 for black */
     text-decoration: none;
     font-size: 20px;
    /* font-weight: bold;*/
@@ -71,6 +72,44 @@ nav ul li a {
 }
 
 /* Mobile Menu Styles */
+
+nav ul, .mobile-menu-list { /*computer menu*/
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+  
+}
+
+nav ul li, .mobile-menu-list li {
+    /*
+    display: inline;
+    margin-right: 20px;*/
+    
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-right: 1px solid rgb(224, 224, 224);
+   
+}
+
+nav ul li a{
+    color: white; /* Set the color to black */
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
+
+}
+
+.mobile-menu-list li a {
+    color: black; /* Set the color to black */
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
+
+}
 .mobile-menu {
     display: none;
 }
@@ -78,31 +117,28 @@ nav ul li a {
 .menu-icon {
     width: 30px;
     height: 30px;
-/*    background-image: url('pictures/darkblue.webp');*/
+    /*    background-color: lightgreen;*/
+   /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
 }
 
 .mobile-menu-list {
     display: none;
-    background-color:rgb(0, 108, 169);
-  /*  background-image: url('pictures/darkblue.webp');*/
+/*    background-color: lightgreen;*/
+   /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
 .mobile-menu-list li {
     padding: 10px;
 }
 
-nav {
-    height: 30px;
-}
-
-/* Mobile Responsive Styles */
 @media (max-width: 768px) {
-    nav {
-        background-color:rgb(0, 108, 169);
-       /* background-image: url('pictures/lightgreen.jpg');*/
-    }
+     nav {
+         background-color:rgb(0, 108, 169); /* Set the background image */
+  
+     }
 
+     
     .menu {
         display: none;
     }
@@ -114,25 +150,8 @@ nav {
     .mobile-menu-list {
         display: block;
     }
-
-    nav ul {
-        flex-direction: column; /* Stack items vertically on small screens */
-        max-width: 100%;
-    }
-
-    nav ul li {
-        width: 100%; /* Full width for each item on small screens */
-    }
 }
 
-.caption {
-  font-family: "PingFang SC", "Microsoft YaHei", "Heiti SC", "SimSun", "sans-serif";
-  font-size: 20px;               /* Adjust the font size */
-  color: blue;                   /* Adjust the text color */
-  text-align: center;            /* Center the text horizontally */
-  display: block;                /* Ensure the element takes up full width */
-  margin: 0 auto;                /* Center the element */
-}
 
 
 .linebreak {
@@ -147,7 +166,7 @@ nav {
 /*.container {
     height: 100vh;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -162,19 +181,19 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
 }
 /*
 
 .text-container {
-    max-width: 500px; 
-    margin: 0 auto; 
+    max-width: 500px;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
 }*/
 
 .picture-container {
@@ -183,22 +202,97 @@ nav {
     margin: 20px;
 }
 
-.picture {
+
+
+/* Adjust size for mobile screens */
+/*
+@media (max-width: 767px) {
+    .responsive-image-icon {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+*/
+
+
+.picture-icon {
    /* width: 80%;*/ /* Adjust the width as needed */
-    max-width: 500px; /* Maximum width of the image */
+    max-width: 1000px; /* Maximum width of the image */
     max-height: 500px;
-    cursor: pointer;
     display: block;
     margin: 0 auto;
 }
-
-.picture-maps {
-   /* width: 80%;*/ /* Adjust the width as needed */
-    max-width: 1800px; /* Maximum width of the image */
-    max-height: 1800px;
-  /*  cursor: pointer;*/
+/*
+.picture {
+    width: 100%;
+    max-width: 500px; /* 500px */
+ /*   max-height: 500px;*/
+   /* cursor: pointer;
     display: block;
     margin: 0 auto;
+}
+*/
+
+.picture {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    aspect-ratio: auto; /* Allow natural aspect ratio */
+}
+
+/* Adjust portrait images (height > width) */
+@media (min-aspect-ratio: 1/1) {
+    .picture {
+        max-width: auto;
+        max-height: 500px;
+    }
+}
+
+
+/*
+.responsive-iframe {
+    width: 100%;
+    max-width: 700px;
+    height: auto;        
+    display: block;
+    margin: 0 auto;
+}*/
+
+.iframe-container {
+    position: relative;
+    width: 90%;         /* Full width */
+    max-width: 500px;    /* Cap width at 500px */
+    padding-bottom: 75%; /* 4:3 aspect ratio (75% of width) */
+    margin: 0 auto;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;          /* Optional: Remove iframe border */
+}
+
+
+.image-container {
+  text-align: center; /* Centers the image horizontally */
+}
+.picture-maps {
+   /* width: 80%;*/ /* Adjust the width as needed */
+ /*   max-width: 1800px; *//* Maximum width of the image */
+    max-height: 100%;
+    width: 100%
+    max-width:100%
+  /*  cursor: pointer;*/
+  display: inline-block;
 }
 
 .enlarged-picture {
@@ -303,12 +397,29 @@ p {
     text-align: center;
 }
 
+
+
+.close-btn {
+/*    background: gray;
+    background-color: gray*/
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.close-btn:hover {
+    background: lightgray;
+}
+
 #close-panel-yuki,
 #close-panel-akitakada,
 #close-panel-higashihiroshima,
 #close-panel-shirokiyama,
 #close-panel-higashihiroshima,
 #close-panel-takehara,
+#close-panel-mihara,
 #close-panel-kamikamagari,
 #close-panel-etajima,
 #close-panel-kurahashi,
@@ -326,6 +437,7 @@ p {
 #close-panel-kumakogen,
 #close-panel-iyo,
 #close-panel-ikata,
+#close-panel-seiyo,
 #close-panel-touon,
 #close-panel-ainan,
 #close-panel-yusuhara,
@@ -334,8 +446,8 @@ p {
 #close-panel-uguru,
 #close-panel-maniwa,
 #close-panel-daizen,
-#close-panel-kitakyushu,
-#close-panel-yamaguchi{
+#close-panel-yamaguchiken,
+#close-panel-kitakyushu,{
     
     margin-top: 1px;
     cursor: pointer;
