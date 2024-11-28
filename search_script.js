@@ -15,24 +15,37 @@ fetch('https://poonh.github.io/travel_blog/articles.json')
 
 // Search function
 function searchArticles() {
-  const query = document.getElementById("search-box").value.toLowerCase();
-  
-  // Filter articles based on the query
-  const filteredArticles = articles.filter(article =>
-    article.title.toLowerCase().includes(query) ||
-    article.description.toLowerCase().includes(query) ||
-    article.tags.some(tag => tag.toLowerCase().includes(query))
-  );
+  const query = document.getElementById("search-box").value.toLowerCase().trim();
 
-  // If there are results, open the results page and pass the data
-  if (filteredArticles.length > 0) {
-    // Store search results in sessionStorage (this is temporary data for the session)
-    sessionStorage.setItem('searchResults', JSON.stringify(filteredArticles));
+  // Split query into individual keywords by spaces
+  const keywords = query.split(/\s+/);
 
-    // Open a new tab with the search results
-    window.open('search_results.html', '_blank');
-  } else {
-    alert('没有结果');
+  const resultsContainer = document.getElementById("search-results");
+  resultsContainer.innerHTML = ""; // Clear previous results
+
+  if (keywords.length > 0) {
+    const filteredArticles = articles.filter(article => {
+      // Check if any of the keywords match the article
+      return keywords.some(keyword =>
+        article.title.toLowerCase().includes(keyword) ||
+        article.description.toLowerCase().includes(keyword) ||
+        article.tags.some(tag => tag.toLowerCase().includes(keyword))
+      );
+    });
+
+    // Display results
+    if (filteredArticles.length > 0) {
+      filteredArticles.forEach(article => {
+        const resultItem = document.createElement("div");
+        resultItem.innerHTML = `
+          <a href="${article.url}" target="_blank"><h3>${article.title}</h3></a>
+          <p>${article.description}</p>
+        `;
+        resultsContainer.appendChild(resultItem);
+      });
+    } else {
+      resultsContainer.innerHTML = "<p>没有结果</p>";
+    }
   }
 }
 
