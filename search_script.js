@@ -80,3 +80,18 @@ function searchMobileArticles() {
   }
 }
 
+// Add event listener to the "Search" button
+document.getElementById("search-button").addEventListener("click", searchArticles);
+document.getElementById("search-box").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    searchArticles();
+  }
+});
+
+
+document.getElementById("search-mobile-button").addEventListener("click", searchArticles);
+document.getElementById("search-mobile-box").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    searchMobileArticles();
+  }
+});
