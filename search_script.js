@@ -85,3 +85,11 @@ document.getElementById("search-box").addEventListener("keypress", (event) => {
     searchArticles();
   }
 });
+
+
+document.getElementById("search-mobile-button").addEventListener("click", searchArticles);
+document.getElementById("search-mobile-box").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    searchMobileArticles();
+  }
+});
