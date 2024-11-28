@@ -159,10 +159,8 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 30px;/*old*/
-    height: 30px;/*old*/
-    display: inline-block;
-    margin-left: 280px; /*
+    width: 30px;
+    height: 30px;
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
