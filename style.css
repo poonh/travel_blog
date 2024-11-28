@@ -25,6 +25,9 @@ body {
 
 
 .container-mobile-search {
+    display: block 
+    visibility: visible 
+    z-index: 10;
     padding: 10px;
     border-top: 1px solid #ccc;
  /*   max-width: 768px*/
