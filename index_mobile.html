@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="style_mobile.css"> <!-- Link to your CSS file -->
     <title>日本乡村乐无穷</title>
     <style>
-        /* Add your custom styles here */
 
-        /*.menu-icon {
-            display: none;
-            cursor: pointer;
-        }*/
 
         .mobile-menu-list {
             display: none;
@@ -47,21 +42,12 @@
             margin-left: 10px; /* Adjust margin as needed */
         }
 
-      /*  .menu-icon {
-            margin-right: 10px; 
-            cursor: pointer;
-        }
-      */
         .mobile-menu-list li {
             display: block; /* Display list items vertically */a
         }
         
         @media only screen and (max-width: 768px) {
-       /*     .menu-icon {
-                display: inline-block;
-                margin-left: 280px;
-                cursor: pointer;
-            }*/
+
 
             .mobile-menu {
                 display: flex;
@@ -69,11 +55,12 @@
                 justify-content: space-between;
                 margin-right: 10px;
             }
-
+/*
             .menu-title {
-                margin-right: auto; /* Pushes 目錄 to the far left */
-                margin-left: 10px; /* Adjust margin as needed */
+                margin-right: auto;
+                margin-left: 10px;
             }
+        */
         }
             </style>
     
@@ -103,7 +90,7 @@
             </nav>
 
             <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
+                <div class="menu-title">目x錄</div>
                 <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
                 <ul class="mobile-menu-list">

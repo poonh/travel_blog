@@ -198,6 +198,11 @@ nav ul li a{
         display: block;
     }
     
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+    
     .container-search {
       display: none;
     }
