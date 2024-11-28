@@ -80,14 +80,6 @@ nav {
 
 /* Menu with Two Horizontal Rows */
 
-/*
-nav {
-    background-color: navy; /* Set background color for the nav element
-    padding: 20px; /* Add padding to extend the background color
-    max-width: 800px; /* Set the max width of the menu
-    margin: 0 auto; /* Center the nav element horizontally
-}
-*/
 nav ul {
 /*    background-image: url('pictures/darkblue.webp');*/
     background-color: rgb(0, 108, 169);
@@ -170,11 +162,17 @@ nav ul li a{
     /*additional ends*/
 }
 
+/*
 .menu-icon {
     width: 30px;
     height: 30px;
-    /*    background-color: lightgreen;*/
-   /* background-image: url('pictures/lightgreen.jpg')*/
+    cursor: pointer;
+}
+*/
+
+.menu-icon {
+    display: inline-block;
+    margin-left: 280px; /* Adjust as needed */
     cursor: pointer;
 }
 
