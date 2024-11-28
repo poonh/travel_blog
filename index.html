@@ -77,10 +77,16 @@
     
             
 </head>
+
 <body>
+
+
+
     <a id="back"></a>
     <header>
+        
         <div class="container">
+            
 
             <nav>
                 <ul class="menu">
@@ -113,9 +119,16 @@
             <br><br>
             <body width = "device-width">
             <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
-            </body>
-         <br><br>
          
+         <!--addtional begins-->
+         <div class="container-right">
+             <div style="margin-bottom: 0px;">
+               <input type="text" id="search-box" placeholder="温泉，红叶，游泳，骑行..." />
+               <button id="search-button">搜索</button>
+             </div>
+             <div id="search-results"></div></div>
+         <!--addtional ends-->
+            <br>
          <!--new begins-->
          <div style="font-size: 14px;">
         (以下地图取自<a href="https://www.j-lis.go.jp" target=_blank>J-LIS自地方公共团体情報システム機構</a>)<br><br>
@@ -175,7 +188,7 @@
                   <div id="info-panel-shirokiyama" class="info-panel" style="display: none;">
                       <button id="close-panel-shirokiyama" class="close-btn">关闭</button>
                       <p>一天往返登白木山(攀升800米，难度适中)</p>
-                      <p>游记: <a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki.html" target="_blank">广岛百名山 - 白木山(1天游)</a>.</p>
+                      <p>游记: <a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki_ad.html" target="_blank">广岛百名山 - 白木山(1天游)</a>.</p>
                   </div>
                   
                   
@@ -243,9 +256,9 @@
                       <p>とび島海道骑行，海景别墅，樱花，特色咖啡小店，温泉</br>
                        <a href="https://poonh.github.io/travel_blog/github_html/2020_kenminnohama_cycling_ad.html" target="_blank">游记:毕业安芸滩骑行(2天1夜)</a></p>
                       <p>浴衣逛古镇，自行车导游团学历史，仿古民家住宿，日本茶室喝正宗抹茶，本格囲炉裡飯，濑户内海登山</br>
-                    　　<a href="https://poonh.github.io/travel_blog/github_html/2021_irori_ad.html" target="_blank">游记:囲炉裏庆圣诞</a></p>
+                    　　<a href="https://poonh.github.io/travel_blog/github_html/2021_irori_ad.html" target="_blank">游记:囲炉裏庆圣诞(2天1夜)</a></p>
                       <p>观星，海景别墅，闪闪水母，古镇，烧烤，阳台海景早餐</br>
-                       <a href="https://poonh.github.io/travel_blog/github_html/2020_autumn_kenminnohama_ad.html" target="_blank">游记:再去県民の浜(2天1夜)</a></p>
+                       <a href="https://poonh.github.io/travel_blog/github_html/2020_autumn_kenminnohama_ad.html" target="_blank">游记:県民の浜复兴之旅(2天1夜)</a></p>
                   </div>
                   
                   <div id="info-panel-etajima" class="info-panel" style="display: none;">
@@ -563,6 +576,7 @@
      <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
  </div>
  <script src="map_script.js"></script>
+ <script src="search_script.js"></script>
  <script src="script.js"></script> <!-- Link to your JS file -->
  <script>
      function toggleMobileMenu() {
@@ -575,5 +589,6 @@
          menuList.classList.remove('active');
      }
  </script>
+
 </body>
 </html>
