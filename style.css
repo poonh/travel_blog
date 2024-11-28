@@ -169,6 +169,10 @@ nav ul li a{
     cursor: pointer;
 }
 
+.menu-title {
+    margin-right: auto; /* Pushes 目錄 to the far left */
+    margin-left: 10px; /* Adjust margin as needed */
+}
 
 
 .mobile-menu-list {
