@@ -15,6 +15,13 @@ body {
  /*   max-width: 768px*/
 }
 
+.container-search {
+    display: flex;
+    align-items: left;
+    justify-content: left; /* Adjusted to center items horizontally */
+    padding: 0px;
+ /*   max-width: 768px*/
+}
 
 
 main {
@@ -150,6 +157,13 @@ nav ul li a{
     .mobile-menu-list {
         display: block;
     }
+    
+    /* additional*/
+    .container-right {
+      display: none;
+    }
+    
+    /* additional*/
 }
 
 

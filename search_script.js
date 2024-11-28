@@ -38,3 +38,8 @@ function searchArticles() {
 
 // Add event listener to the "Search" button
 document.getElementById("search-button").addEventListener("click", searchArticles);
+document.getElementById("search-box").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    searchArticles();
+  }
+});
