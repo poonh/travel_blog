@@ -12,10 +12,10 @@
     <style>
         /* Add your custom styles here */
 
-        /*.menu-icon {
+        .menu-icon {
             display: none;
             cursor: pointer;
-        }*/
+        }
 
         .mobile-menu-list {
             display: none;
@@ -35,13 +35,10 @@
         .mobile-menu-list.active {
             display: block;
         }
-        
-       
-         /*
+
         .mobile-menu {
             display: none;
         }
-        */
 
         .menu-title {
             margin-left: 10px; /* Adjust margin as needed */
@@ -57,11 +54,12 @@
         }
         
         @media only screen and (max-width: 768px) {
-            .menu-icon {
+        /*    .menu-icon {
                 display: inline-block;
-                margin-left: 280px; /* Adjust as needed */
+                margin-left: 280px; 
+                
                 cursor: pointer;
-            }
+            }*/
 
             .mobile-menu {
                 display: flex;
@@ -113,21 +111,12 @@
                           <button id="search-mobile-button">搜索</button>
                         </div>
                     <div id="search-mobile-results"></div></div>
-                    
                     <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
-               <!--
-                <div class="container-mobile-search">
-                    <div style="margin-bottom: 0px;">
-                      <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
-                      <button id="search-mobile-button">搜索</button>
-                    </div>
-                <div id="search-mobile-results"></div></div>
-               -->
                 </ul>
             </div>
         </div>
@@ -135,13 +124,13 @@
     <main>
         <article>
             <br><br>
-            <!--<body width = "device-width">-->
+           <!-- <body width = "device-width">-->
             <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/></img>
          
          <!--addtional begins-->
          <div class="container-search">
              <div style="margin-bottom: 0px;">
-               <input type="text" id="search-box" placeholder="温泉，红叶，游泳，骑行..." />
+               <input type="text" id="search-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
                <button id="search-button">搜索</button>
              </div>
              <div id="search-results"></div></div>
@@ -172,7 +161,7 @@
                         <div style="text-align: center;"><h3>红色表示去过的地方，可以点击</h3></div>
                  <!--class="picture-maps"-->
                 <div class="image-container">
-                 <!--    <body width = "device-width">-->
+                  <!--   <body width = "device-width">-->
               <img src="https://poonh.github.io/travel_blog/maps/hiroshima_red.JPG" class="picture-maps" usemap="#clickable-hiroshima">
                  </div>
                   </div>

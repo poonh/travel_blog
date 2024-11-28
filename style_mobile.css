@@ -155,15 +155,14 @@ nav ul li a{
 
 }
 .mobile-menu {
-    position: fixed;
     display: none;
 }
 
 .menu-icon {
+    width: 30px;/*old*/
+    height: 30px;/*old*/
     display: inline-block;
-    margin-left: 280px; /* margin-right: 10px */
-    width: 30px;
-    height: 30px;
+    margin-left: 280px; /*
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
@@ -196,11 +195,6 @@ nav ul li a{
 
     .mobile-menu-list {
         display: block;
-    }
-    
-    .menu-title {
-        margin-right: auto; /* Pushes 目錄 to the far left */
-        margin-left: 10px; /* Adjust margin as needed */
     }
     
     .container-search {
