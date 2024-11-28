@@ -105,6 +105,12 @@
                 <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
                 <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                    <div id="search-mobile-results"></div></div>
                     <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
@@ -118,8 +124,8 @@
     <main>
         <article>
             <br><br>
-            <body width = "device-width">
-            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+           <!-- <body width = "device-width">-->
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/></img>
          
          <!--addtional begins-->
          <div class="container-search">
@@ -155,7 +161,7 @@
                         <div style="text-align: center;"><h3>红色表示去过的地方，可以点击</h3></div>
                  <!--class="picture-maps"-->
                 <div class="image-container">
-                     <body width = "device-width">
+                  <!--   <body width = "device-width">-->
               <img src="https://poonh.github.io/travel_blog/maps/hiroshima_red.JPG" class="picture-maps" usemap="#clickable-hiroshima">
                  </div>
                   </div>
