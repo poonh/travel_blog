@@ -157,7 +157,17 @@ nav ul li a{
 
 }
 .mobile-menu {
-    display: none;
+    /*display: none;*/ /*originally here only this line*/
+    /*additional begins*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;s
+    /*additional ends*/
 }
 
 .menu-icon {
