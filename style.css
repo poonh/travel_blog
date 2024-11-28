@@ -24,6 +24,15 @@ body {
 }
 
 
+.container-mobile-search {
+    display: flex;
+    align-items: left;
+    justify-content: left; /* Adjusted to center items horizontally */
+    padding: 0px;
+ /*   max-width: 768px*/
+}
+
+
 main {
     background-color:rgb(255, 255, 255);
 /*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
