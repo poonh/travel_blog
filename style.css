@@ -198,7 +198,7 @@ nav ul li a{
  original ends*/
  
  .mobile-menu {
-     display: flex;
+     display: block;
      align-items: center;
      justify-content: space-between;
      margin-right: 10px;
