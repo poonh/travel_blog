@@ -160,6 +160,8 @@ nav ul li a{
 }
 
 .menu-icon {
+    display: inline-block;
+    margin-left: 280px; /* margin-right: 10px */
     width: 30px;
     height: 30px;
     /*    background-color: lightgreen;*/
