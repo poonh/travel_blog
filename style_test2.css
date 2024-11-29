@@ -159,13 +159,13 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
+    width: 60px;/*old*/
+    height: 60px;/*old*/
     display: inline-block;
+    margin-left: 280px; /*original*/
+    /*    background-color: lightgreen;*/
+   /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
- /*   background-color: lightgreen; /* Optional background for testing */
-    text-align: right; /* Centers the icon's content */
-    line-height: 30px; /* Vertically centers the icon's text if any */
 }
 
 .mobile-menu-list {
@@ -190,10 +190,9 @@ nav ul li a{
      }
 
      .menu-title {
-         margin-right: 10px; /* Space between title and icon */
-         font-size: 16px; /* Adjust font size as needed */
-         white-space: nowrap; /* Prevents the title from wrapping */
-     }
+         /* margin-right: auto;*//* Pushes 目錄 to the far left */
+          margin-left: 270px; /* Adjust margin as needed */
+      }
      
     .menu {
         display: none;
