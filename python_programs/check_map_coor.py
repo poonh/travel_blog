@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 from PIL import Image
+import os,sys
 
 # Load your map image
-image_path = 'maps/yamaguchi_red.JPG'  # Replace with your map image file path
+image_path = sys.argv[1]  # Replace with your map image file path
 image = Image.open(image_path)
 
 # Display the image with matplotlib
@@ -29,11 +30,12 @@ fig.canvas.mpl_connect('button_press_event', onclick)
 plt.title("Click to capture coordinates on the map")
 plt.show()
 
-output = ','.join(f"{x},{y}" for x, y in coords)
-print(output)
+
 # Output the final coordinates after closing the plot
 print("All captured coordinates:", coords)
-
+print("Copy and paste the following directly to your html file:")
+output = ','.join(f"{x},{y}" for x, y in coords)
+print(output)
 
 
 """

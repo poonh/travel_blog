@@ -1,55 +1,90 @@
-def modify_html(input_html):
-    # Read the new header content from "new_header_all.txt"
-    with open("new_header_all.txt", "r", encoding="utf-8") as new_header_file:
-        new_header_content = new_header_file.read()
-    
-    # Read the content to be added from "add_image_icon.txt"
-    with open("image_icon.txt", "r", encoding="utf-8") as image_icon_file:
-        image_icon_content = image_icon_file.read()
-    
-    # Read the HTML file content
-    with open(input_html, "r", encoding="utf-8") as html_file:
-        html_content = html_file.readlines()
-    
-    # Step 1: Remove all content before </header> and replace with new_header_all.txt
-    modified_content = []
-    header_found = False
-    for line in html_content:
-        if "</header>" in line:
-            header_found = True
-            # Insert new header content and keep the </header> line
-            modified_content.append(new_header_content + "\n")
-            modified_content.append(line)
-            continue
-        # Skip lines before </header>
-        if header_found:
-            modified_content.append(line)
-    
-    # Step 2: Look for <article> followed by <br><br><br><br> and add image icon content
-    final_content = []
-    i = 0
-    while i < len(modified_content):
-        line = modified_content[i]
-        final_content.append(line)
+import os
+
+def process_html_file(file_path, replace_header_file):
+    try:
+        # Read the HTML file
+        with open(file_path, 'r', encoding='utf-8') as file:
+            lines = file.readlines()
         
-        # Check for <article> and <br><br><br><br> sequence
-        if "<article>" in line and i + 1 < len(modified_content) and "<br><br><br><br>" in modified_content[i + 1]:
-            final_content.append(modified_content[i + 1])  # Append the <br><br><br><br> line
-            final_content.append(image_icon_content + "\n")  # Insert image icon content after <br><br><br><br>
-            i += 1  # Skip the <br><br><br><br> line already processed
+        # Extract the title
+        title_name = ""
+        for line in lines:
+            if "<title>" in line and "</title>" in line:
+                title_name = line.strip().split("<title>")[1].split("</title>")[0]
+                #print(title_name)
+                break
+                
+        
+        if not title_name:
+            print(f"No title found in {file_path}. Skipping file.")
+            return
+        
+        # Locate the specific image line and check the next line
+        img_tag = '<img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>'
+        condition_met = False  # Flag to track if the condition is met
+        
+        for i, line in enumerate(lines):
+            if img_tag in line.strip():
+                #print(lines[i + 1].strip())
+                if i + 1 < len(lines) and lines[i + 1].strip() == "<br><br>":
+                    # Remove lines up to the next line after the image tag
+                    lines = lines[i + 2:]  # Skip the current and next line
+                    condition_met = True
+                break
+                
+        if condition_met == False:
+            print(f"Condition not met in file: {file_path}")
+            return
+        
+                    
+        
+        # Read the replacement header file
+        with open(replace_header_file, 'r', encoding='utf-8') as replace_file:
+            replace_header = replace_file.read()
+        
+        # Replace the <title> tag in the replacement content
+        replace_header = replace_header.replace("<title></title>", f"<title>{title_name}</title>")
+        
+        # Combine the replacement header with the remaining lines
+        new_content = replace_header + "\n" + "".join(lines)
+        
+        # Overwrite the original HTML file
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(new_content)
+        
+        #print(f"Processed and updated: {file_path}")
+    
+    except Exception as e:
+        print(f"Error processing {file_path}: {e}")
+
+        
+
+
+def main():
+    # Folder containing the HTML files
+    folder_path = "github_html"
+    
+    # Specify the replacement header file
+    replace_header_file = "replace_header.txt"
+    
+    if not os.path.isfile(replace_header_file):
+        print(f"Replacement header file '{replace_header_file}' not found. Please ensure it exists.")
+        return
+    
+    # List all HTML files in the folder, excluding those with 'ehime' in the filename
+    for file_name in os.listdir(folder_path):
+        # Check if the file is an HTML file and does not contain 'ehime'
+        if file_name.endswith(".html"):
+            file_path = os.path.join(folder_path, file_name)
             
-        i += 1
-    
-    # Write the modified content back to the original HTML file
-    with open(input_html, "w", encoding="utf-8") as html_file:
-        html_file.writelines(final_content)
-    
-    print(f"Modified '{input_html}' successfully.")
+            if not os.path.isfile(file_path):
+                print(f"Skipping invalid file: {file_path}")
+                continue
+            
+            # Process the file
+            process_html_file(file_path, replace_header_file)
 
-# Get the input HTML file from the user
+if __name__ == "__main__":
+    main()
 
-input_html = "2023_setouchi"
-modify_html(f"github_html/{input_html}_ad.html")
-modify_html(f"github_html/{input_html}_info.html")
-modify_html(f"github_html/{input_html}.html")
 
