@@ -63,10 +63,11 @@ body {
 }*/
 main {
     background-color:rgb(255, 255, 255);
-/*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
+    padding: 50px 10px; /*space between the main text and the bottom of the menu bar*/
     max-width: 800px; /* Set a maximum width for the main content */
     margin: 0 auto;
-    margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
+  /*  margin-top: 50px  *//*space between the main text and the bottom of the menu bar*/
+
 }
 
 /*additional begins*/
@@ -162,7 +163,7 @@ nav ul li a{
     width: 30px;/*old*/
     height: 30px;/*old*/
     display: inline-block;
-    margin-left: 280px; /*
+    margin-left: 280px; /*original*/
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
@@ -190,7 +191,7 @@ nav ul li a{
      }
 
      .menu-title {
-          margin-right: auto; /* Pushes 目錄 to the far left */
+          margin-right: auto;/* Pushes 目錄 to the far left */
           margin-left: 10px; /* Adjust margin as needed */
       }
      
