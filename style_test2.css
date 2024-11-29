@@ -163,8 +163,8 @@ nav ul li a{
     height: 30px; /* Adjust size as needed */
     display: inline-block;
     cursor: pointer;
-    background-color: lightgreen; /* Optional background for testing */
-    text-align: center; /* Centers the icon's content */
+ /*   background-color: lightgreen; /* Optional background for testing */
+    text-align: right; /* Centers the icon's content */
     line-height: 30px; /* Vertically centers the icon's text if any */
 }
 
