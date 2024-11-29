@@ -1,23 +1,113 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>初秋香港慈山寺半天游 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>初秋香港慈山寺半天游</title>
+    <style>
+        /* Add your custom styles here */
+
+        .mobile-menu-list {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+        }
+            </style>
+    
+    
+            
 </head>
+
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
-<main class="content">
-<article>
-<p>上一章</p>
+
+
+
+    <a id="back"></a>
+    <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html">繁體版</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="mobile-menu">
+                <div class="menu-title-container">
+                    <img src="pictures/saijo.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目录</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
+                <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html" onclick="hideMobileMenu()">繁體版</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <article>
+           <div class="icon-picture">
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+           </div>
+            <br>
+
+   
 <p>日期：2023年11月2日（周四）</p>
 <p>网站：<a href="https://www.tszshan.org/home/new/zh-hk/index.php">https://www.tszshan.org/home/new/zh-hk/index.php</a>
 </p>
@@ -29,7 +119,7 @@
 <p>早上8点半过就从家里出发，记录一下我们的港铁。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2048" data-original-width="1152" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/1.JPG" width="360"/>
+<img border="0" class="picture" data-original-height="2048" data-original-width="1152" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/1.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -39,7 +129,7 @@
 <p>门口排队检票入场</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/2.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -50,7 +140,7 @@
 <p>其中一个盖章的地方</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/3.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/3.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -59,7 +149,7 @@
 <p>下面一棵普通一棵漂亮的树，你喜欢哪颗呢？其实都是同一个品种，一切外表都是虚空的。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/4.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/4.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -67,7 +157,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/5.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/5.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -77,7 +167,7 @@
 <p>这里是风水宝地，坐北向南，最难的是山里没高压电缆（又是来自导游）。我们来看看这里的风景。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/6.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/6.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -86,7 +176,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/7.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/7.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -95,33 +185,33 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/8.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/8.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/9.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/9.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/10.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/10.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/11.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/11.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>这里建筑用非洲紫檀木，可以用200年。 <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/12.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/12.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -129,7 +219,7 @@
 <p>我蹭的导游团。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/13.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/13.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -137,7 +227,7 @@
 <p>这里设计贴心，凳子很多。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/14.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/14.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> 还有可以挡太阳的</p>
@@ -145,7 +235,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/15.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/15.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -155,7 +245,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/16.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/16.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -164,7 +254,7 @@
 </p>
 <p style="text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/17.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/17.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  <br/>
@@ -174,7 +264,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/18.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/18.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -182,14 +272,14 @@
 <p>
 </p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/19.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/19.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> 还有抽卡机器，看看我抽到什么?大家顺便看看下图我的新作（你们猜猜是啥？）</p>
 <p style="text-align: center;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/20.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/20.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -198,7 +288,7 @@
 <p>下面人手牌子又令我想起日本。日本很喜欢人手举牌子。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/21.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/21.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -207,13 +297,13 @@
 <p>这里的花很漂亮，春天还有桃花林。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/22.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/22.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/23.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/23.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -222,7 +312,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/24.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/24.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -235,7 +325,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/25.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/25.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -246,14 +336,14 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/26.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/27.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/27.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -264,19 +354,19 @@
 <p>时间到了，进行仪式（忘了仪式名字）</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/28.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/28.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/29.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/29.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/30.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/30.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -284,7 +374,7 @@
 <p>博物馆门口 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/31.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/31.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -297,62 +387,22 @@
 <p>有凳子有遮荫的小巴站 <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/32.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/32.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/33.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2023_cishansi/33.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
-<p>很愉快的半天游。慈善寺硬件软件都设计的很棒。贴心的地方令我有日本的感觉。<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
-<p>
-<br/>
-</p>
+<p>很愉快的半天游。慈善寺硬件软件都设计的很棒。贴心的地方令我有日本的感觉。</p>
+
+
+
 <p>下一章</p>
 <br/>
 <br/>

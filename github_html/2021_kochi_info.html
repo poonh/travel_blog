@@ -12,14 +12,9 @@
     <style>
         /* Add your custom styles here */
 
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
         .mobile-menu-list {
-            display: none;
             position: fixed;
+            display: none;
             top: 0;
             left: 0;
             height: 100%;
@@ -32,33 +27,9 @@
             transition: width 2s;
         }
         
-        .mobile-menu-list.active {
-            display: block;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .menu-title {
-            margin-left: 10px; /* Adjust margin as needed */
-        }
-
-        .menu-icon {
-            margin-right: 10px; /* Adjust margin as needed */
-            cursor: pointer;
-        }
-
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */a
-        }
         
         @media only screen and (max-width: 768px) {
-            .menu-icon {
-                display: inline-block;
-                margin-left: 280px; /* Adjust as needed */
-                cursor: pointer;
-            }
+    
 
             .mobile-menu {
                 display: flex;
@@ -67,23 +38,27 @@
                 margin-right: 10px;
             }
 
-            .menu-title {
-                margin-right: auto; /* Pushes 目錄 to the far left */
-                margin-left: 10px; /* Adjust margin as needed */
-            }
         }
-        
-       
             </style>
     
     
             
 </head>
+
 <body>
+
+
+
     <a id="back"></a>
     <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
         <div class="container">
-
             <nav>
                 <ul class="menu">
                     <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
@@ -92,30 +67,46 @@
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html">繁體版</a></li>
                 </ul>
             </nav>
 
+            
             <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <div class="menu-title-container">
+                    <img src="pictures/saijo.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目录</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
                 <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
                     <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html" onclick="hideMobileMenu()">繁體版</a></li>
                 </ul>
             </div>
         </div>
-        
+
     </header>
     <main>
         <article>
-            <br><br> 
-            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/
-         <br><br><br>
+           <div class="icon-picture">
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+           </div>
+            <br>
+
 
          1.<a href="https://poonh.github.io/travel_blog/github_html/2021_kochi_ad.html" target=_blank>广告</a><br>
          3.<a href="https://poonh.github.io/travel_blog/github_html/2021_kochi.html" target=_blank>游记</a><br>

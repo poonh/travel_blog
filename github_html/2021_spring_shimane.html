@@ -1,27 +1,117 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>初春岛根休闲游</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>初春岛根休闲游</title>
+    <style>
+        /* Add your custom styles here */
+
+        .mobile-menu-list {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+        }
+            </style>
+    
+    
+            
 </head>
+
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
-<main class="content">
-<article>
+
+
+
+    <a id="back"></a>
+    <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html">繁體版</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="mobile-menu">
+                <div class="menu-title-container">
+                    <img src="pictures/saijo.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目录</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
+                <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html" onclick="hideMobileMenu()">繁體版</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <article>
+           <div class="icon-picture">
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+           </div>
+            <br>
+
     1.<a href="https://poonh.github.io/travel_blog/github_html/2021_spring_shimane_ad.html" target=_blank>广告</a><br>
     2.<a href="https://poonh.github.io/travel_blog/github_html/2021_spring_shimane_info.html" target=_blank>相关行程信息</a><br>
     4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/2021_spring_shimane.pdf" target=_blank>行程单</a><br>
     5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2021_spring_shimane.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
-    <h3 align="center">1.初春岛根休闲游 - 游记<br><br></h3>
+    <h3 align="center">3.初春岛根休闲游 - 游记<br><br></h3>
 <div>
 <div>
 <p>前言：之前看过资料，就有想登吾妻山（广岛岛根交界，海拔1000多米）的打算，不过没有具体打算什么时候。年底爬完火山饭局，L老师问我们还有没有去旅行的计划，那就不如她走之前去吾妻山吧，不过后来发现这个时候山顶积雪还没化，我们水平爬不了，附近风景好点的山海拔也都1000米以上，那我就放弃登山了，之后看到岛根的自行车官网，尾原大坝可以骑，所以就打算骑行了。后来其他原因，没有骑行，改成休闲游。</p>
@@ -2273,11 +2363,21 @@
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
-<div class="overlay" id="overlay">
-<img alt="Enlarged image" class="overlay-img" id="overlayImg" src=""/>
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
 </div>
-<script src="../script.js">
-</script> <!-- Link to your JS file -->
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
 </article>
 </main>
 </body>

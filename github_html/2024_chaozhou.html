@@ -1,24 +1,112 @@
 <!DOCTYPE html>
-
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-<meta content="#FFFFFF" name="msapplication-TileColor"/>
-<link href="http://gmpg.org/xfn/11" rel="profile"/>
-<link href="../style.css" rel="stylesheet"/> <!-- Link to your CSS file -->
-<title>潮汕历史文化之旅</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>潮州历史文化之旅</title>
+    <style>
+        /* Add your custom styles here */
+
+        .mobile-menu-list {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+        }
+            </style>
+    
+    
+            
 </head>
+
 <body>
-<header>
-<!--        <h1>Life in Saijo</h1>-->
-</header>
-<main class="content">
-<article>
-<p>上一章</p>
-<p>
+
+
+
+    <a id="back"></a>
+    <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html">繁體版</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="mobile-menu">
+                <div class="menu-title-container">
+                    <img src="pictures/saijo.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目录</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
+                <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
+                    <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html" onclick="hideMobileMenu()">繁體版</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <article>
+           <div class="icon-picture">
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
+           </div>
+            <br>
+
 <b>日期：</b>2024年2月29日-3月2日</p>
 <p>
 <b>前言：</b>从来没试过那么说走就走的旅行。当然不是今天说明天行，我必须得计划的。今次提前了九天。很久之前说过春节后去旅行，不过没有实际行动，因为我没特别想去。上周二A看了旅行社广告，说潮州高铁旅行，之后我马上查了一下行程，觉得可行就去了。从她说到决定去可能不到半小时时间，然后因为我已经看了大概行程，决定了，我不许A改，不许她提议去别的地方，要不就那都不能去。晚上，A请示了老板知道计划出门那几天不用上班，我就马上买车票了。
@@ -74,7 +162,7 @@
 <p>地铁出来经过这条路就能到售票处，看到肯德基。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/1.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/1.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -82,7 +170,7 @@
 <p>我买的早餐，三个人。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/2.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/2.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  <br/>
@@ -92,7 +180,7 @@
 <p>吃不饱的肯德基早餐</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/3.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/3.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -101,21 +189,21 @@
 <p>好像地铁的福田高铁站台</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/4.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/4.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 <br/> </p>
 <p> 按照显示牌的指示认车厢颜色，我们坐的是蓝色，不过字太少我觉得看不清。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/5.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/5.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/6.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/6.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -126,7 +214,7 @@
 <p>出发了~A和B第一次坐高铁。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/7.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/7.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -134,7 +222,7 @@
 <p> 在车上继续喝咖啡，A还发挥了ta的特性，把杯子留下，第二天果然用上。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/8.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/8.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -142,7 +230,7 @@
 <p>由于很早就去高铁站而且要坐车两小时，我已经准备好玩具 ，好让我等待时全程不会无聊。这是我新学的手绳，比起中国结绳子省很多空间。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/9.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/9.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -154,7 +242,7 @@
 <p>路上经常看到这样开车的。车不是在换道，是一直在白线上行驶。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/10.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/10.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -162,7 +250,7 @@
 <p>这里行人路上停车还特别多，搞到行人没地方走，带着老人孩子尤其不方便。在日本，如果你想买车，前提是需要车位，不知道行人路的车到底有没有车位？也不知道这里有没有禁止行人路停车的政策，更不知道这问题领导根本关不关心？</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/11.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/11.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -173,7 +261,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2266" data-original-width="2266" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/12.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2266" data-original-width="2266" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/12.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -185,7 +273,7 @@
 <p>言归正传，我们下车了，潮汕站是标准高铁站，厕所很干净。车站有指示坐车去古城。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/13.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/13.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -194,7 +282,7 @@
 <p>我们开车了。潮州我们来了~</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/14.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/14.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -205,7 +293,7 @@
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/15.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/15.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -216,7 +304,7 @@
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/16.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/16.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -224,7 +312,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/17.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/17.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -232,13 +320,13 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/18.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/18.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/19.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/19.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -246,7 +334,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/20.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/20.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -256,7 +344,7 @@
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/21.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/21.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -264,14 +352,14 @@
 <p> 配了油蒜的鹅丸紫菜汤。第一次喝油蒜汤真的很香。这个鹅丸也很筋道。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/22.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/22.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们的拼盘，全都很好吃哦。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/23.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/23.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -279,7 +367,7 @@
 <p> 第一次吃鹅头，觉得皮有一点点像猪耳，挺好吃的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/24.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/24.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -292,7 +380,7 @@
 <p>门口 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/25.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/25.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -305,7 +393,7 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/26.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/26.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -313,13 +401,13 @@
 <p>我们的下午茶，杏仁奶茶（8元，纯杏仁茶7元），芝麻茶（6元，有纯白纯黑及双拼），齿酥油炸粿，4元，泡在茶里，不喜欢油炸的不用点，这个是很脆的，普宁豆腐（10元），总共42元。这家点比一般大，卫生不错。特别喜欢这里的杏仁奶茶，杏仁味很香。只喝杏仁茶有点偏甜，喝杏仁奶茶刚好。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/27.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/27.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/28.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/28.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -327,7 +415,7 @@
 <p> 老板在打芝麻茶</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/29.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/29.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -335,7 +423,7 @@
 <p> 店内环境</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/30.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/30.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/> </p>
@@ -343,14 +431,14 @@
 <p>沿着西湖的路 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/31.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/31.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/32.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/32.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -358,7 +446,7 @@
 <p>路上的中药铺</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/33.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/33.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -366,7 +454,7 @@
 <p>走到西湖尽头是三利步行街，这是一条重修过的街道，以前卖衣服的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/34.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/34.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -375,20 +463,20 @@
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/35.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/35.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/36.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/36.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>火水灯现在已经非常少</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/37.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/37.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -399,7 +487,7 @@
 <p>买老药桔的时候看到一只超级可爱的长毛猫路过，我很想和它玩（不爱猫的人竟然想和猫玩）。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1578" data-original-width="1578" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/38.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1578" data-original-width="1578" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/38.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -420,7 +508,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>日本东广岛西条外国人参加政府旅行团参观酒厂</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/39.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/39.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -431,7 +519,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2898" data-original-width="2898" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/40.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2898" data-original-width="2898" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/40.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -442,7 +530,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>这里拜财神。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2484" data-original-width="2484" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/41.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2484" data-original-width="2484" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/41.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -451,7 +539,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/42.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/42.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -463,7 +551,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2780" data-original-width="2780" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/43.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2780" data-original-width="2780" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/43.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -474,21 +562,21 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>古城有间卤鹅店提供舞狮拍照。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/44.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/44.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>我们看看其他地方，这里的街道建筑叫“骑楼”，汕头老城也是一样的，是民国时代的建筑。不过我不知道骑楼是什么意思...</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/45.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/45.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/46.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/46.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -497,7 +585,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>白天的牌坊街，一会儿看夜景。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/47.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/47.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -506,7 +594,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/48.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/48.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -514,7 +602,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/49.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/49.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -522,7 +610,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>还有网红冰淇淋</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/50.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/50.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -533,7 +621,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/51.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/51.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -542,14 +630,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/52.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/52.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>
 <br/>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3014" data-original-width="3014" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/53.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3014" data-original-width="3014" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/53.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -558,14 +646,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>我们的三轮车</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/54.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/54.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>出发了</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/55.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/55.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -574,13 +662,13 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>历史故事就在城楼开始，城楼那里从顶伸延到底有道很宽的坑，是古代用来防洪用的。洪水一来就下闸。古代泛滥时，居民 就在城楼上看。不过现代有位市长（忘了名字）修了大坝，潮州就洪水不再了。这里有个太平桥，其实是地下防水道，给居民避洪用的。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/56.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/56.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/57.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/57.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -591,7 +679,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1251" data-original-width="1251" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/58.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1251" data-original-width="1251" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/58.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -606,7 +694,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>日本很会利用本地资源推广为旅游产品，我再给两个例子，一个是爱知县东荣町盛产的一种矿物绢云母 （sericite), 可以用来作粉底用。手作美容产品及参观矿山是旅游体验，参考<a href="https://naori-toei.jp/">官网</a>。另一例子岛根县松江市穴道湖南边有千万年前生产的来待石，该地的来待石博物馆提供石头雕刻体验，参考<a href="https://www.kimachistone.com/guide/">官网</a>。</p>
 <p> 驿站入口</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/59.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/59.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -614,7 +702,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p> 驿站门口的通花瓷店，除了花瓶，还有发簪等等。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/60.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/60.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -622,7 +710,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>好了，回到我们的三轮车，我们去了潮州府夜景拍照，这里是用红木，广济楼用桃木（不知道有没有记错）。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/61.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/61.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -632,7 +720,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>刘师傅</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/62.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/62.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -640,7 +728,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p> 牌坊街夜景</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/63.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/63.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -648,7 +736,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p> 切鹅的以为是真人，会动，其实是假的</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/64.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/64.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -657,7 +745,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>广济楼那边的夜景</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/65.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/65.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -667,19 +755,19 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>店内环境</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/66.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/66.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/67.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/67.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/68.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/68.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -687,27 +775,27 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>我们的晚饭。话说火锅的萝卜特别好吃，久煮不烂。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/69.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/69.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/70.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/70.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 嫩肉</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/71.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/71.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>爽口爆汁的牛丸</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/72.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/72.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -715,7 +803,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>很鲜味的鱼粥</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/73.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/73.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -723,21 +811,21 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>很好吃的蚝烙，份量也多</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/74.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/74.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  </p>
 <p>大爱的辣椒酱</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/75.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/75.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>老板爸爸泡的工夫茶</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/76.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/76.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -745,7 +833,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>放在门口的外卖辣椒酱和沙茶酱。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/77.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/77.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -760,21 +848,21 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/78.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/78.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
 <div class="separator" style="clear: both; text-align: center;">喝茶室</div>
 <div class="separator" style="clear: both; text-align: center;"> <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/79.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/79.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div>体验日式茶道<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/80.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/80.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -786,7 +874,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/81.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/81.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -800,28 +888,28 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>居民区街道 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/82.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/82.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/83.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/83.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/84.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/84.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>卖鱼的有我很想吃的黄鳝</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/85.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/85.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -833,7 +921,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>这家猪肉点早上九点多就卖完</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/86.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/86.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -841,14 +929,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>老房子的对联</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/87.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/87.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>又一老房子</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/88.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/88.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -856,14 +944,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>理发店</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/89.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/89.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>金银衣纸店</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/90.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/90.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -871,13 +959,13 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>好像已经废弃的幼儿园</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/91.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/91.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/92.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/92.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -887,7 +975,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>我们的早餐店</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/93.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/93.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -896,7 +984,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/94.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/94.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -904,14 +992,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p> 店内环境</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/95.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/95.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/96.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/96.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -921,7 +1009,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>我是拍挂历的</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/97.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/97.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -931,7 +1019,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/98.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/98.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -939,7 +1027,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>磨蹭到快10点，才出发去汕头（计划是9：30出发的）。打车120元，中间一段走高速。这次的司机比较靠谱，最少变道偶尔会打灯。</p>
 <p>路上看到很多没人住的房子，不过不是烂尾楼。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/99.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/99.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -948,7 +1036,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2350" data-original-width="2350" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/100.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2350" data-original-width="2350" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/100.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -958,7 +1046,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/101.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/101.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -966,7 +1054,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>今次美团司机还不错，停车后帮我们拿行李。而且因为找不到地方还教我们如何跟人家说。这里有好几家食肆，我们在找酒店时在其中一家河南羊肉门口呆了一会，人家见我们拿着行李，还让我们坐下来。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/102.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/102.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -980,7 +1068,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/103.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/103.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -990,7 +1078,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 前台的热茶，还有即磨咖啡忘了拍。
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/104.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/104.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1001,14 +1089,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>前台那里有平台花园，可以晒太阳。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/105.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/105.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们住6楼，那里有公共区，可以看书，有微波炉及蒸炉。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/106.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/106.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1019,7 +1107,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>开关全部触控，还会放音乐。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/107.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/107.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1027,13 +1115,13 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>房间有大屏幕 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/108.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/108.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/109.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/109.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1041,7 +1129,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/110.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/110.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1050,7 +1138,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/111.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/111.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1060,7 +1148,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>看完房间去吃饭了。去了附近吃隆江猪脚饭，可以吃猪手(多骨）或猪脚（纯肉）。小份15，大份20，含素菜，有例汤。这个猪手饭不过不失，有点肥。</p>
 <p>20元的大份猪手饭，还带好像猪肠的东西<br/>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/112.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/112.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1069,7 +1157,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>门口</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/113.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/113.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1077,7 +1165,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/114.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/114.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1088,7 +1176,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>感谢郭师傅让我获得知识，再见了~ </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2287" data-original-width="2287" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/115.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2287" data-original-width="2287" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/115.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1096,7 +1184,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>小公园入口</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/116.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/116.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1106,7 +1194,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>我们去了老大鱼丸，这里很多选择，我们点了马胶鱼丸，15元4粒，有点贵 ，也没啥特别不推荐。这里可以买生的外卖，但千万不要，比起龙眼南路贵太多了。胡椒猪肚这里50元一斤，龙眼南路大该30就可以。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/117.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/117.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1115,7 +1203,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/118.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/118.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1123,7 +1211,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/119.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/119.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1131,7 +1219,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>隔壁茶饮店小哥很努力推销，见到人就说hello，介绍自己家的茶饮。</p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/120.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/120.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1144,14 +1232,14 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/121.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/121.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>这是半外卖店，有些简单座位。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/122.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/122.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1161,7 +1249,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/123.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/123.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1171,21 +1259,21 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/124.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/124.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>我们逛逛老城，这里是中国最大的骑楼群。我又不知道什么是骑楼，古城内也没看到介绍 。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/125.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/125.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/126.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/126.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1193,7 +1281,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/127.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/127.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1201,7 +1289,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/128.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/128.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1209,7 +1297,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/129.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/129.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1217,7 +1305,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/130.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/130.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1226,7 +1314,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p>潮州三宝当茶饮</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/131.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/131.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1234,7 +1322,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <p> 这款油柑美式也充满本地特色，话说香港有柠檬咖啡的</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/132.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/132.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1248,7 +1336,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;">游客中心</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/133.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/133.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1259,7 +1347,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;">
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2539" data-original-width="2539" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/134.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2539" data-original-width="2539" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/134.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1272,7 +1360,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/135.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/135.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1286,7 +1374,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;"> </div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/136.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/136.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1297,7 +1385,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;">最后就是讲对外开放，我没看</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/137.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/137.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1309,7 +1397,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;"> </div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/138.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/138.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1321,7 +1409,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/139.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/139.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1329,7 +1417,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/140.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/140.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1337,7 +1425,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/141.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/141.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1348,7 +1436,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;">
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/142.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/142.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1358,7 +1446,7 @@ against Ethanol-Induced Gastric Damage: In Vitro and In Vivo Studies </a>
 <div class="separator" style="clear: both;">侨批文物馆有个小影院，没闭锁但又不放映，也没说放映什么，这啥意思？</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/143.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/143.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1387,7 +1475,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">离开这两个博物馆，我去了邮局，这里一条马路，无论是行人还是给车用的交通灯都是坏的，也没人手指挥。我觉得汕头管理交通的人实在太没安全意识了。</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/144.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/144.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1398,7 +1486,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">邮局门口</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/145.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/145.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1406,7 +1494,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> </div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/146.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/146.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1416,7 +1504,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> <br/>
 </div>
 <div class="separator" style="clear: both;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/147.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/147.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1424,7 +1512,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">这个景点可以盖章留念</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/148.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/148.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1441,14 +1529,14 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/149.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/149.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </div> </div>
 <div class="separator" style="clear: both;">现成的油蒜。我想潮汕人经常吃所以都有现成的卖。<div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/150.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/150.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1456,7 +1544,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <br/>这个饼干一般般。这里买10元，汕头小公园买12元。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/151.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/151.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1466,7 +1554,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">下面的令我惊喜，很久没见过了。过年香港经常吃的，左面的叫笑口枣，无陷。右面的角仔，里面花生芝麻。两者都是油炸的。<br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/152.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/152.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1476,7 +1564,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> 18元一斤的散装花生糖芝麻糖。一直觉得中式花生糖好吃又健康，怎么就打不出国际?</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="834" data-original-width="834" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/153.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="834" data-original-width="834" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/153.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1490,7 +1578,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both; text-align: left;"> </div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/154.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/154.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1499,7 +1587,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both; text-align: left;">油柑</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/155.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/155.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1510,7 +1598,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> <br/>
 </div>
 <div class="separator" style="clear: both;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/156.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/156.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1518,7 +1606,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> 姜薯，本地特产，下文详述。很多都是削皮后卖的。</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/157.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/157.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1526,7 +1614,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">酒，不知道是不是店家自己泡的。</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/158.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/158.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1535,7 +1623,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> 海鲜市场的龙虾</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/159.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/159.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1546,7 +1634,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;">牡蛎</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/160.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/160.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>  <br/>
@@ -1554,7 +1642,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> 青口</div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/161.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/161.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </div>
@@ -1564,7 +1652,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> <br/>
 </div>
 <div class="separator" style="clear: both;"> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/162.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/162.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1574,7 +1662,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <div class="separator" style="clear: both;"> </div>
 <div class="separator" style="clear: both;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/163.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/163.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1592,7 +1680,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/164.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/164.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1602,13 +1690,13 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <p>店里的海鲜</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/165.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/165.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/166.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/166.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1624,7 +1712,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/167.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/167.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1632,7 +1720,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <p> 我们的其他菜</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/168.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/168.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1640,7 +1728,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/169.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/169.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1650,7 +1738,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <p> 我们喝的茶是三姐冲的，她上杯子的时候还说:"小心烫"。家里已经把她训练熟手。话说这个茶叶好像鸭屎香，很好喝。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/170.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/170.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1664,7 +1752,7 @@ Slave)，他们有被骗被抢去当黑奴，也有被卖后被虐待致死的�
 <p>晚饭后回酒店，这条街早上经过有糖水铺就进去吃，杏仁糊很一般，不过鸭母捻不错，装饰加个红枣里面还有银杏枸杞，我学习了。以后做汤圆也可以这样。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/171.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/171.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1684,7 +1772,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p> </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/172.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/172.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1698,7 +1786,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3002" data-original-width="3002" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/173.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3002" data-original-width="3002" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/173.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1711,7 +1799,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/174.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/174.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1719,7 +1807,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>店内环境</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/175.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/175.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1727,14 +1815,14 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>我们先吃番喜沙茶面</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="240" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/176.JPG" width="320"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/176.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 店内环境 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/177.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/177.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1742,7 +1830,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p> 我的海鲜沙茶面27元，很漂亮吧。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/178.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/178.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1750,7 +1838,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>猪肉拌面18元，牛肉26元。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/179.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/179.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1759,7 +1847,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>吃完饭就在龙眼南路买东西，街角经常遇到人喝茶，都用一样的茶具（小茶杯那种）。潮州人真的很爱喝茶。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2070" data-original-width="2070" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/180.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2070" data-original-width="2070" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/180.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1767,7 +1855,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>我们现在去买牛丸了，阿亮手锤牛丸，之前一天经过过的。买的时候中午，没有人。之前是旁晚去，人多很多。这里牛丸55一斤（好像一般小店都这个价)，我们还买了猪肚丸(30)，墨鱼丸(75)，鱼丸(35，用的石斑鱼)，总共235元。现在有快递，下次还可以再买。阿亮问我们多久到家，我说约6小时，他还送了煮牛肉丸的牛肉汤给我们（冷冻的）。这个汤估计是早买的人有，所以想要就早点去买。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/181.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/181.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1775,7 +1863,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>锤牛肉的锤</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/182.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/182.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1783,7 +1871,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>老板娘做鱼皮饺</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/183.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/183.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1792,13 +1880,13 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/184.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/184.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/185.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/185.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1807,14 +1895,14 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>他家有保温包装，还有冰。我们中午12点买，6点回到家里冰都没怎么化。老板娘还送了些油蒜给我们回去煮汤。她还特意提醒把袋子扔掉然后把蒜放进去...</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/186.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/186.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/187.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/187.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1824,25 +1912,25 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>鹅肉买肉多的部分55一斤 ，肉多肉少部分一起买45一斤，一只约400元。粉肝好像120，鹅掌35一只，另外还有鹅肠鹅心鹅胗。我们买103元的鹅肉，80元粉肝，还有其他，总共285元。 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/188.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/188.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/189.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/189.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/190.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/190.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/191.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/191.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1851,7 +1939,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="2803" data-original-width="2803" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/192.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="2803" data-original-width="2803" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/192.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1862,7 +1950,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>买给C的鹅下庄，C怕肉汁流失，所以要回家自己切。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/193.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/193.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1870,7 +1958,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p> 最后C切得乱七八糟</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1204" data-original-width="1600" height="482" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/194.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1204" data-original-width="1600" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/194.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1881,7 +1969,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/195.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/195.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1892,7 +1980,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/196.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/196.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1904,13 +1992,13 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/197.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/197.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
 </p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/198.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/198.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1918,7 +2006,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>站内免费充电区</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/199.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/199.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1926,7 +2014,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>唯一的便利店</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/200.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/200.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1934,7 +2022,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>高大上的候车室</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/201.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/201.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
@@ -1943,7 +2031,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/202.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/202.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1951,7 +2039,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>A忍不住吃鹅，粉肝实在太好吃了。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/203.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/203.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -1961,7 +2049,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/204.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/204.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1969,13 +2057,13 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>这个车车票比汕头站到深圳北的贵30多元，而且在较远的汕头南，但觉得值得，因为人很少。我全程一个人坐3个人的位置（那天是周六）,太舒服了。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="4032" data-original-width="3024" height="640" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/205.JPG" width="480"/>
+<img border="0" class="picture" data-original-height="4032" data-original-width="3024" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/205.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p> 路上好好欣赏风景，经过很大的坟场。</p>
 <p> <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/206.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/206.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1983,7 +2071,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>不知道是不是鱼塘</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/207.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/207.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -1991,7 +2079,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p>农田</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/208.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/208.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2012,7 +2100,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1276" data-original-width="1702" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/209.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1276" data-original-width="1702" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/209.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2025,7 +2113,7 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 </p>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="1280" data-original-width="1707" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/210.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="1280" data-original-width="1707" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/210.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
@@ -2045,14 +2133,14 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <p> 成田机场候机室给旅客免费体验日本折纸</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/211.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/211.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> </p>
 <p>现场展示的日本折纸，我看上了其中一款，然后自己学了，后来学了很多日式折纸，送了很多给人。这就是先接触，然后深入，再传播。我也在传播日本文化。</p>
 <p>
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/212.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/212.JPG"/>
 </div>
 <div style="text-align: center;">
 </div> <br/>
@@ -2065,13 +2153,13 @@ reunion"就能搜到好多视频了。两韩分裂导致家庭分离韩国新闻
 <br/>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/213.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/213.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>成品</div>
 <div class="separator" style="clear: both; text-align: center;">
 <div class="picture-container">
-<img border="0" class="picture" data-original-height="3024" data-original-width="4032" height="480" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/214.JPG" width="640"/>
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2024_chaozhou/214.JPG"/>
 </div>
 <div style="text-align: center;">
 </div>
