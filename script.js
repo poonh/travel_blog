@@ -14,3 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.style.display = 'none';
     });
 });
+
+
+document.getElementById('menu-icon').addEventListener('click', function () {
+    const menu = document.querySelector('.mobile-menu-list');
+    menu.classList.toggle('active'); // Toggles the 'active' class
+});
