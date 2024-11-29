@@ -194,11 +194,7 @@ nav ul li a{
     }
 
     .mobile-menu {
-        /*display: block;*//*original*/
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;
+        display: block;
     }
 
     .mobile-menu-list {
