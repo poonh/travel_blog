@@ -67,8 +67,7 @@ main {
     max-width: 800px; /* Set a maximum width for the main content */
     margin: 0 auto;
     margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
-    padding-left: 10px; /*addtional*/
-    padding-right: 10px;/*addtional*/
+
 }
 
 /*additional begins*/
@@ -249,6 +248,14 @@ nav ul li a{
     .icon-picture{
       display: none;
     }
+    
+    main {
+            margin-top: 0px; /* Override margin-top for smaller screens */
+            padding-top: 0px
+            top: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     
 }
 
