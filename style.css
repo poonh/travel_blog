@@ -210,6 +210,12 @@ nav ul li a{
     .container-search {
       display: none;
     }
+    
+    main {
+            margin-top: 0px; /* Override margin-top for smaller screens */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 }
 
 
