@@ -159,8 +159,8 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
     display: inline-block;
     cursor: pointer;
  /*   background-color: lightgreen; /* Optional background for testing */
