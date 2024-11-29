@@ -128,7 +128,6 @@ nav ul li, .mobile-menu-list li {
     /*
     display: inline;
     margin-right: 20px;*/
-    
     flex: 1 1 auto; /* Allows items to grow and shrink equally */
     text-align: center; /* Center align the text in each item */
     padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
@@ -207,7 +206,8 @@ nav ul li a{
         top: 0;
         left: 0;
         height: 100%;
-        width: 60%; 
+        width: 60%;
+        background-color: #fff
     }
     
     .container-search {
