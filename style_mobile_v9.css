@@ -57,10 +57,10 @@ body {
   background-color: #0056b3;
 }
 
-#search-mobile-results {
+/*#search-mobile-results {
   margin-top: 10px;
   font-size: 14px;
-}
+}*/
 main {
     background-color:rgb(255, 255, 255);
 /*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
@@ -154,9 +154,8 @@ nav ul li a{
     /*font-weight: bold;*/ /*computer menu font*/
 
 }
-
 .mobile-menu {
-    display: none; /*this hides the mobile menu from large screens*/
+    display: none;
 }
 
 .menu-icon {
@@ -175,7 +174,12 @@ nav ul li a{
    /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
+.mobile-menu-list.active {
+    display: block;
+}
+
 .mobile-menu-list li {
+    display: block;/* Display list items vertically */
     padding: 10px;
 }
 
@@ -195,11 +199,7 @@ nav ul li a{
     }
 
     .mobile-menu {
-        /*display: block;*//*original*/
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;
+        display: block;
     }
 
     .mobile-menu-list {

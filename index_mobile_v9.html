@@ -32,24 +32,38 @@
             transition: width 2s;
         }
         
-        .mobile-menu-list.active {
+        /*.mobile-menu-list.active {
             display: block;
-        }
+        }*/
 
-       /* .mobile-menu {
+        /*.mobile-menu {
             display: none;
         }*/
 
        /* .menu-title {
-            margin-left: 10px;
+            margin-left: 10px; 
         }*/
 
 
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */a
-        }
+      /*  .mobile-menu-list li {
+            display: block; 
+        }*/
         
-   
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+          /* .menu-title {
+                margin-right: auto;
+                margin-left: 10px; 
+            }*/
+        }
             </style>
     
     
