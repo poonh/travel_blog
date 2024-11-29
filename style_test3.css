@@ -192,6 +192,7 @@ nav ul li a{
 .menu-title-icon-container {
     display: flex; /* Aligns the title and icon horizontally */
     align-items: center; /* Vertically centers the items */
+    flex-shrink: 1; /* Allow the title and icon to shrink if necessary */
 }
 
 
