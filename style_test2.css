@@ -159,10 +159,10 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 60px;/*old*/
-    height: 60px;/*old*/
+    width: 30px;/*old*/
+    height: 30px;/*old*/
     display: inline-block;
-    margin-left: 280px; /*original*/
+    margin-left: auto; /*original*/
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
@@ -191,7 +191,7 @@ nav ul li a{
 
      .menu-title {
          /* margin-right: auto;*//* Pushes 目錄 to the far left */
-          margin-left: 270px; /* Adjust margin as needed */
+          margin-left: 260px; /* Adjust margin as needed */
       }
      
     .menu {
