@@ -8,10 +8,13 @@ body {
 }
 
 .container {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center; /* Adjusted to center items horizontally */
-    padding: 10px;
+    padding-top:0px;
+    padding-bottom: 40px;
  /*   max-width: 768px*/
 }
 
@@ -67,6 +70,7 @@ main {
     max-width: 800px; /* Set a maximum width for the main content */
     margin: 0 auto;
     margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
+
 }
 
 /*additional begins*/
@@ -162,11 +166,40 @@ nav ul li a{
     width: 30px;/*old*/
     height: 30px;/*old*/
     display: inline-block;
-    margin-left: auto; /*original*/
+  /*  margin-left: auto; *//*original*/
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
 }
+
+/* Container for the image and title+icon */
+.menu-title-container {
+    display: flex; /* Aligns the items horizontally */
+    align-items: center; /* Vertically centers the items */
+    justify-content: space-between; /* Ensures equal spacing between items */
+    padding: 0 10px; /* Adds some padding to prevent items from touching screen edges */
+    max-width: 100%; /* Prevents the container from exceeding the screen width */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+
+/* Styling for the image */
+.menu-image {
+    width: 80vw;
+    flex-shrink: 0;
+    /*width: 100%;*/ /* Size of the image */
+    /*height: 100%px; *//* Size of the image */
+    margin-right: 10px; /* Space between image and title */
+}
+
+/* Container for the title and icon together */
+.menu-title-icon-container {
+    display: flex; /* Aligns the title and icon horizontally */
+    align-items: center; /* Vertically centers the items */
+    flex-shrink: 1; /* Allow the title and icon to shrink if necessary */
+}
+
 
 .mobile-menu-list {
     display: none;
@@ -190,8 +223,13 @@ nav ul li a{
      }
 
      .menu-title {
-         /* margin-right: auto;*//* Pushes 目錄 to the far left */
-          margin-left: 260px; /* Adjust margin as needed */
+         font-size: 18px; /* Font size of the title */
+         font-weight: bold; /* Makes the title bold */
+         margin-right: 5px; /* Space between title and icon */
+         flex-grow: 1; /* Allows the title to use any extra space */
+         white-space: nowrap; /* Prevents title from breaking into multiple lines */
+         overflow: hidden; /* Ensures the text doesn't overflow */
+         text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
       }
      
     .menu {
@@ -209,6 +247,24 @@ nav ul li a{
     .container-search {
       display: none;
     }
+    
+    .icon-picture{
+      display: none;
+    }
+    
+    main {
+            margin-top: 0px; /* Override margin-top for smaller screens */
+            padding-top: 0px
+            top: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+    .container {
+        padding-bottom: 10px;
+     /*   max-width: 768px*/
+    }
+    
 }
 
 
