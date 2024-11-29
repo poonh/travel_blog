@@ -199,6 +199,7 @@ nav ul li a{
     }
 
     .mobile-menu {
+        position: fixed;
         display: block;
     }
 
