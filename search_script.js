@@ -54,7 +54,7 @@ function searchMobileArticles() {
   // Split query into individual keywords by spaces
   const keywords = query.split(/\s+/);
 
-  const resultsContainer = document.getElementById("search-mobile-results");
+  const resultsContainer = document.getElementById("search-results");
   resultsContainer.innerHTML = ""; // Clear previous results
 
   if (keywords.length > 0) {
