@@ -128,14 +128,14 @@ def googleextract(filename):  #for google car route  kml files
              else:                            
                 name.append((googlekml[i-5].split("<name>"))[1].split("</name>")[0])
           elif(googlekml[i-4].find("<name>")):
-             print(i+1,i-3)
+             #print(i+1,i-3)
              if(googlekml[i-4].find("<![CDATA[")>=0):
                 name.append((googlekml[i-4].split("<name><![CDATA[")[1].split("]]></name>")[0]))
              else:                           
                 name.append((googlekml[i-4].split("<name>"))[1].split("</name>")[0])
        if (googlekml[i].find("</coordinates>") >= 0 and googlekml[i-2].find("<coordinates>") == -1):
           coorendline.append(i)
-    print(name)
+    #print(name)
     Color=random.sample(range(len(trackcolor)), len(name))
     for k in range(0,len(name)):
        final.write("    <Placemark>\n")
@@ -328,7 +328,7 @@ def colortype(inputfilename):
                 final.write("    <name>"+temp_name+"</name>/n")
              else:
                 final.write("    <name>"+inputfile[i-2].split("<name>")[1])
-                print(i-2,inputfile[i-2].split("<name>")[1])
+                #print(i-2,inputfile[i-2].split("<name>")[1])
              final.write("    <styleUrl>#placemark-%s</styleUrl>\n"%color)
              final.write("    <Point><coordinates>\n")
              final.write("        "+inputfile[i+3])
@@ -340,14 +340,15 @@ def colortype(inputfilename):
              final.write("         "+'<mwm:lang code="default">'+inputfile[i-1].split("<description>")[1].split("</description>")[0]+"</mwm:lang>"+"\n")
              final.write("       </mwm:description>\n")
            else: #if it is an icon,not line and with description
-             print("check :",i,inputfile[i-1])
+             print("line: ",i,inputfile[i-1].replace("\n","")," done")
              if(inputfile[i-1].find("<name>")>=0 and inputfile[i-1].find("</name>")>=0):
                 temp_name=(inputfile[i-1].split("<name>")[1].split("</name>")[0])
-                print("case if:",temp_name)
+                #print("case if:",temp_name)
+                print("line: ",i,inputfile[i-1].replace("\n","")," done")
                 final.write("    <name>"+temp_name+"</name>\n")
 #                final.write("    <name>"+temp_name)
              else:
-                print("case else: ",inputfile[i-2].split("<name>"))
+                #print("case else: ",inputfile[i-2].split("<name>"))
                 final.write("    <name>"+inputfile[i-2].split("<name>")[1]+"</name>\n")
              final.write("    <styleUrl>#placemark-%s</styleUrl>\n"%color)
              final.write("    <Point><coordinates>\n")
@@ -376,5 +377,6 @@ final.write("  </Document>\n")
 final.write("</kml>")
 final.close()
 
+print(f"{output_map_name} successfully created")
 
 #deleteroute("allroute.kml","Directions from 广大 to Fukutomi Park Golf Course")
