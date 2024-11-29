@@ -32,16 +32,16 @@
             transition: width 2s;
         }
         
-        .mobile-menu-list.active {
+        /*.mobile-menu-list.active {
             display: block;
-        }
+        }*/
 
-        .mobile-menu {
+        /*.mobile-menu {
             display: none;
-        }
+        }*/
 
        /* .menu-title {
-            margin-left: 10px;
+            margin-left: 10px; 
         }*/
 
 
@@ -49,7 +49,21 @@
             display: block; /* Display list items vertically */a
         }
         
-   
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+          /* .menu-title {
+                margin-right: auto;
+                margin-left: 10px; 
+            }*/
+        }
             </style>
     
     
@@ -78,7 +92,7 @@
             </nav>
 
             <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
+                <div class="menu-title">目x錄</div>
                 <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
                 <ul class="mobile-menu-list">
