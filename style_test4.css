@@ -159,14 +159,42 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 60px;/*old*/
-    height: 60px;/*old*/
+    width: 30px;/*old*/
+    height: 30px;/*old*/
     display: inline-block;
-    margin-left: auto; /*original*/
+  /*  margin-left: auto; *//*original*/
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
 }
+
+/* Container for the image and title+icon */
+.menu-title-container {
+    display: flex; /* Aligns the image and title+icon horizontally */
+    align-items: center; /* Vertically centers the items */
+    margin-left: 10px; /* Adjust the margin to position the container */
+    max-width: 100%; /* Ensures the container doesn't exceed the screen width */
+    box-sizing: border-box; /* Ensures padding and margins are included in the width calculation */
+    overflow: hidden; /* Hides any content that exceeds the container's width */
+}
+
+
+/* Styling for the image */
+.menu-image {
+    width: 70vw;
+    flex-shrink: 0;
+    /*width: 100%;*/ /* Size of the image */
+    /*height: 100%px; *//* Size of the image */
+    margin-right: 10%; /* Space between image and title */
+}
+
+/* Container for the title and icon together */
+.menu-title-icon-container {
+    display: flex; /* Aligns the title and icon horizontally */
+    align-items: center; /* Vertically centers the items */
+    flex-shrink: 1; /* Allow the title and icon to shrink if necessary */
+}
+
 
 .mobile-menu-list {
     display: none;
@@ -190,8 +218,9 @@ nav ul li a{
      }
 
      .menu-title {
-         /* margin-right: auto;*//* Pushes 目錄 to the far left */
-          margin-left: 260px; /* Adjust margin as needed */
+         font-size: 20px; /* Font size of the title */
+         font-weight: bold; /* Makes the title bold */
+         margin-right: 10px; /* Space between title and icon */
       }
      
     .menu {
@@ -209,6 +238,11 @@ nav ul li a{
     .container-search {
       display: none;
     }
+    
+    .icon-picture{
+      display: none;
+    }
+    
 }
 
 
