@@ -159,7 +159,7 @@ nav ul li a{
 
 }
 .mobile-menu {
-    postiion:fixed
+    
     display: none;
 }
 
@@ -203,7 +203,6 @@ nav ul li a{
 
 
 .mobile-menu-list {
-    postiion:fixed
     display: none;
 /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
@@ -239,6 +238,7 @@ nav ul li a{
     }
 
     .mobile-menu {
+        postiion: fixed
         display: block;
     }
 
