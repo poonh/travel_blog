@@ -1,4 +1,4 @@
-cod<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,8 @@ cod<!DOCTYPE html>
                 <div class="menu-title">目xx錄</div>
                 <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
-                <ul class="mobile-menu-list">
+                <div class="mobile-menu-list" onclick="hideMobileMenu()">
+                    <ul>
                     <div class="container-mobile-search">
                         <div style="margin-bottom: 0px;">
                           <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
@@ -87,7 +88,7 @@ cod<!DOCTYPE html>
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
-                </ul>
+                </ul></div>
             </div>
         </div>
     </header>
