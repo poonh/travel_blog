@@ -65,18 +65,23 @@
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
                 </ul>
             </nav>
-
+            
             <div class="mobile-menu">
-                <div class="menu-title">目录</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <div class="menu-title-container">
+                    <img src="path/to/your/image.jpg" alt="Menu Image" class="menu-image">
+                    <div class="menu-title-icon-container">
+                        <div class="menu-title">目录</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    </div>
+                </div>
                 <ul class="mobile-menu-list">
                     <div class="container-mobile-search">
                         <div style="margin-bottom: 0px;">
                           <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
                           <button id="search-mobile-button">搜索</button>
                         </div>
-                    <div id="search-results"></div></div>
+                        <div id="search-results"></div>
+                    </div>
                     <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
@@ -85,7 +90,7 @@
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
                 </ul>
             </div>
-        </div>
+
     </header>
     <main>
         <article>
