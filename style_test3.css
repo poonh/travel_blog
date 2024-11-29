@@ -168,18 +168,22 @@ nav ul li a{
     cursor: pointer;
 }
 
-
-
 /* Container for the image and title+icon */
 .menu-title-container {
     display: flex; /* Aligns the image and title+icon horizontally */
     align-items: center; /* Vertically centers the items */
     margin-left: 20px; /* Adjust the margin to position the container */
+    max-width: 100%; /* Ensures the container doesn't exceed the screen width */
+    box-sizing: border-box; /* Ensures padding and margins are included in the width calculation */
+    overflow: hidden; /* Hides any content that exceeds the container's width */
 }
+
 
 /* Styling for the image */
 .menu-image {
-    width: 100%; /* Size of the image */
+    width: 70vw;
+    flex-shrink: 0;
+    /*width: 100%;*/ /* Size of the image */
     /*height: 100%px; *//* Size of the image */
     margin-right: 10%; /* Space between image and title */
 }
