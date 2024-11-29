@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>日本鄉村樂無窮</title>
+    <style>
+        /* Add your custom styles here */
+
+        .mobile-menu-list {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+        }
+            </style>
+    
+    
+            
+</head>
+
+<body>
+
+
+
+    <a id="back"></a>
+    <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="溫泉 紅葉 游泳 (用空格隔開關鍵詞)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author_big5.html">作者的話</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">日本鄉村遊記(按地圖)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list_big5.html">日本鄉村遊記(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan_big5.html">其他日本遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe_big5.html">歐洲遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program_big5.html">有用網址及程序下載</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">简体版</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="mobile-menu">
+                <div class="menu-title-container">
+                    <img src="pictures/saijo_big5.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目錄</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
+                <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="溫泉 紅葉 游泳 (用空格隔開關鍵詞)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
+                    <li><a href="https://poonh.github.io/travel_blog/author_big5.html" onclick="hideMobileMenu()">作者的話</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本鄉村遊記(按地圖)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list_big5.html" onclick="hideMobileMenu()">日本鄉村遊記(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan_big5.html" onclick="hideMobileMenu()">其他日本遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe_big5.html" onclick="hideMobileMenu()">歐洲遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program_big5.html" onclick="hideMobileMenu()">有用網址及程序下載</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">简体版</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <article>
+           <div class="icon-picture">
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo_big5.JPG"/>
+           </div>
+            <br>
+         
+       <b><a href ="https://www.navitime.co.jp" target=_blank>NAVITIME</a></b><br>
+       我用來規劃行車線路的地圖。以大路優先，不是隻算距離，真正最短時間及最安全線路。下載app導航收費。<br><br>
+       
+       <b><a href ="https://yamap.com" target=_blank>YAMAP</a></b><br>
+       登山者提供的日本登山線路及記錄。<br><br>
+       
+       <b>谷歌地圖轉mapsme地圖<a href ="https://poonh.github.io/travel_blog/mapsme/google_to_mapsme.py" target=_blank>程序</a></b><br>
+       1.我的地圖轉換過程時把特定顏色轉成maps.me的標記，所以要和我谷歌地圖顏色用法一致：<br>
+       紅:住宿 &nbsp&nbsp 藍:景點 &nbsp&nbsp綠:喫飯  &nbsp&nbsp橙:購物 &nbsp&nbsp 啡:加油站 &nbsp&nbsp  紫:停車場<br>
+       
+       2.輸入輸出都必須爲kml格式。<br>
+       3.有些特殊符號不能讀，地名及附加信息儘量純文字。<br>
+       4.用法：python3 google_to_mapsme.py input_google_map.kml output_mapsme_map.kml<br><br>
+       
+       <b>按座標點擊地圖照片<a href ="https://poonh.github.io/travel_blog/mapsme/check_map_coor.py" target=_blank>程序</a></b><br>
+       今次做這個網站新學的小技能，就是<a href ="https://poonh.github.io/travel_blog/index.html" target=_blank>首頁</a>地圖照片可按不同區域鏈接不同頁面。你看html編碼需要輸入座標，座標可從python得出。<br>
+       用法：python3 check_map_coor.py xxx.JPG<br>
+       
+
+            <br><br>
+                       
+                       
+                       <!--    <footer>
+                       <p>&copy; 2024 Life in Saijo</p>
+                       </footer>-->
+                       <div id="overlay" class="overlay">
+                           <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+                       </div>
+           
+            <!--new ends-->
+
+
+
+        </article>
+    </main>
+<br><br>
+
+
+<!--    <footer>
+        <p>&copy; 2024 Life in Saijo</p>
+    </footer>-->
+ <div id="overlay" class="overlay">
+     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+ </div>
+ <script src="map_script.js"></script>
+ <script src="script.js"></script> <!-- Link to your JS file -->
+ <script>
+     function toggleMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.toggle('active');
+     }
+
+     function hideMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.remove('active');
+     }
+ </script>
+</body>
+</html>
