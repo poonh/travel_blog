@@ -172,7 +172,7 @@ nav ul li a{
 .menu-title-container {
     display: flex; /* Aligns the image and title+icon horizontally */
     align-items: center; /* Vertically centers the items */
-    margin-left: 20px; /* Adjust the margin to position the container */
+    margin-left: 10px; /* Adjust the margin to position the container */
     max-width: 100%; /* Ensures the container doesn't exceed the screen width */
     box-sizing: border-box; /* Ensures padding and margins are included in the width calculation */
     overflow: hidden; /* Hides any content that exceeds the container's width */
