@@ -19,10 +19,11 @@ body {
 }
 
 .container-search {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-    align-items: left;
-    justify-content: left; /* Adjusted to center items horizontally */
-    padding: 0px;
+    justify-content: right; /* Adjusted to center items horizontally */
+    padding-top: 5px;
  /*   max-width: 768px*/
 }
 
