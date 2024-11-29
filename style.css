@@ -57,10 +57,10 @@ body {
   background-color: #0056b3;
 }
 
-#search-mobile-results {
+/*#search-mobile-results {
   margin-top: 10px;
   font-size: 14px;
-}
+}*/
 main {
     background-color:rgb(255, 255, 255);
 /*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
@@ -159,8 +159,10 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 30px;
-    height: 30px;
+    width: 30px;/*old*/
+    height: 30px;/*old*/
+    display: inline-block;
+    margin-left: 280px; /*
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
@@ -172,7 +174,12 @@ nav ul li a{
    /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
+.mobile-menu-list.active {
+    display: block;
+}
+
 .mobile-menu-list li {
+    display: block; /* Display list items vertically */
     padding: 10px;
 }
 
@@ -182,6 +189,10 @@ nav ul li a{
   
      }
 
+     .menu-title {
+          margin-right: auto; /* Pushes 目錄 to the far left */
+          margin-left: 10px; /* Adjust margin as needed */
+      }
      
     .menu {
         display: none;
