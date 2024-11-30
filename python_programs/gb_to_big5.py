@@ -71,6 +71,8 @@ def convert_simplified_to_traditional(file_path):
         # Additional replacements
         converted_content = converted_content.replace('index_big5.html">繁體版', 'index.html">简体版')
         converted_content = converted_content.replace('index_big5.html" onclick="hideMobileMenu()">繁體版', 'index.html" onclick="hideMobileMenu()">简体版')
+        
+        converted_content = converted_content.replace('search_script','search_script_big5')
 
         # Generate the new file name
         dir_name, original_name = os.path.split(file_path)
@@ -107,7 +109,7 @@ def process_directory(directory):
 
 def main():
     # Specify the directory containing the HTML files
-    directory = "github_html"  # Update to the target directory
+    directory = "big5_convert"  # Update to the target directory
     
     # Process all HTML files in the directory
     if os.path.isdir(directory):
