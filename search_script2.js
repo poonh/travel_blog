@@ -2,7 +2,7 @@
 let articles = [];
 
  // Fetch articles from JSON
-fetch('https://poonh.github.io/travel_blog/articles_big5.json')
+fetch('https://poonh.github.io/travel_blog/articles.json')
   .then(response => {
     console.log('Fetched articles.json:', response);
     return response.json();
@@ -40,9 +40,9 @@ function searchArticles() {
       sessionStorage.setItem('searchResults', JSON.stringify(filteredArticles));
 
       // Open a new tab with the search results
-      window.open('search_results_big5.html', '_blank');
+      window.open('../search_results.html', '_blank');
     } else {
-      alert('没有結果');
+      alert('没有结果');
     }
   }
 }
@@ -73,7 +73,7 @@ function searchMobileArticles() {
       sessionStorage.setItem('searchResults', JSON.stringify(filteredArticles));
 
       // Open a new tab with the search results
-      window.open('search_results_big5.html', '_blank');
+      window.open('../search_results.html', '_blank');
     } else {
       alert('没有结果');
     }
