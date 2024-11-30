@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>隆冬火山一天遊</title>
+    <style>
+        /* Add your custom styles here */
+
+        .mobile-menu-list {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+    
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
+
+        }
+            </style>
+    
+    
+            
+</head>
+
+<body>
+
+
+
+    <a id="back"></a>
+    <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="溫泉 紅葉 游泳 (用空格隔開關鍵詞)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://poonh.github.io/travel_blog/author_big5.html">作者的話</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html">日本鄉村遊記(按地圖)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list_big5.html">日本鄉村遊記(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan_big5.html">其他日本遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe_big5.html">歐洲遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program_big5.html">有用網址及程序下載</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html">简体版</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="mobile-menu">
+                <div class="menu-title-container">
+                    <img src="pictures/saijo_big5.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目錄</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
+                <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="溫泉 紅葉 游泳 (用空格隔開關鍵詞)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
+                    <li><a href="https://poonh.github.io/travel_blog/author_big5.html" onclick="hideMobileMenu()">作者的話</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html" onclick="hideMobileMenu()">日本鄉村遊記(按地圖)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/journal_list_big5.html" onclick="hideMobileMenu()">日本鄉村遊記(按列表)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/other_japan_big5.html" onclick="hideMobileMenu()">其他日本遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/europe_big5.html" onclick="hideMobileMenu()">歐洲遊記(非自駕)</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/web_and_program_big5.html" onclick="hideMobileMenu()">有用網址及程序下載</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">简体版</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <article>
+           <div class="icon-picture">
+            <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo_big5.JPG"/>
+           </div>
+            <br>
+
+            1.<a href="https://poonh.github.io/travel_blog/github_html/2021_hiyama_ad_big5.html" target=_blank>廣告</a><br>
+            2.<a href="https://poonh.github.io/travel_blog/github_html/2021_hiyama_info_big5.html" target=_blank>相關行程信息</a><br>
+            4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2021_hiyama.kml" target=_blank>maps.me地圖</a>(maps.me app用)<br><br>
+            <h3 align="center">3.隆冬火山一天遊 - 遊記<br><br></h3>
+
+        
+        
+
+<p>日期：<span lang="EN-US">2020年12月29日（二）
+
+</p>
+<!--
+<p>前言：我是之前在吳市官網看到桂浜，之後找到火山的。桂浜本身是個好地方，這是市政府建的一個很大的體育中心，裏面有室內游泳池，網球場，羽毛球場等，還有海邊咖啡店，溫泉及小博物館，夏天還可以海邊紮營，喫燒烤。我們原來打算登山後下來泡溫泉，不過現在疫情太嚴重，打算稍後好些再來游泳，到時候再泡。</p>
+<p>景區網站： <a href="http://katsuragahama-spa.com/">http://katsuragahama-spa.com/</a>
+</p>-->
+<p>對了，這個山名叫“火山”，日語ひやま(hiyama)、不是一般的かざん（kazan），所以這個不是噴火的那種火山。我們走的線路登山口就在桂浜溫泉館附近（有廁所），車就停在那裏，但登山口不止一個的。</p>
+<p>火山海拔400米，走得快的話兩三小時可以往返。我們慢，最後花了4小時（包括午飯時間）。如果有餘力，可以繼續爬後面的一個山，再攀升100米，具體線路看yamap。整體來說，火山不算難，賣點是最高點可以坐着拍照的大石頭（見下文）。 整體而言，路線算容易，沒有難走的地方，消耗體力也不多。</p>
+<!--
+<p>這是我們的行程地圖（線路取自navitime,當中E73是東廣島到吳的免費高速）：</p>
+<p>
+<iframe height="480" src="https://www.google.com/maps/d/u/0/embed?mid=1zG20D1eAXy3twVCQP3Kmi4QSpC1QxmJd" width="640">
+</iframe> </p>
+-->
+<p>今天是近期難得的好天氣，晴天帶雲，直到晚上才下雨，第二天就下雪降溫了。今天白天最多十幾度，我多穿了，搞到路上出了好多汗。</p>
+<p>早上我們九點出發，車程1個半小時到，我們大概11點正式登山，開車路上經過海邊的7-11，之後很順利就到桂浜溫泉館的停車場了。</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/1.JPG"/>
+</div>
+<div style="text-align: center;">溫泉館門口
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/2.JPG"/>
+</div>
+<div style="text-align: center;">我們先來欣賞一下pp的新裝
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/3.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/4.JPG"/>
+</div>
+<div style="text-align: center;">我們就從這裏走去登山口
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/5.JPG"/>
+</div>
+<div style="text-align: center;">當你看到這個屋子，往右走就是了
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/6.JPG"/>
+</div>
+<div style="text-align: center;">看到這個小牌子，跟着走就行
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/7.JPG"/>
+</div>
+<div style="text-align: center;">這就是剛開始那段路了
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/8.JPG"/>
+</div>
+<div style="text-align: center;">路有時候有樓梯，有時候不是
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/9.JPG"/>
+</div>
+<div style="text-align: center;">走了半小時，就已經走了三分一的路了，在第一個休息點拍照先
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/10.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+</p>
+<p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/11.JPG"/>
+</div>
+<div style="text-align: center;">用了美顏的效果就是好啊！
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/12.JPG"/>
+</div>
+<div style="text-align: center;">雖然是冬天了，不過樹木的顏色還是很好看。我們路上還看到大松塔和小松塔，路上還有很多其他美景
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/13.JPG"/>
+</div>
+<div style="text-align: center;">後面不知道什麼名字的植物成了個很有特色的背景
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/14.JPG"/>
+</div>
+<div style="text-align: center;">“女子漢”
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/15.JPG"/>
+</div>
+<div style="text-align: center;">搞些松塔做聖誕圈
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/16.JPG"/>
+</div>
+<div style="text-align: center;">
+</div> <div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/17.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/18.JPG"/>
+</div>
+<div style="text-align: center;">松塔戒指
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/19.JPG"/>
+</div>
+<div style="text-align: center;">這個也能做聖誕圈裝飾
+</div>
+
+<p>看些風景照~</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/20.JPG"/>
+</div>
+<div style="text-align: center;">
+</div> <div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/21.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/22.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/23.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/24.JPG"/>
+</div>
+<div style="text-align: center;">2018西日本豪雨，吳是重災區，這個估計就是當日的痕跡
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/25.JPG"/>
+</div>
+<div style="text-align: center;">這裏的岩石很好看，都很大
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/26.JPG"/>
+</div>
+<div style="text-align: center;">
+</div> <div class="picture-container">
+<img border="0" class="picture" data-original-height="3024" data-original-width="4032" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/27.JPG"/>
+</div>
+<div style="text-align: center;">火山一個特點就是特別多宗教雕像
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/28.JPG"/>
+</div>
+<div style="text-align: center;">慢慢走上去，開始見到海景了
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/29.JPG"/>
+</div>
+<div style="text-align: center;">又是蘆葦（上次在<a href ="https://poonh.github.io/travel_blog/github_html/2020_kitakyushu_ad.html" target=_blank>平尾臺</a>見過很多的）
+</div>
+<p>1點左右，我們快到山頂了，走最後一段路前有個亭子，我們就在那裏喫飯（這裏忘了拍照），當時ln還帶了橘子給大家喫呢。亭子那裏有兩條路可走，當你面朝大海，左邊一條路是往另外一個山的，右邊就是去山頂的。我們選擇了去山頂。走到這裏，我一直出汗....</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/30.JPG"/>
+</div>
+<div style="text-align: center;">登頂了！
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/31.JPG"/>
+</div>
+<div style="text-align: center;">地圖介紹，左邊是愛媛(西側)，右邊是山口（東側），海是朝南的。眼前很多小島
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/32.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/33.JPG"/>
+</div>
+<div style="text-align: center;">
+</div> <div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/34.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/35.JPG"/>
+</div>
+<div style="text-align: center;">這裏好美，先凝望一下~
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/36.JPG"/>
+</div>
+<div style="text-align: center;">模特和攝影師
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/37.JPG"/>
+</div>
+<div style="text-align: center;">這裏的重點是這個石頭，這纔是火山的最高峯。最上面的石頭雖然很大，但不是很平的...
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/38.JPG"/>
+</div>
+<div style="text-align: center;">我們先琢磨一下如何上去
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/39.JPG"/>
+</div>
+<div style="text-align: center;">要拉繩子上的，出力！
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/40.JPG"/>
+</div>
+<div style="text-align: center;">繼續努力~
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/41.JPG"/>
+</div>
+<div style="text-align: center;">
+</div> 最後一步了，要爬梯子上去</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/42.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>  好不容易終於上去了，耶！</p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/43.JPG"/>
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/44.JPG"/>
+</div>
+<div style="text-align: center;">耶！拍這張的時候腿其實在鬥
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/45.JPG"/>
+</div>
+<div style="text-align: center;">來個自拍
+</div>
+<p>raku老師沒守規矩，選擇危險的路上來，嚇死我們了！</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/46.JPG"/>
+</div>
+ <div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/47.JPG"/>
+</div>
+<div style="text-align: center;">救命啊~
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/48.JPG"/>
+</div>
+<div style="text-align: center;">終於上來了~
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/49.JPG"/>
+</div>
+<div style="text-align: center;">我們也邀請你一同上來~
+</div>
+<p>雖然大家一起坐着，但還是有點怕的。不過怕也要拍照。</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/50.JPG"/>
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/51.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/52.JPG"/>
+</div>
+<div style="text-align: center;"> 這次之後我愛上了美顏~
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/53.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/54.JPG"/>
+</div>
+<div style="text-align: center;">全家福
+</div>
+
+坐在石頭上面，面對瀨戶內海，眼前的景象真的很適合沉思，尤其當時沒人，我們可以盡情享受。當時天氣有點朦朧，我們看見遠方的山和雲分不清，非常有意境。
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/55.JPG"/>
+</div>
+
+
+<div style="text-align: center;">
+</div>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://youtube.com/embed//pm9yxEQ4poo" width="60%">
+</iframe>
+</div>
+
+<p> 下面是愛媛，最遠處就是山雲分不清的地方，看視頻就比較清楚。</p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/56.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/57.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+</p>
+<p>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/58.JPG"/>
+</div>
+<div style="text-align: center;">山頂的另一側是吳，這裏是兩邊都是海，可以看到三個縣
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/59.JPG"/>
+</div>
+<div style="text-align: center;">我還看到一個像運動場的地方，我特備敏感...
+</div>
+
+<p>這個地方很美好，尤其是隻屬於我們（我們在路上遇到一些登山客，不過我們在山頂的時候完全沒其他人）。第一次坐在山頂的石頭看風景，很特別，以後都會記得這個地方。這裏也果然是山頂，我終於覺得冷了。</p>
+<p>我們要下去了，由於路不難走，我們下去也很快，大概一個多小時到了。最後一段路的樹葉特別多，pp當了小尼姑幫大家打掃（掃把就是放在那裏給人掃樹葉用的）。</p>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/60.JPG"/>
+</div>
+<div style="text-align: center;">
+</div> <div class="picture-container">
+<img border="0" class="picture" data-original-height="2048" data-original-width="1536" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/61.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+<p>下來當然還要晚飯，今晚我家裏喫火鍋。鍋底是韓式的海鮮清湯，配自制的韓國辣椒蘸醬，raku老師還把挺辣的辣椒切的非常碎把蘸料加工，很給力。</p>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/62.JPG"/>
+</div>
+<div style="text-align: center;">除了這些我們還買了很多其他的菜，今晚海鮮很多
+</div>
+
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/63.JPG"/>
+</div>
+<div style="text-align: center;">韓式海鮮湯鍋底
+</div>
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/64.JPG"/>
+</div>
+<div style="text-align: center;">
+</div>
+
+<div class="picture-container">
+<img border="0" class="picture" data-original-height="1536" data-original-width="2048" src="https://poonh.github.io/travel_blog/html_pics/2021_hiyama/65.JPG"/>
+</div>
+
+<p>學長送的新鍋首次出境，大家以後在我的遊記會常見到它的。沒有洗碗王子的日子，今次感謝raku老師洗碗。</p>
+<p>今天隆冬登山非常開心~這個假期度過了滿足的一整天。 <br/>
+</p>
+
+1.<a href="https://poonh.github.io/travel_blog/github_html/2021_hiyama_ad_big5.html" target=_blank>廣告</a><br>
+2.<a href="https://poonh.github.io/travel_blog/github_html/2021_hiyama_info_big5.html" target=_blank>相關行程信息</a><br>
+4.附件：<a href="https://poonh.github.io/travel_blog/mapsme/2021_hiyama.kml" target=_blank>maps.me地圖</a>(maps.me app用)<br><br>
+<br/>
+<!--    <footer>
+        <p>&copy; 2024 Life in Saijo</p>
+    </footer>-->
+<div id="overlay" class="overlay">
+    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+</div>
+<script src="../script.js"></script> <!-- Link to your JS file -->
+<script>
+    function toggleMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.toggle('active');
+    }
+    
+    function hideMobileMenu() {
+        var menuList = document.querySelector('.mobile-menu-list');
+        menuList.classList.remove('active');
+    }
+</script>
+</article>
+</main>
+</body>
+</html>
