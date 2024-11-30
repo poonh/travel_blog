@@ -74,7 +74,7 @@
             
             <div class="mobile-menu">
                 <div class="menu-title-container">
-                    <img src="pictures/saijo.JPG" alt="Menu Image" class="menu-image">
+                    <img src="https://poonh.github.io/travel_blog/pictures/saijo.JPG" alt="Menu Image" class="menu-image">
                     <!--<div class="menu-title-icon-container">-->
                         <div class="menu-title">目录</div>
                         <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
@@ -107,48 +107,47 @@
            </div>
             <br>
          
-         2.<a href="https://poonh.github.io/travel_blog/github_html/.html" target=_blank>相关行程信息</a><br>
-         3.<a href="https://poonh.github.io/travel_blog/github_html/.html" target=_blank>游记</a><br>
-         4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/.pdf" target=_blank>行程单</a><br>
-         5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
-         <h3 align="center">1.xxx - 广告<br><br></h3>
+<!--main content begins-->
 
-        
-        
-        
-        <!--main content here-->
-        
-        2.<a href="https://poonh.github.io/travel_blog/github_html/.html" target=_blank>相关行程信息</a><br>
-        3.<a href="https://poonh.github.io/travel_blog/github_html/.html" target=_blank>游记</a><br>
-        4.附件：<a href="https://poonh.github.io/travel_blog/itinerary/.pdf" target=_blank>行程单</a><br>
-        5.附件：<a href="https://poonh.github.io/travel_blog/mapsme/.kml" target=_blank>maps.me地图</a>(maps.me app用)<br><br>
-        
+
+<!--main content ends-->
             <br><br>
-                    
+                       
+                       
+                       <!--    <footer>
+                       <p>&copy; 2024 Life in Saijo</p>
+                       </footer>-->
+                       <div id="overlay" class="overlay">
+                           <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+                       </div>
+           
+            <!--new ends-->
 
+
+
+        </article>
+    </main>
 <br><br>
 
 
 <!--    <footer>
         <p>&copy; 2024 Life in Saijo</p>
     </footer>-->
-<div id="overlay" class="overlay">
-    <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
-</div>
-<script src="../script.js"></script> <!-- Link to your JS file -->
-<script>
-    function toggleMobileMenu() {
-        var menuList = document.querySelector('.mobile-menu-list');
-        menuList.classList.toggle('active');
-    }
-    
-    function hideMobileMenu() {
-        var menuList = document.querySelector('.mobile-menu-list');
-        menuList.classList.remove('active');
-    }
-</script>
-</article>
-</main>
+ <div id="overlay" class="overlay">
+     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+ </div>
+ <script src="map_script.js"></script>
+ <script src="../script.js"></script> <!-- Link to your JS file -->
+ <script>
+     function toggleMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.toggle('active');
+     }
+
+     function hideMobileMenu() {
+         var menuList = document.querySelector('.mobile-menu-list');
+         menuList.classList.remove('active');
+     }
+ </script>
 </body>
 </html>
-
