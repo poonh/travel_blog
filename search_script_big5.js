@@ -40,7 +40,7 @@ function searchArticles() {
       sessionStorage.setItem('searchResults', JSON.stringify(filteredArticles));
 
       // Open a new tab with the search results
-      window.open('search_results.html', '_blank');
+      window.open('search_results_big5.html', '_blank');
     } else {
       alert('没有结果');
     }
@@ -73,7 +73,7 @@ function searchMobileArticles() {
       sessionStorage.setItem('searchResults', JSON.stringify(filteredArticles));
 
       // Open a new tab with the search results
-      window.open('search_results.html', '_blank');
+      window.open('search_results_big5.html', '_blank');
     } else {
       alert('没有结果');
     }
