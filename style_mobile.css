@@ -205,7 +205,8 @@ nav ul li a{
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the image */
     /*padding: 10px; *//* Adds spacing around the content */
-    height: auto; /*ends*/
+    /*ends*/
+    height: 100px;    /*ends*/
 }
 
 
