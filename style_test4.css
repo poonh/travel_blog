@@ -178,10 +178,6 @@ nav ul li a{
     display: flex; /* Aligns the items horizontally */
     align-items: center; /* Vertically centers the items */
     justify-content: space-between; /* Ensures equal spacing between items */
-    padding: 0 10px; /* Adds some padding to prevent items from touching screen edges */
-    max-width: 100%; /* Prevents the container from exceeding the screen width */
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
-    overflow: hidden; /* Prevents content from overflowing */
 }
 
 
@@ -238,7 +234,7 @@ nav ul li a{
      }
 
      .menu-title {
-         font-size: 15px; /* Font size of the title */
+         font-size: 18px; /* Font size of the title */
          font-weight: bold; /* Makes the title bold */
          margin-left: 5px;
          margin-right: 5px; /* Space between title and icon */
