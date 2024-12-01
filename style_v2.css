@@ -147,7 +147,18 @@ nav ul li a{
 
 
 .mobile-menu-list {
+    position: fixed;
     display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%; /* Adjust width as needed */
+    background-color: #fff; /* Adjust as needed */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    flex-direction: column; /* Display items vertically */
+    transition: width 2s;
 /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
 }
