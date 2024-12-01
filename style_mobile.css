@@ -243,7 +243,7 @@ nav ul li a{
      }
 
      .menu-title {
-         font-size: 18px; /* Font size of the title */
+         font-size: 16px; /* Font size of the title */
          font-weight: bold; /* Makes the title bold */
          margin-left: 5px;
          margin-right: 5px; /* Space between title and icon */
