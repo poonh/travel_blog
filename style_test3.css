@@ -203,7 +203,7 @@ nav ul li a{
 
 
 .mobile-menu-list {
-    /*position: fixed;*/
+    position: fixed;
     display: none;
     top: 0;
     left: 0;
