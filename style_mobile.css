@@ -180,6 +180,13 @@ nav ul li a{
     display: flex; /* Aligns the items horizontally */
     align-items: center; /* Vertically centers the items */
     justify-content: flex-start; /* Ensures equal spacing between items */
+    background-color: lightgreen; /* Add background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    /*padding: 10px; *//* Adds spacing around the content */
+    /*ends*/
+    height: auto;
 }
 
 
@@ -200,13 +207,6 @@ nav ul li a{
     display: flex; /* Aligns the title and icon horizontally */
     align-items: center; /* Vertically centers the items */
     flex-shrink: 1; /* Allow the title and icon to shrink if necessary */
-    background-color: lightgreen; /* Add background image */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
-    /*padding: 10px; *//* Adds spacing around the content */
-    /*ends*/
-    height: 100px;    /*ends*/
 }
 
 
