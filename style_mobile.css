@@ -191,6 +191,8 @@ nav ul li a{
     /*width: 100%;*/ /* Size of the image */
     /*height: 100%px; *//* Size of the image */
     margin-right: 0px; /* Space between image and title */
+    height: 100%;/*add**/
+    object-fit: cover;/*add**/
 }
 
 /* Container for the title and icon together */
