@@ -191,7 +191,7 @@ nav ul li a{
     flex-shrink: 0;
     /*width: 100%;*/ /* Size of the image */
     /*height: 100%px; *//* Size of the image */
-    margin-right: 10px; /* Space between image and title */
+    margin-right: 5px; /* Space between image and title */
 }
 
 /* Container for the title and icon together */
@@ -210,7 +210,7 @@ nav ul li a{
     height: 100%;
     width: 60%; /* Adjust width as needed */
     background-color: #fff; /* Adjust as needed */
-    padding: 20px;
+    padding: 10px;
     border-right: 1px solid #ccc; /* Adjust as needed */
     z-index: 1000; /* Ensure it's above other content */
     flex-direction: column; /* Display items vertically */
@@ -257,6 +257,8 @@ nav ul li a{
         top: 0; /* Stick the menu to the top */
         left: 0;
         width: 100%; /* Full width */
+        padding: 20px;
+        border-right: 1px solid #ccc;
         z-index: 1000; /
     }
 
