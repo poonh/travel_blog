@@ -10,55 +10,26 @@
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <title>日本乡村乐无穷</title>
     <style>
-        /* Add your custom styles here */
+        /* Add your custom styles here */ 
 
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
-        .mobile-menu-list {
-            display: none;
+   /*     .mobile-menu-list {
             position: fixed;
+            display: none;
             top: 0;
             left: 0;
             height: 100%;
-            width: 60%; /* Adjust width as needed */
-            background-color: #fff; /* Adjust as needed */
+            width: 60%;
+            background-color: #fff;
             padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
+            border-right: 1px solid #ccc;
+            z-index: 1000;
+            flex-direction: column; 
             transition: width 2s;
-        }
+        }*/
         
-        .mobile-menu-list.active {
-            display: block;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .menu-title {
-            margin-left: 10px; /* Adjust margin as needed */
-        }
-
-        .menu-icon {
-            margin-right: 10px; /* Adjust margin as needed */
-            cursor: pointer;
-        }
-
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */a
-        }
         
         @media only screen and (max-width: 768px) {
-            .menu-icon {
-                display: inline-block;
-                margin-left: 280px; /* Adjust as needed */
-                cursor: pointer;
-            }
+    
 
             .mobile-menu {
                 display: flex;
@@ -67,21 +38,27 @@
                 margin-right: 10px;
             }
 
-            .menu-title {
-                margin-right: auto; /* Pushes 目錄 to the far left */
-                margin-left: 10px; /* Adjust margin as needed */
-            }
         }
             </style>
     
     
             
 </head>
+
 <body>
+
+
+
     <a id="back"></a>
     <header>
+        <div class="container-search">
+            <div style="margin-bottom: 0px;">
+              <input type="text" id="search-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+              <button id="search-button">搜索</button>
+            </div>
+            <div id="search-results"></div></div>
+        
         <div class="container">
-
             <nav>
                 <ul class="menu">
                     <li><a href="https://poonh.github.io/travel_blog/author.html">作者的话</a></li>
@@ -90,32 +67,45 @@
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html">其他日本游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/europe.html">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html">繁體版</a></li>
                 </ul>
             </nav>
 
+            
             <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <div class="menu-title-container">
+                    <img src="pictures/saijo.JPG" alt="Menu Image" class="menu-image">
+                    <!--<div class="menu-title-icon-container">-->
+                        <div class="menu-title">目录</div>
+                        <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                    <!--</div>-->
+                </div>
                 <ul class="mobile-menu-list">
+                    <div class="container-mobile-search">
+                        <div style="margin-bottom: 0px;">
+                          <input type="text" id="search-mobile-box" placeholder="温泉 红叶 游泳 (用空格隔开关键词)" />
+                          <button id="search-mobile-button">搜索</button>
+                        </div>
+                        <div id="search-results"></div>
+                    </div>
                     <li><a href="https://poonh.github.io/travel_blog/author.html" onclick="hideMobileMenu()">作者的话</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/index.html" onclick="hideMobileMenu()">日本乡村游记(按地图)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/journal_list.html" onclick="hideMobileMenu()">日本乡村游记(按列表)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/other_japan.html" onclick="hideMobileMenu()">其他日本游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/europe.html" onclick="hideMobileMenu()">欧洲游记(非自驾)</a></li>
                     <li><a href="https://poonh.github.io/travel_blog/web_and_program.html" onclick="hideMobileMenu()">有用网址及程序下载</a></li>
+                    <li><a href="https://poonh.github.io/travel_blog/index_big5.html" onclick="hideMobileMenu()">繁體版</a></li>
                 </ul>
             </div>
         </div>
+
     </header>
     <main>
         <article>
-            <br><br>
-            <body width = "device-width">
+           <div class="icon-picture">
             <img border="0" width=100% src="https://poonh.github.io/travel_blog/pictures/saijo.JPG"/>
-            </body>
-         <br><br>
-         
+           </div>
+            <br>
          <!--new begins-->
          <div style="font-size: 14px;">
         (以下地图取自<a href="https://www.j-lis.go.jp" target=_blank>J-LIS自地方公共团体情報システム機構</a>)<br><br>
@@ -141,7 +131,7 @@
                         <div style="text-align: center;"><h3>红色表示去过的地方，可以点击</h3></div>
                  <!--class="picture-maps"-->
                 <div class="image-container">
-                     <body width = "device-width">
+                  <!--   <body width = "device-width">-->
               <img src="https://poonh.github.io/travel_blog/maps/hiroshima_red.JPG" class="picture-maps" usemap="#clickable-hiroshima">
                  </div>
                   </div>
@@ -175,7 +165,7 @@
                   <div id="info-panel-shirokiyama" class="info-panel" style="display: none;">
                       <button id="close-panel-shirokiyama" class="close-btn">关闭</button>
                       <p>一天往返登白木山(攀升800米，难度适中)</p>
-                      <p>游记: <a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki.html" target="_blank">广岛百名山 - 白木山(1天游)</a>.</p>
+                      <p>游记: <a href="https://poonh.github.io/travel_blog/github_html/2020_shiraki_ad.html" target="_blank">广岛百名山 - 白木山(1天游)</a>.</p>
                   </div>
                   
                   
@@ -208,7 +198,7 @@
                       <button id="close-panel-higashihiroshima" class="close-btn">关闭</button>
 
 
-                      <p>平民价格包岛，教钓鱼，坐私人游艇，广岛牡蛎烧烤，野营，流星</br>
+                      <p>平民价格包无人岛，教钓鱼，坐私人游艇，广岛牡蛎烧烤，野营，流星</br>
                       游记: <a href="https://poonh.github.io/travel_blog/github_html/2020_ryuoshima_ad.html" target="_blank">豪华包岛五星服务之龍王島与世隔绝之旅(2天1夜)</a></p>
           
                       <p>新年400级楼梯登山，濑户内海美景，伪法国名胜，心形小岛，戦迹</br>
@@ -243,9 +233,9 @@
                       <p>とび島海道骑行，海景别墅，樱花，特色咖啡小店，温泉</br>
                        <a href="https://poonh.github.io/travel_blog/github_html/2020_kenminnohama_cycling_ad.html" target="_blank">游记:毕业安芸滩骑行(2天1夜)</a></p>
                       <p>浴衣逛古镇，自行车导游团学历史，仿古民家住宿，日本茶室喝正宗抹茶，本格囲炉裡飯，濑户内海登山</br>
-                    　　<a href="https://poonh.github.io/travel_blog/github_html/2021_irori_ad.html" target="_blank">游记:囲炉裏庆圣诞</a></p>
+                    　　<a href="https://poonh.github.io/travel_blog/github_html/2021_irori_ad.html" target="_blank">游记:囲炉裏庆圣诞(2天1夜)</a></p>
                       <p>观星，海景别墅，闪闪水母，古镇，烧烤，阳台海景早餐</br>
-                       <a href="https://poonh.github.io/travel_blog/github_html/2020_autumn_kenminnohama_ad.html" target="_blank">游记:再去県民の浜(2天1夜)</a></p>
+                       <a href="https://poonh.github.io/travel_blog/github_html/2020_autumn_kenminnohama_ad.html" target="_blank">游记:県民の浜复兴之旅(2天1夜)</a></p>
                   </div>
                   
                   <div id="info-panel-etajima" class="info-panel" style="display: none;">
@@ -280,14 +270,14 @@
          
          <div id="info-panel-shobara" class="info-panel" style="display: none;">
              <button id="close-panel-shobara" class="close-btn">关闭</button>
-             <p>昭和时代学校吃神石和牛牛排，爱护狗只公园Tiergarten见学及寻宝，道后山赏红叶，柿子味冰淇淋，温泉</p>
+             <p>昭和时代学校吃神石和牛牛排，云海，爱护狗只公园Tiergarten见学及寻宝，道后山赏红叶，柿子味冰淇淋，温泉</p>
              <p>游记:<a href="https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki_ad.html" target="_blank">神石高原爱护动物红叶之旅(2天1夜)</a></p>
          </div>
          
          
          <div id="info-panel-shinseki" class="info-panel" style="display: none;">
              <button id="close-panel-shinseki" class="close-btn">关闭</button>
-             <p>昭和时代学校吃神石和牛牛排，爱护狗只公园Tiergarten见学及寻宝，道后山赏红叶，柿子味冰淇淋，温泉</p>
+             <p>昭和时代学校吃神石和牛牛排，云海，爱护狗只公园Tiergarten见学及寻宝，道后山赏红叶，柿子味冰淇淋，温泉</p>
              <p>游记: <a href="https://poonh.github.io/travel_blog/github_html/2021_autumn_shinseki_ad.html" target="_blank">神石高原爱护动物红叶之旅(2天1夜)</a></p>
          </div>
          <a id="shimane"><div style="text-align: center;">
@@ -563,6 +553,7 @@
      <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
  </div>
  <script src="map_script.js"></script>
+ <script src="search_script.js"></script>
  <script src="script.js"></script> <!-- Link to your JS file -->
  <script>
      function toggleMobileMenu() {
@@ -575,5 +566,6 @@
          menuList.classList.remove('active');
      }
  </script>
+
 </body>
 </html>
