@@ -158,13 +158,16 @@ nav ul li a{
     border-right: 1px solid #ccc; /* Adjust as needed */
     z-index: 1000; /* Ensure it's above other content */
     flex-direction: column; /* Display items vertically */
-    transition: width 2s;
+    /*transition: width 0.3s;*/
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
 .mobile-menu-list.active {
-    display: block;
+    display: flex;
+    opacity: 1;
 }
 
 .mobile-menu-list li {
@@ -222,9 +225,6 @@ nav ul li a{
     }
     
 }
-
-
-
 
 .content {
     max-width: 800px;
