@@ -91,31 +91,32 @@ nav {
     margin: 0 auto; /* Center the nav element horizontally
 }
 */
-
 nav ul {
+/*    background-image: url('pictures/darkblue.webp');*/
     background-color: rgb(0, 108, 169);
     list-style-type: none;
     padding: 20px;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
+    flex-wrap: wrap; /* Allows items to wrap into two rows */
+    justify-content: center; /* Centers items horizontally */
+    max-width: 800px; /* Optional: Set a max width for the menu */
 }
 
 nav ul li {
-    flex: 1 1 auto;
-    text-align: center;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    border-right: 1px solid rgb(224, 224, 224);
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-right: 1px solid rgb(224, 224, 224); /*separation bar between menu items*/
 
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* White #000 for black */
     text-decoration: none;
     font-size: 20px;
+   /* font-weight: bold;*/
     display: inline-block;
 }
 
