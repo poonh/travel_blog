@@ -177,7 +177,7 @@ nav ul li a{
 .menu-title-container {
     display: flex; /* Aligns the items horizontally */
     align-items: center; /* Vertically centers the items */
-    justify-content: space-between; /* Ensures equal spacing between items */
+    justify-content: flex-start; /* Ensures equal spacing between items */
 }
 
 
