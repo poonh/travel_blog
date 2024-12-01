@@ -91,65 +91,34 @@ nav {
     margin: 0 auto; /* Center the nav element horizontally
 }
 */
+
 nav ul {
-/*    background-image: url('pictures/darkblue.webp');*/
     background-color: rgb(0, 108, 169);
     list-style-type: none;
     padding: 20px;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap into two rows */
-    justify-content: center; /* Centers items horizontally */
-    max-width: 800px; /* Optional: Set a max width for the menu */
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
 }
 
 nav ul li {
-    flex: 1 1 auto; /* Allows items to grow and shrink equally */
-    text-align: center; /* Center align the text in each item */
-    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    border-right: 1px solid rgb(224, 224, 224); /*separation bar between menu items*/
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-right: 1px solid rgb(224, 224, 224);
 
 }
 
 nav ul li a {
-    color: #000; /* White #000 for black */
-    text-decoration: none;
-    font-size: 20px;
-   /* font-weight: bold;*/
-    display: inline-block;
-}
-
-/* Mobile Menu Styles */
-
-nav ul, .mobile-menu-list { /*computer menu*/
-    list-style-type: none;
-    padding: 10;
-    margin: 0;
-  
-}
-
-nav ul li, .mobile-menu-list li {
-    /*
-    display: inline;
-    margin-right: 20px;*/
-    
-    flex: 1 1 auto; /* Allows items to grow and shrink equally */
-    text-align: center; /* Center align the text in each item */
-    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    border-right: 1px solid rgb(224, 224, 224);
-   
-}
-
-nav ul li a{
-    color: white; /* Set the color to black */
+    color: white;
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
-    /*font-weight: bold;*/ /*computer menu font*/
-
 }
+
 
 .mobile-menu-list li a {
     color: black; /* Set the color to black */
@@ -203,7 +172,7 @@ nav ul li a{
 
 
 .mobile-menu-list {
-    position: fixed;
+    /*position: fixed;*/
     display: none;
     top: 0;
     left: 0;
@@ -252,6 +221,7 @@ nav ul li a{
     }
 
     .mobile-menu {
+        position: fixed
         display: block;
     }
 
