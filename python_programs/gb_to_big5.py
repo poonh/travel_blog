@@ -72,7 +72,7 @@ def convert_simplified_to_traditional(file_path):
         converted_content = converted_content.replace('index_big5.html">繁體版', 'index.html">简体版')
         converted_content = converted_content.replace('index_big5.html" onclick="hideMobileMenu()">繁體版', 'index.html" onclick="hideMobileMenu()">简体版')
         
-        converted_content = converted_content.replace('search_script','search_script_big5')
+        converted_content = converted_content.replace('search_script2','search_script2_big5')
 
         # Generate the new file name
         dir_name, original_name = os.path.split(file_path)
