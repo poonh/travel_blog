@@ -10,37 +10,7 @@
     <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
     <title>攜老帶嫩遊富士三湖 - 西湖河口湖山中湖
 </title>
-    <style>
-        /* Add your custom styles here */
-
-        .mobile-menu-list {
-            position: fixed;
-            display: none;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 60%; /* Adjust width as needed */
-            background-color: #fff; /* Adjust as needed */
-            padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
-            transition: width 2s;
-        }
-        
-        
-        @media only screen and (max-width: 768px) {
     
-
-            .mobile-menu {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-right: 10px;
-            }
-
-        }
-            </style>
     
     
             
@@ -396,16 +366,6 @@ http://www.houtou-fudou.jp/
  <script src="map_script.js"></script>
  <script src="../script.js"></script> <!-- Link to your JS file -->
 <script src="../search_script2_big5.js"></script>
- <script>
-     function toggleMobileMenu() {
-         var menuList = document.querySelector('.mobile-menu-list');
-         menuList.classList.toggle('active');
-     }
-
-     function hideMobileMenu() {
-         var menuList = document.querySelector('.mobile-menu-list');
-         menuList.classList.remove('active');
-     }
- </script>
+ 
 </body>
 </html>
