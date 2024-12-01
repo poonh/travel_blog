@@ -166,6 +166,11 @@ nav ul li a{
 .menu-icon {
    /* width: 30px;
     height: 30px;*/
+    background-color: lightgray;
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    padding: 10px; /*ends*/
     font-size: 30px;
     display: inline-block;
     margin-left: auto; /*original*/
@@ -245,6 +250,11 @@ nav ul li a{
          white-space: nowrap; /* Prevents title from breaking into multiple lines */
          overflow: hidden; /* Ensures the text doesn't overflow */
          text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+         background-color: lightgray;
+         background-size: cover; /* Ensures the image covers the entire element */
+         background-repeat: no-repeat; /* Prevents the image from repeating */
+         background-position: center;
+         padding: 10px; /*ends*/
       }
      
     .menu {
