@@ -122,14 +122,14 @@ nav ul li a {
 
 /* Mobile Menu Styles */
 
-nav ul, .mobile-menu-list { /*computer menu*/
+nav ul { /*computer menu*/
     list-style-type: none;
     padding: 10;
     margin: 0;
   
 }
 
-nav ul li, .mobile-menu-list li {
+nav ul li {
     /*
     display: inline;
     margin-right: 20px;*/
@@ -164,10 +164,12 @@ nav ul li a{
 }
 
 .menu-icon {
-    width: 30px;/*old*/
-    height: 30px;/*old*/
+   /* width: 30px;
+    height: 30px;*/
+
+    font-size: 30px;
     display: inline-block;
-  /*  margin-left: auto; *//*original*/
+    margin-left: auto; /*original*/
     /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
@@ -177,11 +179,14 @@ nav ul li a{
 .menu-title-container {
     display: flex; /* Aligns the items horizontally */
     align-items: center; /* Vertically centers the items */
-    justify-content: space-between; /* Ensures equal spacing between items */
-    padding: 0 10px; /* Adds some padding to prevent items from touching screen edges */
-    max-width: 100%; /* Prevents the container from exceeding the screen width */
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
-    overflow: hidden; /* Prevents content from overflowing */
+    justify-content: flex-start; /* Ensures equal spacing between items */
+    background-color: lightgreen; /* Add background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    /*padding: 10px; *//* Adds spacing around the content */
+    /*ends*/
+    height: auto;
 }
 
 
@@ -189,9 +194,12 @@ nav ul li a{
 .menu-image {
     width: 80vw;
     flex-shrink: 0;
+    align-items: left;
     /*width: 100%;*/ /* Size of the image */
     /*height: 100%px; *//* Size of the image */
-    margin-right: 10px; /* Space between image and title */
+    margin-right: 0px; /* Space between image and title */
+    height: 100%;/*add**/
+    object-fit: cover;/*add**/
 }
 
 /* Container for the title and icon together */
@@ -203,13 +211,27 @@ nav ul li a{
 
 
 .mobile-menu-list {
-    display: none;
+    position: fixed;
+  /*  display: none;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%; /* Adjust width as needed */
+    background-color: #fff; /* Adjust as needed */
+    padding: 10px;
+    border-right: 1px solid #ccc; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    flex-direction: column; /* Display items vertically */
+    /*transition: width 0.3s;*/
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
 .mobile-menu-list.active {
-    display: block;
+    display: flex;
+    opacity: 1;
 }
 
 .mobile-menu-list li {
@@ -224,10 +246,12 @@ nav ul li a{
      }
 
      .menu-title {
-         font-size: 18px; /* Font size of the title */
+         font-size: 16px; /* Font size of the title */
          font-weight: bold; /* Makes the title bold */
+         margin-left: 5px;
          margin-right: 5px; /* Space between title and icon */
          flex-grow: 1; /* Allows the title to use any extra space */
+         writing-mode: vertical-rl;  /* Makes the text vertical, from right to left */
          white-space: nowrap; /* Prevents title from breaking into multiple lines */
          overflow: hidden; /* Ensures the text doesn't overflow */
          text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
@@ -239,10 +263,18 @@ nav ul li a{
 
     .mobile-menu {
         display: block;
+        position: fixed;  /* Fix the mobile menu at the top */
+        top: 0; /* Stick the menu to the top */
+        left: 0;
+        width: 100%; /* Full width */
+        padding: 0px;
+        border-right: 1px solid #ccc;
+        z-index: 1000; /
     }
 
     .mobile-menu-list {
         display: block;
+        padding-top: 50px; /
     }
     
     .container-search {

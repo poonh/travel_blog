@@ -15,8 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function toggleMobileMenu() {
+    var menuList = document.querySelector('.mobile-menu-list');
+    menuList.classList.toggle('active');
+}
 
-document.getElementById('menu-icon').addEventListener('click', function () {
-    const menu = document.querySelector('.mobile-menu-list');
-    menu.classList.toggle('active'); // Toggles the 'active' class
-});
+function hideMobileMenu() {
+    var menuList = document.querySelector('.mobile-menu-list');
+    menuList.classList.remove('active');
+}
