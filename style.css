@@ -224,14 +224,16 @@ nav ul li a{
     flex-direction: column; /* Display items vertically */
     /*transition: width 0.3s;*/
     opacity: 0;
+    pointer-events: none; /*additional*/
     transition: opacity 0.3s ease-in-out;
 /*    background-color: lightgreen;*/
    /* background-image: url('pictures/lightgreen.jpg')*/
 }
 
 .mobile-menu-list.active {
-    display: flex;
+    /*display: flex;  /*originally here*/
     opacity: 1;
+    pointer-events: auto; /* Interactable *//*additional*/
 }
 
 .mobile-menu-list li {
