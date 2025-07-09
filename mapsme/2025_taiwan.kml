@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+  <name>攜老帶少遊高雄.kml</name>
+  <visibility>1</visibility>
+    <Style id="line-ff0000ff">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff0000ff">
+      <Pair>
+        <styleUrl>#line-ff0000ff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff00ffff">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff00ffff">
+      <Pair>
+        <styleUrl>#line-ff00ffff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffff0000">
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffff0000">
+      <Pair>
+        <styleUrl>#line-ffff0000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff008000">
+      <LineStyle>
+        <color>ff008000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff008000">
+      <Pair>
+        <styleUrl>#line-ff008000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800080">
+      <LineStyle>
+        <color>ff800080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800080">
+      <Pair>
+        <styleUrl>#line-ff800080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff336699">
+      <LineStyle>
+        <color>ff336699</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff336699">
+      <Pair>
+        <styleUrl>#line-ff336699</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffff00ff">
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffff00ff">
+      <Pair>
+        <styleUrl>#line-ffff00ff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800000">
+      <LineStyle>
+        <color>ff800000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800000">
+      <Pair>
+        <styleUrl>#line-ff800000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffffff00">
+      <LineStyle>
+        <color>ffffff00</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffffff00">
+      <Pair>
+        <styleUrl>#line-ffffff00</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff003300">
+      <LineStyle>
+        <color>ff003300</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff003300">
+      <Pair>
+        <styleUrl>#line-ff003300</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff00ff00">
+      <LineStyle>
+        <color>ff00ff00</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff00ff00">
+      <Pair>
+        <styleUrl>#line-ff00ff00</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff008080">
+      <LineStyle>
+        <color>ff008080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff008080">
+      <Pair>
+        <styleUrl>#line-ff008080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff006666">
+      <LineStyle>
+        <color>ff006666</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff006666">
+      <Pair>
+        <styleUrl>#line-ff006666</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff7acaff">
+      <LineStyle>
+        <color>ff7acaff</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff7acaff">
+      <Pair>
+        <styleUrl>#line-ff7acaff</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff808080">
+      <LineStyle>
+        <color>ff808080</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff808080">
+      <Pair>
+        <styleUrl>#line-ff808080</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ff800000">
+      <LineStyle>
+        <color>ff800000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ff800000">
+      <Pair>
+        <styleUrl>#line-ff800000</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-ffe22b8a">
+      <LineStyle>
+        <color>ffe22b8a</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+     <StyleMap id="line-ffe22b8a">
+      <Pair>
+        <styleUrl>#line-ffe22b8a</styleUrl>
+      </Pair>
+    </StyleMap>
+  <Style id="placemark-red">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-blue">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-blue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-purple">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-yellow">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-pink">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-pink.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-brown">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-brown.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-green">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeppurple">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-deeppurple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lightblue">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-lightblue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-cyan">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-cyan.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-teal">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-teal.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lime">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-lime.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeporange">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-deeporange.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-gray">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-gray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-bluegray">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.me/placemarks/placemark-bluegray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>世奇商旅（本店無提供停車場）</name>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>
+                    120.3047976,22.6660215,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Hotel</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>弘記肉臊飯鋪</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3043142,22.6646031,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>聖保羅烘焙花園-左營店</name>
+    <styleUrl>#placemark-yellow</styleUrl>
+    <Point><coordinates>
+                    120.3056646,22.6628093,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Ruifeng Night Market</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.2993478,22.6660148,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>家樂福</name>
+    <styleUrl>#placemark-orange</styleUrl>
+    <Point><coordinates>
+                    120.299729,22.668164,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Shopping</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>家樂福</name>
+    <styleUrl>#placemark-orange</styleUrl>
+    <Point><coordinates>
+                    120.300331,22.663689,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Shopping</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>家樂福</name>
+    <styleUrl>#placemark-orange</styleUrl>
+    <Point><coordinates>
+                    120.3087572,22.6621672,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Shopping</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>全聯福利中心</name>
+    <styleUrl>#placemark-orange</styleUrl>
+    <Point><coordinates>
+                    120.3080605,22.6637516,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Shopping</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>9x9 文具專家</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.3083638,22.6623136,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>龍華市場</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3068695,22.6585922,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Kayla patisserie凱拉洋果子</name>
+    <styleUrl>#placemark-brown</styleUrl>
+    <Point><coordinates>
+                    120.3090412,22.6629411,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Gas</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>地鐵3出口</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.303163,22.6579228,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>4出口(不過馬路)</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.3035254,22.6667168,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>2出口(過馬路)
+</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.3030158,22.6655263,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>東琉線碼頭</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.445228,22.468496,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>成記雙糕潤</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.445017,22.4682103,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>東港金星雙糕潤-屏東伴手禮 屏東名產 屏東雙糕潤 東港伴手禮 東港名產 東港必吃</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.4446983,22.4680942,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>水行俠-海上自行車</name>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>
+                    120.3858296,22.3499219,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Hotel</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Yoyo起司捲</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3859144,22.3497682,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>半潛艇 探索拉美</name>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>
+                    120.3853201,22.3514262,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Hotel</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>小琉球魅力商圈</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3824011,22.3529193,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>日星島AM.PM｜海景｜早午餐｜咖啡</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.381653,22.3532453,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">最低消費120</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>可不可熟成紅茶（便宜）</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3811344,22.3530041,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>彩虹市集3樓段純貞牛肉麵</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3092601,22.6877848,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://rsv.skm.com.tw/groups/skm-KaohsiungZuoying/companies/-Kzv_5wF-VQ89ccMDzcm/restaurants/-LBcaiBB14N4JBdR_Xzt/booking</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>屏東站</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.4860729,22.6689173,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>慈鳳宮</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.48685,22.67123,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>屏東西市場</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.4783075,22.6740953,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>台灣鳳梨工場</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.4207694,22.6576977,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>(高檔)醉稻香怀旧料理餐厅</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.4782181,22.6707211,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>玉皇宫(屏东市)</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.4922179,22.666861,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>三和瓦窑</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.4268757,22.6632978,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>舊鐵橋濕地生態公園</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.426989,22.6623093,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>捷運高雄車站</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.302583,22.6394924,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>红顶谷创谷物文创乐园</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.317502,22.6720892,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>华馔汤包面食馆</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3018061,22.6646339,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>2號出口</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.3292503,22.580776,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>蓝白航运股份有限公司</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.4446978,22.4684071,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>东港华侨市场</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.4439357,22.4681211,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>胜利星村创意生活园区</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.484498,22.6786031,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>董師傅手工麻糬</name>
+    <styleUrl>#placemark-yellow</styleUrl>
+    <Point><coordinates>
+                    120.3047603,22.6658797,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>MINI.D COFFEE 裕誠館</name>
+    <styleUrl>#placemark-brown</styleUrl>
+    <Point><coordinates>
+                    120.3053511,22.6658205,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Gas</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>龍涎居雞膳食坊 高雄富國店</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3071816,22.6658118,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>全家便利商店 高雄富裕店(非常大)</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3072692,22.6660894,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>天豆福有机豆花豆浆</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3071362,22.6658697,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+       <mwm:description>         <mwm:lang code="default">https://eco-hugger.com/places/tiandoufu/</mwm:lang>
+       </mwm:description>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>草衙SKM Park Outlets Kaohsiung </name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.3293377,22.5825944,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>7-ELEVEN 小琉球門市</name>
+    <styleUrl>#placemark-green</styleUrl>
+    <Point><coordinates>
+                    120.3818123,22.3531736,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Food</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>下车点</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.426605,22.662282,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>九曲堂车站</name>
+    <styleUrl>#placemark-purple</styleUrl>
+    <Point><coordinates>
+                    120.4210032,22.6564116,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Parking</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>屏烟1936文化基地</name>
+    <styleUrl>#placemark-blue</styleUrl>
+    <Point><coordinates>
+                    120.5050198,22.6617565,0
+    </coordinates></Point>
+    <ExtendedData xmlns:mwm="https://maps.me">
+       <mwm:icon>Viewpoint</mwm:icon>
+    </ExtendedData>
+  </Placemark>
+  </Document>
+</kml>
